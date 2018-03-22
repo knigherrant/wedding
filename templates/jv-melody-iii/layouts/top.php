@@ -57,27 +57,6 @@
     <!--/Block Breadcrumb-->
 <?php endif;?>
 
-<?php if( $this['block']->count('top') ):?>
-    <!--Block top-->
-	<section id="block-top" >
-    	<div class="container">
-    		<jdoc:include type="block" name="top"  />
-        </div>
-    </section>
-    <!--/Block top-->
-<?php endif;?>
-
-
-<?php if( $this['block']->count('topb') ):?>
-    <!--Block topb-->
-	<section id="block-topb">
-    	<div class="container">
-    		<jdoc:include type="block" name="topb" style="raw" />
-        </div>
-    </section>
-    <!--/Block topb-->
-<?php endif;?>
-
 <?php if( $this['position']->count('full-webding-conent-1') ):?>
     <!--Block full-webding-conent-1-->
     <section id="down" class="wd_scroll_wrap">
@@ -101,4 +80,41 @@
         </div>
     </section>
     <!--/Block full-webding-conent-2-->
+<?php endif;?>
+
+<?php if( $this['position']->count('full-webding-conent-3') ):?>
+    <!--Block full-webding-conent-3-->
+    <section id="block-event" class="wd_scroll_wrap">
+        <div class="wd_event_wrapper wd_toppadder90 wd_bottompadder50">
+            <div class="container">
+                <jdoc:include type="position" name="full-webding-conent-3" style="jvxhtml" />
+            </div>
+        </div>
+    </section>
+    <!--/Block full-webding-conent-3-->
+<?php endif;?>
+
+<?php if( $this['block']->count('top') ):?>
+    <!--Block top-->
+    <section id="block-top" class="wd_scroll_wrap">
+        <div class="wd_guest_wrapper wd_toppadder90">
+            <div class="wd_overlay"></div>
+            <jdoc:include type="position" name="top-title" style="rawtitle" />
+            <div class="container">
+                <jdoc:include type="block" name="top"  />
+            </div>
+        </div>
+    </section>
+    <!--/Block top-->
+<?php endif;?>
+
+
+<?php if( $this['block']->count('topb') ):?>
+    <!--Block topb-->
+    <section id="block-topb">
+        <div class="container">
+            <jdoc:include type="block" name="topb" style="raw" />
+        </div>
+    </section>
+    <!--/Block topb-->
 <?php endif;?>

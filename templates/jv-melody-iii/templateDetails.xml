@@ -157,6 +157,10 @@ JV Framework 4.2.5 is a steep improvemence over our old Framework. While droppin
       <position>panel-4</position>
       <position>panel-5</position>
       <position>panel-6</position>
+      <position>full-webding-conent-1</position>
+      <position>full-webding-conent-2</position>
+      <position>full-webding-conent-3</position>
+      <position>top-title</position>
       <position>top-1</position>
       <position>top-2</position>
       <position>top-3</position>
@@ -169,8 +173,6 @@ JV Framework 4.2.5 is a steep improvemence over our old Framework. While droppin
       <position>topb-4</position>
       <position>topb-5</position>
       <position>topb-6</position>
-      <position>full-webding-conent-1</position>
-      <position>full-webding-conent-2</position>
       <position>left</position>
       <position>left-1</position>
       <position>left-2</position>

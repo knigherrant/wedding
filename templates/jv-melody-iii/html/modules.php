@@ -118,16 +118,14 @@ function modChrome_jvxhtmls($module, &$params, &$attribs){ ?>
 <?php }
 
 function modChrome_rawtitle($module, &$params, &$attribs){ ?>
-   <?php if($module->showtitle): ?>
-    <div class="wd_heading">
-        <h4>are getting married!</h4>
-        <h2>
-            <?php if(isset($options['icon'])): ?>
-                <i class="icon-<?php echo $options['icon']; ?>"></i>
-            <?php endif; ?>
-            <?php echo $module->title; ?>
-        </h2>
-    </div>
+   <?php
+    if ($module->showtitle != 0) :
+        $title = explode('||',$module->title);
+    ?>
+        <div class="wd_heading">
+            <?php if (!empty($title[1])) echo '<h4>'.trim($title[1]).'</h4>'; ?>
+            <h2 class="title-module"><?php echo trim($title[0]); ?></h2>
+        </div>
     <?php endif; ?>
     <?php echo $module->content; ?>
 <?php } ?>
