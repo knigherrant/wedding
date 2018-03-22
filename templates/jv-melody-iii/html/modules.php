@@ -89,14 +89,11 @@ function modChrome_jvxhtml($module, &$params, &$attribs){
 		if ($module->showtitle != 0) :
 			$title = explode('||',$module->title);
 		?>
-			<h3 class="title-module">
-		   		<span><?php echo trim($title[0]); ?></span>
-                <?php if (!empty($title[1])) echo '<small>'.trim($title[1]).'</small>'; ?>
-            </h3>
+            <div class="wd_heading">
+                <?php if (!empty($title[1])) echo '<h4>'.trim($title[1]).'</h4>'; ?>
+                <h2 class="title-module"><?php echo trim($title[0]); ?></h2>
+            </div>
 		<?php endif; ?>
-
-
-
         <div class="contentmod clearfix">
 			<?php echo $module->content; ?>
          </div>

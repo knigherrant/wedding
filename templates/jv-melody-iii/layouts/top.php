@@ -83,7 +83,7 @@
     <section id="down" class="wd_scroll_wrap">
         <div class="wd_about_wrapper wd_toppadder90 wd_bottompadder70">
             <div class="container">
-                <jdoc:include type="position" name="full-webding-conent-1" style="raw" />
+                <jdoc:include type="position" name="full-webding-conent-1" style="jvxhtml" />
             </div>
         </div>
     </section>
