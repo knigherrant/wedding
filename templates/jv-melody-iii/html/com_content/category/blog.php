@@ -23,7 +23,11 @@ JHtml::_('behavior.caption');
 	<?php if ($this->params->get('show_category_title', 1) or $this->params->get('page_subheading')) : ?>
 		<h2> <?php echo $this->escape($this->params->get('page_subheading')); ?>
 			<?php if ($this->params->get('show_category_title')) : ?>
-				<span class="subheading-category"><?php echo $this->category->title; ?></span>
+				<?php $cat_title = explode('||', $this->category->title); ?>
+				<div class="wd_heading">
+					<?php if (!empty($cat_title[1])) echo '<h4>'.trim($cat_title[1]).'</h4>'; ?>
+					<h2><?php echo trim($cat_title[0]); ?></h2>
+				</div>
 			<?php endif; ?>
 		</h2>
 	<?php endif; ?>

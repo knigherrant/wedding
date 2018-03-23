@@ -1,13 +1,13 @@
 <?php
 /*
  # Module		JV Contact
- # @version		3.0.1
+ # @version		3.4
  # ------------------------------------------------------------------------
- # author    Open Source Code Solutions Co
- # copyright Copyright © 2008-2012 joomlavi.com. All Rights Reserved.
+ # author    PHPKungfu Solutions Co
+ # copyright Copyright © 2008-2012 phpkungfu.club. All Rights Reserved.
  # @license - http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL or later.
- # Websites: http://www.joomlavi.com
- # Technical Support:  http://www.joomlavi.com/my-tickets.html
+ # Websites: http://www.phpkungfu.club
+ # Technical Support:  http://www.phpkungfu.club/my-tickets.html
 -------------------------------------------------------------------------*/
 
 // No direct access to this file
@@ -17,20 +17,20 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 class modJVContactHelper extends JObject
 {
 	function __construct($moduleid,$params){
-		
-		
+
+
 		$this->_moduleid = $moduleid;
-		
+
 		$myparams = $this->_getParams($params);
 		$this->_params = $myparams;
-		
+
 		$this->_addAssets();
-		
-		
+
+
 		return;
 	}
 	private function _getParams($params){
-		
+
 		$arr['moduleclass_sfx'] = htmlspecialchars($params->get('moduleclass_sfx'));
 		$arr['textheader']		= $params->get('textheader');
 		$arr['textfooter']		= $params->get('textfooter');
@@ -39,18 +39,18 @@ class modJVContactHelper extends JObject
 		$arr['moreinfo']		= $params->get('moreinfo');
 		$arr['mailsubject']		= $params->get('mailsubject');
 		$arr['mailcopy']		= $params->get('mailcopy');
-		
+
 		$arr['layout']			= $params->get('layout','default');
 		$arr['customlayout']	= $params->get('customlayout');
 		$arr['customcss']		= $params->get('customcss');
-		
+
 		$arr['mailto']			= $params->get('mailto');
 		$arr['mailto2']			= $params->get('mailto2');
-		
+
 		$arr['showform']		= $params->get('showform',1);
 		$arr['textinfield']		= $params->get('textinfield');
 		$arr['customfield']		= $params->get('customfield');
-		
+
 		$arr['showsocial']		= $params->get('showsocial');
 		$arr['showfacebook']	= $params->get('showfacebook',1);
 		$arr['showtweeter']		= $params->get('showtweeter',1);
@@ -58,14 +58,15 @@ class modJVContactHelper extends JObject
 		$arr['showlikein']		= $params->get('showlikein',1);
 		$arr['showaddthismore']	= $params->get('showaddthismore',1);
 		$arr['social']			= $this->_getSocial($arr);
-		
-		
-		
+
+
+
 		$arr['showcaptcha']			= $params->get('showcaptcha',1);
+                $arr['captcha_version']			= $params->get('captcha_version',1);
 		$arr['captchapublickey']	= $params->get('captchapublickey');
 		$arr['captchaprivatekey']	= $params->get('captchaprivatekey');
 		$arr['captchatheme']		= $params->get('captchatheme','white');
-		
+
 		$arr['captcha_instructions_visual']		= $params->get('captcha_instructions_visual','Instructions visual');
 		$arr['captcha_instructions_audio']		= $params->get('captcha_instructions_audio','Instructions audio');
 		$arr['captcha_play_again']				= $params->get('captcha_play_again','Play again');
@@ -75,10 +76,10 @@ class modJVContactHelper extends JObject
 		$arr['captcha_refresh_btn']				= $params->get('captcha_refresh_btn','Refesh');
 		$arr['captcha_help_btn']				= $params->get('captcha_help_btn','Help');
 		$arr['captcha_incorrect_try_again']		= $params->get('captcha_incorrect_try_again','Incorrect try again');
-		
+
 		$arr['captcha']				= $this->_getCaptcha($arr);
-		
-		
+
+
 		$arr['showmap']		= $params->get('showmap');
 		$arr['map_width']	= $params->get('map_width','100%');
 		$arr['map_height']	= $params->get('map_height','200px');
@@ -88,71 +89,80 @@ class modJVContactHelper extends JObject
 		$arr['map_icon']	= $params->get('map_icon');
 		$arr['map_zoom']	= $params->get('map_zoom','17');
 		$arr['map_apikey']	= $params->get('map_apikey','AIzaSyD7KJAbPjbKDmQxCVsiTlVOmQihmbOoFdY');
-		
+
 		$arr['map_infotext']	= $params->get('map_infotext',"I'm here");
 		$arr['map_marker']		= $params->get('map_marker',"");
-		
-		
+
+
 		$arr['map']			= $this->_getMap($arr);
-		
+
 		$arr['moduleid']	= $this->_moduleid;
 		return $arr;
 	}
-	
+
 	private function _getMap($myparams){
 		if(!$myparams['showmap']) return;
 		$doc = JFactory::getDocument();
-		$doc->addScript('http://maps.googleapis.com/maps/api/js?key='.$myparams['map_apikey'].'&sensor=false');
+		$path_prefix = "http";
+		if ($doc->params->get('force_ssl') == 2) $path_prefix = "https";
+		$doc->addScript($path_prefix . '://maps.googleapis.com/maps/api/js?key='.$myparams['map_apikey'].'&sensor=false');
 		$doc->addScript(JURI::root().'modules/mod_jvcontact/assets/js/jvmap.js');
-		
+
 		$mapid = 'jvmap'.$this->_moduleid;
-		
+
 		$infotext = str_replace('"', '\"', $myparams['map_infotext']);
 		$infotext = str_replace("\r\n", '<br/>', $infotext);
-		
-		
-		$html = '<div style="width:'.$myparams['map_width'].';height:'.$myparams['map_height'].'" class="jvmapcontain" id="'.$mapid.'"></div>
-		<script type="text/javascript">
-		var myjvmap = new jvmap({
-							jvmapid		:"'.$mapid.'",
-							lat			:"'.$myparams['map_lat'].'",
-							lng			:"'.$myparams['map_long'].'",
-							address		:"'.$myparams['map_address'].'",
-							zoom		:'.$myparams['map_zoom'].',
-							iconmarker	:"'.$myparams['map_icon'].'",
-							infotext	:"'.$infotext.'"
-						});
-		';
-		$markers = $myparams['map_marker'];
-		if($markers && isset($markers)) foreach($markers as $marker){
-			$arr = explode('|',$marker);
-			$arr[2] = str_replace("'", "\'", $arr[2]);
-			$arr[2] = str_replace('"', '\"', $arr[2]);
-			$html .= "myjvmap.placeMarker($arr[0],$arr[1],'$arr[2]');";
-		}
-		
-		$html .= '</script>';
-			
+		$script = '
+			jQuery(function($){
+				jSont.initialize({
+					jvmapid		:"'.$mapid.'",
+					lat			:"'.$myparams['map_lat'].'",
+					lng			:"'.$myparams['map_long'].'",
+					address		:"'.$myparams['map_address'].'",
+					zoom		:'.$myparams['map_zoom'].',
+					iconmarker	:"'.$myparams['map_icon'].'",
+					infotext	:"'.$infotext.'"
+				});
+			';
+			$markers = $myparams['map_marker'];
+			if($markers && isset($markers)) foreach($markers as $marker){
+				$arr = explode('|',$marker);
+				$arr[2] = str_replace("'", "\'", $arr[2]);
+				$arr[2] = str_replace('"', '\"', $arr[2]);
+				$script .= "jSont.placeMarker($arr[0],$arr[1],'$arr[2]');";
+			}
+
+		$script .= '});';
+
+		$doc->addScriptDeclaration($script);
+
+		$html = '<div style="width:'.$myparams['map_width'].';height:'.$myparams['map_height'].'" class="jvmapcontain" id="'.$mapid.'"></div>';
+
 		return $html;
 	}
-	
-	private function _checkCaptcha($privatekey){
-		
+
+	private function _checkCaptcha($myparams){
+
 		$post = JRequest::get('post');
-		require_once(dirname(__FILE__).'/assets/recaptchalib.php');
-		
-		$url = JFactory::getURI()->toString();
-		@$resp = recaptcha_check_answer(
-				$privatekey,
-				$url,
-				$post["recaptcha_challenge_field"],
-				$post["recaptcha_response_field"]
-		);
-		
-		if (!$resp->is_valid) {
-			return false;
-		}
-				
+                if($myparams['captcha_version'] == 2){
+                    require_once(dirname(__FILE__).'/assets/autoload.php');
+                    $recaptcha = new \ReCaptcha\ReCaptcha($myparams['captchaprivatekey']);
+                    $resp = $recaptcha->verify($post['g-recaptcha-response']);
+                    return $resp->isSuccess();
+                }else{
+                    require_once(dirname(__FILE__).'/assets/recaptchalib.php');
+                    $url = JFactory::getURI()->toString();
+                    @$resp = recaptcha_check_answer(
+                                    $myparams['captchaprivatekey'],
+                                    $url,
+                                    $post["recaptcha_challenge_field"],
+                                    $post["recaptcha_response_field"]
+                    );
+                    if (!$resp->is_valid) {
+                            return false;
+                    }
+                }
+
 		return true;
 	}
 	function getUserEmail($userids){
@@ -163,58 +173,58 @@ class modJVContactHelper extends JObject
 		foreach ($lists as $l) $email[] = $l->email;
 		return $email;
 	}
-	
+
 	function sendMail($fields){
-		
-		$posts = JRequest::get('post');
+
+		$app = JFactory::getApplication();
+		$jvcontact = $app->input->get('jvcontact',array(), 'post');
 		$myparams = $this->_params;
 		$moduleid = $myparams['moduleid'];
-		
-		if($myparams['showcaptcha']){
-			if(!$this->_checkCaptcha($myparams['captchaprivatekey'])) return 'Invalid Captcha!';
-		}
-		
-		if(isset($posts['jvcontact'])) $post = $posts['jvcontact'][$moduleid];
-		
+		if(isset($jvcontact[$moduleid])) $post = $jvcontact[$moduleid];
+		$cbcopymail = $app->input->getString('cbcopymail','');
 		if(isset($post)){
 			$token = JRequest::checkToken();
 			if($token){
+				if($myparams['showcaptcha']){
+					if(!$this->_checkCaptcha($myparams)) return 'Invalid Captcha!';
+				}
+
 				$name = $post['name'];
 				$email = $post['email'];
 				$cc = $bcc = null;
 				$subject = !empty($post['subject']) ? $post['subject'] : $myparams['mailsubject'];
-				
-				if(isset($posts['cbcopymail']) && $posts['cbcopymail']){
+
+				if($cbcopymail){
 					$bcc = $email;
 				}
-				
+
 				foreach($post as $key=>$p){
 					if(is_array($p)){
 						$post[$key] = implode(', ',$p);
 					}
 				}
-					
+
 				$mailto = $myparams['mailto'];
 				$mailto2 = $myparams['mailto2'];
-					
+
 				if($mailto){
 					$recipient = $this->getUserEmail($mailto);
 				}
-					
+
 				if($mailto2){
 					$mailto2 = explode("\r\n",$mailto2);
 					foreach($mailto2 as $mail){
 						if($mail!='') $recipient[] = $mail;
 					}
 				}
-					
+
 				$body = $this->getBodyMail($fields,$post);
-					
-				
+
+
 				if($name && $email && $subject){
 					$mail = JFactory::getMailer();
 					if($mail->sendMail($email, $name, $recipient, $subject, $body,1,$cc,$bcc)){
-						return $myparams['thankyou'];
+						return 'ok';
 					}else{
 						return 'Error in send mail!';
 					}
@@ -224,69 +234,69 @@ class modJVContactHelper extends JObject
 			}else{
 				return 'Invalid Token!';
 			}
-			
+			return 'ok';
 		}
-		
-		return;
+		return false;
 	}
-	
+
 	public function getBodyMail($fields,$post){
 		$html = '<table style="width:100%">';
 		if($fields) foreach($fields as $field){
 			$name = $field['name'];
 			$html .= '<tr><td>'.$field['title'].'</td><td>'.$post[$name].'</td></tr>';
 		}
-		
+
 		$html .= '</table>';
-		
+
 		$html = JString::str_ireplace("\r\n", "<br/>", $html);
 		return $html;
 	}
-	
+
 	private function _addAssets(){
 		$myparams = $this->_params;
 		$doc = JFactory::getDocument();
-		
+
 		$doc->addScript('modules/mod_jvcontact/assets/js/default.js');
-		
+
 		$myparams['layout'] = substr($myparams['layout'],2);
-		
+
 		if($myparams['layout']=='custom'){
 			$doc->addStyleDeclaration($myparams['customcss']);
 		}else{
-			
-			if($myparams['layout']){
+
+			if($myparams['layout'] =="default"){
 				$doc->addStyleSheet('modules/mod_jvcontact/assets/css/'.$myparams['layout'].'.css');
 			}
-			
+
 		}
-		
+
 		return;
 	}
-	
+
 	function getFields(){
 		$myparams = $this->_params;
 		$moduleid = $myparams['moduleid'];
-		
+
 		$fields = $myparams['customfield'];
 		$fields = JArrayHelper::fromObject($fields);
 		$rows = array();
-		
+
 		if($fields) foreach ($fields as $k=>$field){
 			$key = $field['name'];
 			$rows[$key]['title'] = $field['title'];
 			$rows[$key]['name'] = $field['name'];
 			$fieldname = 'jvcontact['.$moduleid.']['.$field['name'].']';
-			
+
 			if($myparams['textinfield'] && ($field['type']=='text' || $field['type']=='textarea' || $field['type']=='name' || $field['type']=='email' || $field['type']=='subjectfield')){
 				$field['value'] = $field['title'];
 				$field['attribute'] = 'placeholder="'.$field['title'].'"';
-				
+
 			}else{
 				$rows[$key]['label'] = $field['title'];
+				$field['attribute'] = 'placeholder="'.$field['title'].'"';
 			}
-			
-			
+
+
 			$field['validate'] .= ' field-'.$field['name'];
 			switch($field['type']){
 				case 'name':
@@ -294,7 +304,7 @@ class modJVContactHelper extends JObject
 				case 'subjectfield':
 				case 'text':
 					$rows[$key]['input'] = '<input class="inputbox '.$field['validate'].'" type="text" name="'.$fieldname.'" value="" '.@$field['attribute'].'/>';
-					
+
 					break;
 				case 'textarea':
 					$rows[$key]['input'] = '<textarea class="inputbox '.$field['validate'].'" name="'.$fieldname.'" '.@$field['attribute'].'></textarea>';
@@ -305,21 +315,21 @@ class modJVContactHelper extends JObject
 					if($options) foreach($options as $opt){
 						$option[] = JHTML::_('select.option',$opt,$opt);
 					}
-					
+
 					$rows[$key]['input'] = JHTML::_('select.radiolist',$option,$fieldname,'class="btn-group"');
-					
+
 					break;
 				case 'checkbox':
 					$html = '';
-					
+
 					$options = explode("\r\n",$field['option']);
-					
+
 					if($options) foreach($options as $opt){
-						$html .= '<input type="checkbox" id="'.$opt.'" name="'.$fieldname.'[]" value="'.$opt.'" />';
+						$html .= '<input class="checkbox '.$field['validate'].'" type="checkbox" id="'.$opt.'" name="'.$fieldname.'[]" value="'.$opt.'" />';
 						$html .= '<label class="checkbtn" for="'.$opt.'">'.$opt.'</label>';
 					}
-						
-					
+
+
 					$rows[$key]['input'] = $html;
 					break;
 				case 'select':
@@ -328,80 +338,88 @@ class modJVContactHelper extends JObject
 					if($options) foreach($options as $opt){
 						$option[] = JHTML::_('select.option',$opt,$opt);
 					}
-						
+
 					$html = JHTML::_('select.genericlist',$option,$fieldname);
 					$rows[$key]['input'] = $html;
 					break;
 			}
 		}
-		
+
 		return $rows;
 	}
-	
+
 	private function _getSocial($myparams){
-		
+
 		$html = '';
 		$showsocial = $myparams['showsocial'];
-		
-		
+
+
 		if($showsocial){
 			$html = '<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fac7257716dacd5"></script>';
-			
+
 			if($showsocial==3){
 				if($myparams['showfacebook'])	$button[] = '<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>';
 				if($myparams['showtweeter'])	$button[] = '<a class="addthis_button_tweet"></a>';
 				if($myparams['showgplus'])		$button[] = '<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>';
 				if($myparams['showlikein'])		$button[] = '<a class="addthis_button_linkedin"></a>';
 				if($myparams['showaddthismore']) $button[] = '<a class="addthis_counter addthis_pill_style"></a>';
-				
-				
+
+
 				$button = $button?implode(' ',$button):'';
-				
+
 			}else{
 				if($myparams['showfacebook']) 		$button[] = '<a class="addthis_button_facebook"></a>';
 				if($myparams['showtweeter']) 		$button[] = '<a class="addthis_button_twitter"></a>';
 				if($myparams['showgplus']) 			$button[] = '<a class="addthis_button_email"></a>';
 				if($myparams['showlikein']) 		$button[] = '<a class="addthis_button_linkedin"></a>';
 				if($myparams['showaddthismore']) 	$button[] = '<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>';
-				
+
 				$button = $button?implode(' ',$button):'';
-				
+
 				if($showsocial==2)	$bigstyle = 'addthis_32x32_style';
-				
+
 			}
-			
+
 			$html .= '<div class="addthis_toolbox addthis_default_style '.@$bigstyle.'">'.$button.'</div>';
-			
+
 		}
-		
-		
+
+
 		return $html;
 	}
-	
-	private function _getCaptcha($myparams){		
-		
+
+	private function _getCaptcha($myparams){
+
 		if($myparams['showcaptcha']){
 			$captchaid = 'recaptcha'.rand(1, 9999);
-			
+
+                        if($myparams['captcha_version'] == 2){
+                            $html[0] = "<script src='https://www.google.com/recaptcha/api.js'></script>"
+                                    . "<div id='$captchaid' class='g-recaptcha' data-sitekey='".$myparams['captchapublickey']."'></div>";
+
+                            return $html;
+                        }
+
+
 			if($myparams['captchatheme']=='custom'){
 				$html[0] = '<div id="'.$captchaid.'" style="display:none">
-				
+
 				<div id="recaptcha_image"></div>
 				<div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
-				
+
 				<span class="recaptcha_only_if_image">Enter the words above:</span>
 				<span class="recaptcha_only_if_audio">Enter the numbers you hear:</span>
-				
+
 				<input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
-				
+
 				<div><a href="javascript:Recaptcha.reload()">Get another CAPTCHA</a></div>
 				<div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type(\'audio\')">Get an audio CAPTCHA</a></div>
 				<div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type(\'image\')">Get an image CAPTCHA</a></div>
-				
+
 				<div><a href="javascript:Recaptcha.showhelp()">Help</a></div>
-				
+
 				</div>
-				
+
 				<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k='.$myparams['captchapublickey'].'"></script>
 				<noscript>
 				<iframe src="http://www.google.com/recaptcha/api/noscript?k='.$myparams['captchapublickey'].'"
@@ -409,8 +427,8 @@ class modJVContactHelper extends JObject
 				<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
 				<input type="hidden" name="recaptcha_response_field" value="manual_challenge">
 				</noscript>
-				
-				
+
+
 				';
 				$html[1] = '<script type="text/javascript">
 					 var RecaptchaOptions = {
@@ -418,10 +436,10 @@ class modJVContactHelper extends JObject
 					    custom_theme_widget: "'.$captchaid.'"
 					 };
 				</script>';
-				
+
 				return $html;
-			}else{				
-				
+			}else{
+
 				$html[0]= '<div id="'.$captchaid.'"></div>
 				<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 				<script type="text/javascript">
@@ -439,16 +457,16 @@ class modJVContactHelper extends JObject
                         help_btn : "'.$myparams['captcha_help_btn'].'",
                         incorrect_try_again : "'.$myparams['captcha_incorrect_try_again'].'"
                 	}
-					
+
 				});
 				</script>';
-				
+
 				return $html;
 			}
-			
+
 		}
-		
+
 		return ;
 	}
-	
+
 }

@@ -113,7 +113,7 @@
     <!--Block topb-->
     <section id="block-topb">
         <div class="container">
-            <jdoc:include type="block" name="topb" style="raw" />
+            <jdoc:include type="block" name="topb" style="jvxhtml" />
         </div>
     </section>
     <!--/Block topb-->

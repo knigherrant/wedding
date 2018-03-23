@@ -352,10 +352,6 @@ textarea:focus {
   box-shadow: 0px 0px 25px -10px;
 }
 
-.wd_btn {
-  float: left;
-  width: 100%;
-}
 .wd_btn a {
   display: inline-block;
   width: auto;
@@ -406,6 +402,7 @@ textarea:focus {
   border-radius: 50px;
   border: none;
   padding: 0px 30px;
+  font-family: Lora, serif;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -916,44 +913,35 @@ textarea:focus {
   color: #ffffff;
 }
 .wd_guest_infobox {
-  float: left;
-  width: 100%;
-  padding: 60px 0px 30px 0px;
+  padding: 60px 0 30px 0;
 }
 .wd_guest_infobox h2 {
-  float: left;
-  width: 100%;
-  color: #ffffff;
-  margin: 0px 0px 30px 0px;
+  color: #fff;
+  margin: 0 0 30px 0;
 }
 .wd_guest_infobox h2 span {
   color: #f07677;
 }
 .wd_guest_infobox h4 {
-  float: left;
-  width: 100%;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Lora', serif;
   margin: 0px 0px 15px 0px;
 }
 .wd_guest_infobox p {
-  float: left;
-  width: 100%;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 50px;
 }
 .wd_guest_formbox {
-  float: right;
-  width: 90%;
+  padding-top: 45px;
   background-color: #fafafa;
   text-align: center;
-  padding: 45px 0px 0px 0px;
 }
 .wd_guest_formbox h2 {
   margin: 0;
   color: #111111;
   font-size: 30px;
   font-style: italic;
+  font-family: 'Lora', serif;
 }
 .wd_guest_formbox h4 {
   font-family: 'Great Vibes', cursive;
@@ -970,6 +958,9 @@ textarea:focus {
   padding: 45px 70px;
   text-align: left;
 }
+.wd_guest_form .form-group {
+  margin-bottom: 20px;
+}
 .wd_guest_form label {
   display: block;
   font-size: 16px;
@@ -984,7 +975,6 @@ textarea:focus {
   line-height: 48px;
   padding: 0px 10px;
   border: 1px solid #e4e4e4;
-  margin-bottom: 20px;
   border-radius: 0;
 }
 .wd_guest_form .wd_btn {
