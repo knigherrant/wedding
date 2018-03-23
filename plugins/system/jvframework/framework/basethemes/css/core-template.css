@@ -109,6 +109,16 @@ textarea {
 .chzn-container-single .chzn-single div b {
   background-position: 0 6px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px;
+  font-weight: normal;
+  line-height: normal;
+}
 p {
   margin: 0 0 20px;
 }
@@ -876,7 +886,7 @@ ul.jvRelated-link li {
   .col-md-4 .equal-column.row > .col-md-3:before {
     width: 67px;
   }
-
+  
   .jv-module ul.menu {
     margin: 0;
     padding: 0;
