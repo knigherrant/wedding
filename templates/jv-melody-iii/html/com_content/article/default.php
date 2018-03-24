@@ -51,7 +51,7 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 	<?php if (!$this->print) : ?>
 		<?php if ($canEdit || $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
 		<div class="btn-group pull-right">
-			<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <span class="icon-cog"></span> <span class="caret"></span> </a>
+			<a class="btn btn-sm dropdown-toggle" data-toggle="dropdown" href="#"> <span class="icon-cog"></span> <span class="caret"></span> </a>
 			<?php // Note the actions class is deprecated. Use dropdown-menu instead. ?>
 			<ul class="dropdown-menu actions">
 				<?php if ($params->get('show_print_icon')) : ?>
@@ -75,7 +75,7 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 	<?php endif; ?>
 
 	<?php if ($useDefList && ($info == 0 || $info == 2)) : ?>
-		<div class="article-info muted">
+		<div class="article-info-outer muted">
 			<dl class="article-info">
 			<dt class="article-info-term"><?php echo JText::_('COM_CONTENT_ARTICLE_INFO'); ?></dt>
 
@@ -120,25 +120,33 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 
 			<?php if ($params->get('show_publish_date')) : ?>
 				<dd class="published">
-					<span class="icon-calendar"></span> <?php echo JText::sprintf('COM_CONTENT_PUBLISHED_DATE_ON', JHtml::_('date', $this->item->publish_up, JText::_('DATE_FORMAT_LC3'))); ?>
+					<em class="fa fa-calendar-o" aria-hidden="true"></em>
+					<?php echo JHtml::_('date', $this->item->publish_up, JText::_('DATE_FORMAT_LC3')); ?>
 				</dd>
 			<?php endif; ?>
 
 			<?php if ($info == 0) : ?>
 				<?php if ($params->get('show_modify_date')) : ?>
 					<dd class="modified">
-						<span class="icon-calendar"></span> <?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
+						<em class="fa fa-calendar-o" aria-hidden="true"></em>
+						<?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
 					</dd>
 				<?php endif; ?>
 				<?php if ($params->get('show_create_date')) : ?>
 					<dd class="create">
-						<span class="icon-calendar"></span> <?php echo JText::sprintf('COM_CONTENT_CREATED_DATE_ON', JHtml::_('date', $this->item->created, JText::_('DATE_FORMAT_LC3'))); ?>
+						<em class="fa fa-calendar-o" aria-hidden="true"></em>
+						<?php echo JText::sprintf('COM_CONTENT_CREATED_DATE_ON', JHtml::_('date', $this->item->created, JText::_('DATE_FORMAT_LC3'))); ?>
 					</dd>
 				<?php endif; ?>
 
 				<?php if ($params->get('show_hits')) : ?>
 					<dd class="hits">
-						<span class="icon-eye-open"></span> <?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
+						<em class="fa fa-eye" aria-hidden="true"></em>
+						<?php if($this->item->hits > 0): ?>
+							<?php echo $this->item->hits. ' ' . JText::_( 'COM_CONTENT_VIEWS' ); ?>
+	          <?php else: ?>
+	           	<?php echo $this->item->hits. ' ' . JText::_( 'COM_CONTENT_VIEW' ); ?>
+	          <?php endif; ?>
 					</dd>
 				<?php endif; ?>
 			<?php endif; ?>
@@ -224,27 +232,28 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 				<?php endif; ?>
 				<?php if ($params->get('show_publish_date')) : ?>
 					<dd class="published">
-						<span class="icon-calendar"></span>
-						<?php echo JText::sprintf('COM_CONTENT_PUBLISHED_DATE_ON', JHtml::_('date', $this->item->publish_up, JText::_('DATE_FORMAT_LC3'))); ?>
+						<em class="fa fa-calendar-o" aria-hidden="true"></em>
+						<?php echo JHtml::_('date', $this->item->publish_up, JText::_('DATE_FORMAT_LC3')); ?>
 					</dd>
 				<?php endif; ?>
 			<?php endif; ?>
 
 			<?php if ($params->get('show_create_date')) : ?>
 				<dd class="create">
-					<span class="icon-calendar"></span>
+					<em class="fa fa-calendar-o" aria-hidden="true"></em>
 					<?php echo JText::sprintf('COM_CONTENT_CREATED_DATE_ON', JHtml::_('date', $this->item->created, JText::_('DATE_FORMAT_LC3'))); ?>
 				</dd>
 			<?php endif; ?>
 			<?php if ($params->get('show_modify_date')) : ?>
 				<dd class="modified">
-					<span class="icon-calendar"></span>
+					<em class="fa fa-calendar-o" aria-hidden="true"></em>
 					<?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
 				</dd>
 			<?php endif; ?>
 			<?php if ($params->get('show_hits')) : ?>
 				<dd class="hits">
-					<span class="icon-eye-open"></span> <?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
+					<em class="fa fa-eye" aria-hidden="true"></em>
+					<?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
 				</dd>
 			<?php endif; ?>
 			</dl>

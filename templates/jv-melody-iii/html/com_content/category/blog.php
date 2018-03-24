@@ -25,9 +25,9 @@ JHtml::_('behavior.caption');
 			<?php if ($this->params->get('show_category_title')) : ?>
 				<?php $cat_title = explode('||', $this->category->title); ?>
 				<div class="wd_heading">
-					<?php if (!empty($cat_title[1])) echo '<h4>'.trim($cat_title[1]).'</h4>'; ?>
-					<h2><?php echo trim($cat_title[0]); ?></h2>
-				</div>
+          <h4>Wedding journal</h4>
+          <h2><?php echo $this->category->title; ?></h2>
+        </div>
 			<?php endif; ?>
 		</h2>
 	<?php endif; ?>

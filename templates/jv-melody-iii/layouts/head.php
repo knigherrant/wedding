@@ -26,10 +26,7 @@ else
 	$this ['asset']->addLess ( "menu-touch", array('media' => 'screen and (max-width: '.$this['option']->get('menu.responsive').'px)'));
 }
 
-$this['asset']->addLess('fonts');
-$this['asset']->addLess('font-awesome');
-$this['asset']->addLess('css3');
-$this['asset']->addLess('menu');
+$this['asset']->addLess('font-awesome');;
 if($this['option']->get('global.k2css')) $this['asset']->addLess('k2');
 $this['asset']->addLess('template');
 

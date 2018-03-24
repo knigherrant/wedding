@@ -13,7 +13,7 @@
 
     if ($option == 'com_content' && $view == 'category' && $layout == 'blog')
     {
-       $blogClass = 'wd_blog_wrapper wd_toppadder90 wd_bottompadder40';
+       $blogClass = 'wd_blog_wrapper';
     }
     ?>
 </head>
@@ -30,7 +30,7 @@
                 </div>
             <?php endif;?>
             <section class="wd_scroll_wrap">
-                <div id="block-main" class="<?php echo $blogClass; ?>">
+                <div id="block-main" class="<?php echo $blogClass; ?> wd_toppadder90 wd_bottompadder40">
                     <div class="container">
                         <div class="row">
                             <?php echo $this['template']->render('content'); ?>
