@@ -1,0 +1,230 @@
+*::after, *::before {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}.form-group input.form-control, input#filter_search, input{height:auto !important;}.controls .input-prepend.input-append input, .controls .input-prepend.input-append  .add-on{height:auto !important;}
+body{
+	color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.42857;
+    margin:0;
+    background: #000;
+}
+ul{
+	list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+a, a:hover, a:focus{text-decoration: none;}
+p{margin: 0 0 10px;}
+body .body .container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.jMain.span12 {
+    display: flex;
+}
+#content.span12{width: 100%;}
+#content > div#cpaMain{margin:0 -15px;}
+#cpaLeft.span3{padding: 15px 35px 45px; width: 25%; float: left; position: relative;}
+#cpaLeft > a#logo{
+	background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 15px 0;
+    font-size:0;
+    width:166px;
+    height:166px;
+    margin: 0 auto;
+}
+#cpaLeft > div#menu{padding:30px 0 80px;}
+#cpaLeft > div#menu ul li {
+    padding: 5px 0;
+}
+#cpaLeft > div#menu ul li a{
+	color: #fff;
+	font-size: 18px;
+}
+#cpaLeft > div#menu ul li.active a{
+	color: #e3ae32;
+}
+#cpaLeft > div#company-info{margin-bottom: 30px;}
+#cpaLeft > div#company-info h4, #cpaLeft > div#sales h4 {
+    color: rgb(50, 88, 145);
+    font-size: 18px;
+    margin:0 0 15px;
+}
+#cpaLeft > div#company-info .block, #cpaLeft > div#sales .block{padding:10px 0;}
+#cpaLeft > div#company-info .block > p,  #cpaLeft > div#sales .block > p{font-size: 14px; margin: 0 0 5px;}
+#cpaLeft > div#company-info .block > p:first-child, #cpaLeft > div#sales .block > p:first-child{
+	color: rgb(227, 174, 50);
+	font-size: 16px;
+}
+#cpaLeft .jk-logout {
+    bottom: 15px;
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+#mainContent.span9{padding: 20px 40px 20px 50px; width: 75%; float: left; background: rgb(255, 255, 255) none repeat scroll 0 0;
+    color: rgb(0, 0, 0);}
+#contract-form .jkcontent > h2{
+	font-size: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+#contract-form .jkcontent > div#contact ul,
+#contract-form .jkcontent > div#siglo-info ul{margin:0 -15px; padding: 0 0 5px;}
+#contract-form .jkcontent > div#contact ul::before,
+#contract-form .jkcontent > div#siglo-info ul::before,
+#contract-form .jkcontent > div#contact ul::after,
+#contract-form .jkcontent > div#siglo-info ul::after{clear: both; display: table;}
+#contract-form .jkcontent > div#contact ul li{display: inline-block; width:25%; padding:0 15px;}
+#contract-form .jkcontent > div#siglo-info ul.date li{display: inline-block; width:25%; padding:0 15px;}
+#contract-form .jkcontent > div#siglo-info ul.id-info li{display: inline-block; width:25%; padding:0 15px;}
+#contract-form .content{padding:10px 10px 15px;}
+#contract-form .jkcontent > div#siglo-product table thead th{
+	text-align: left;
+    width: 25%;
+}
+#contract-form .jkcontent > div#siglo-product table tr.content-table{height:60px;}
+#contract-form .jkcontent > div#siglo-product table tr td{padding:5px 0;}
+#mainContent h2.title{
+	background: rgb(51, 89, 145) none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    font-size: 18px;
+    margin: 0;
+}
+#contract-form .jkcontent > div#product-return table thead tr {
+    background: rgb(51, 89, 145) none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+}
+#contract-form .jkcontent > div#product-return table thead tr th{padding:7px; font-size: 18px; width:50%; text-align: left;}
+#contract-form .jkcontent > div#payment .card-info::before, #contract-form .jkcontent > div#payment .card-info::after{
+	clear: both; display: table;
+}
+#contract-form .jkcontent > div#payment .card-info{display: table; margin-bottom: 10px;
+    width: 100%;}
+#contract-form .jkcontent > div#payment .card-info h3{
+	display: table-cell;
+    padding: 0 15px;
+    width: 50%;
+    margin:0;
+}
+#contract-form .jkcontent > div#payment .form-card ul{display: table; width:100%; margin: 0 -15px;}
+#contract-form .jkcontent > div#payment .form-card ul.address li {
+    display: table-cell;
+    padding: 0 15px;
+    width: 33.3%;
+}
+#contract-form .jkcontent > div#payment .form-card ul.ex li {
+    display: table-cell;
+    padding: 0 15px;
+    width: 50%;
+}
+.control-group {
+    margin-bottom: 15px;
+}
+.control-group input{
+	border: 1px solid rgb(221, 221, 221);
+    display: inline-block;
+    padding: 6px 12px;
+    width: 100%;
+}
+#mainContent .control-group span{
+	padding-right: 15px;
+}
+#mainContent .control-group input, #mainContent .control-group textarea {
+    border: 1px solid rgb(221, 221, 221);
+    display: inline-block;
+    padding: 6px 12px;
+    width: 60%;
+    border-radius: 5px;
+	height:auto;
+}
+#contract-form .jkcontent > div#agreement ul{display: table; width:100%; margin: 0 -15px;}
+#contract-form .jkcontent > div#agreement .control-group{display: table-cell; width:50%; padding: 0 15px;}
+#contract-form .jkcontent > div#agreement .form-group p{float:left;}
+#contract-form .jkcontent > div#product-return .retuns{
+	background: rgb(51, 89, 145) none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    display: table;
+    padding: 7px;
+    width: 100%;
+}
+#mainContent .wrapcontent #contract-form .jkcontent > div#product-return .retuns > h2{
+	display: table-cell;
+    font-size: 18px;
+    margin: 0;
+    width: 50%;
+}
+body [class*="span"]{margin-left:0;}
+.block--sale-users{margin:0 -15px;}
+.block--sale-users::before, .block--sale-users ::after{display:table; content:""; clear:both;} 
+.block--sale-users .block--sale-user{
+	float: left;
+    padding: 0 15px;
+    width: 33.3%;
+}
+/*-----------------------responsive---------------------------*/
+@media (max-width:1600px){}
+@media (max-width:1440px){}
+@media (max-width:1366px){}
+@media (max-width:1199px){
+	body .body .container {
+	    width: 970px;
+	}
+}
+@media (max-width:1024px){}
+@media (max-width:991px){
+	body .body .container {
+	    width: auto;
+	}
+	#cpaLeft.span3{padding: 15px 15px 45px;}
+	#mainContent.span9{padding:20px 12px 20px 20px;}
+	#cpaLeft > a#logo{background-size: 80% auto; background-position: center center;}
+	#mainContent .form-group span{padding-right: 5px;}
+	#mainContent .form-group input, #mainContent .form-group textarea{width: 50%;}
+}
+@media (max-width:767px){
+	#cpaLeft.span3, #mainContent.span9{width:100%; float: none;}
+	.jMain.span12{display: block;}
+}
+@media (max-width:640px){}
+@media (max-width:568px){
+	#mainContent .wrapcontent > div#contact ul li, #mainContent .wrapcontent > div#siglo-info ul.date li,
+	#mainContent .wrapcontent > div#siglo-info ul.id-info li, #mainContent .wrapcontent > div#payment .form-card ul.address li,
+	#mainContent .wrapcontent > div#payment .form-card ul.ex li, #mainContent .wrapcontent > div#agreement ul li
+	{width:100%; display: block; padding: 0 15px 10px; }
+	#mainContent.span9{padding:20px 15px 20px 15px;}
+	#cpaLeft > div#menu{padding: 15px 0 30px}
+}
+@media (max-width:480px){
+	#mainContent .wrapcontent > div#payment .card-info h3{display: block; width:100%;}
+	#mainContent .form-group input, #mainContent .form-group textarea{width:100%;}
+	#mainContent .wrapcontent > div#agreement ul, #mainContent .wrapcontent > div#payment .form-card ul,
+	#mainContent .wrapcontent > div#contact ul, #mainContent .wrapcontent > div#siglo-info ul{margin: 0}
+	#mainContent .wrapcontent > div#contact ul li, #mainContent .wrapcontent > div#siglo-info ul.date li, 
+	#mainContent .wrapcontent > div#siglo-info ul.id-info li, #mainContent .wrapcontent > div#payment .form-card ul.address li, 
+	#mainContent .wrapcontent > div#payment .form-card ul.ex li, #mainContent .wrapcontent > div#agreement ul li{padding:0 0 10px;}
+}
+@media (max-width:400px){}
+@media (max-width:380px){}
+@media (max-width:320px){}

@@ -22,7 +22,7 @@
         <div id="mainsite">
             <span class="flexMenuToggle" ></span>
             <?php  echo $this['template']->render('top'); ?>
-            <?php if( $this['block']->count('topb') ):?>
+            <?php if( $this['block']->count('content-top') ):?>
                 <div class="wd_scroll_wrap">
                     <div class="wd_gallery_wrapper wd_toppadder90 wd_bottompadder90">
                         <jdoc:include type="position" name="content-top"  />

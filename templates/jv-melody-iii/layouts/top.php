@@ -108,6 +108,15 @@
     <!--/Block top-->
 <?php endif;?>
 
+<?php if( $this['position']->count('full-webding-conent-4') ):?>
+    <!--Block full-webding-conent-4-->
+    <section class="wd_testimonial_wrapper wd_toppadder70 wd_bottompadder70">
+        <div class="container">
+            <jdoc:include type="position" name="full-webding-conent-4" style="jvxhtml" />
+        </div>
+    </section>
+    <!--/Block full-webding-conent-4-->
+<?php endif;?>
 
 <?php if( $this['block']->count('topb') ):?>
     <!--Block topb-->
