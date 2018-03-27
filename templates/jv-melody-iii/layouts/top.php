@@ -120,10 +120,12 @@
 
 <?php if( $this['block']->count('topb') ):?>
     <!--Block topb-->
-    <section id="block-topb">
-        <div class="container">
-            <jdoc:include type="block" name="topb" style="jvxhtml" />
-        </div>
+    <section id="block-topb" class="wd_scroll_wrap">
+        <div class="wd_family_wrapper wd_toppadder90 wd_bottompadder90">
+            <div class="container">
+                <jdoc:include type="block" name="topb" style="jvxhtml" />
+            </div>
+            </div>
     </section>
     <!--/Block topb-->
 <?php endif;?>

@@ -36,7 +36,13 @@ body, html{
   color: #797979;
   overflow-x: hidden;
 }
+body {
+  position: relative;
+}
 /*---------- Custom Css Start -------*/
+section, .sidebar .jv-module {
+  margin-bottom: 0;
+}
 a {
   color: #797979;
   text-decoration: none;
@@ -189,10 +195,11 @@ textarea:focus {
 #status img {
 }
 /*-- Header Css Start --*/
+.position-slideshow {
+  .clearfix();
+}
 .wd_slider {
   &_wrapper{
-    float:left;
-    width:100%;
     background:url(../images/header/slider.jpg);
     position:relative;
       background-attachment: fixed;
@@ -304,27 +311,23 @@ textarea:focus {
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 .wd_logo{
-    float: left;
-    width: 100%;
     padding-top: 49px;
 }
 .wd_logo img{
   display:inline-block;
 }
 .wd_header_wrapper{
-    float: left;
-    width: 100%;
     background-color: rgba(255, 255, 255, 0.30);
     z-index: 1;
     position: relative;
+
+    .clearfix();
 }
 .wd_mainmenu_wrapper{
-  float:left;
-  width:100%;
+
 }
 .wd_main_menu{
-  float:left;
-  width:100%;
+
 }
 .wd_main_menu ul{
     float: right;
@@ -475,16 +478,13 @@ textarea:focus {
 }
 /*-- About Wrapper css Start --*/
 .wd_about_wrapper{
-  float:left;
-  width:100%;
   background-image:url(../images/content/about_bg.jpg);
   background-size:cover;
   background-position:100% 100%;
   background-repeat:no-repeat;
 }
 .wd_about_infobox{
-  float:left;
-  width:100%;
+
   text-align:center;
     margin-bottom: 40px;
 
@@ -562,20 +562,17 @@ textarea:focus {
   }
 }
 .wd_about_infobox h2{
-  float:left;
-  width:100%;
+
   font-size:30px;
   text-transform:capitalize;
   color:#f07677;
 }
 .wd_about_infobox p{
-  float:left;
-  width:100%;
+
   text-transform:capitalize;
 }
 .wd_about_infobox ul{
-  float:left;
-  width:100%;
+
   margin:0px;
   padding:0px;
 }
@@ -614,8 +611,7 @@ textarea:focus {
     transition: all 0.5s;
 }
 .wd_about_infobox h1{
-  float:left;
-  width:100%;
+
   font-size:60px;
   margin:0px;
   position:relative;
@@ -634,19 +630,13 @@ textarea:focus {
     float: none;
 }
 .wd_about_infobox_date{
-  float:left;
-  width:100%;
   padding:45px 60px;
 }
 .wd_about_infobox_date p{
-    float: left;
-    width: 100%;
     font-style: italic;
     padding: 0px 30px;
 }
 .wd_about_infobox_date h2{
-    float: left;
-    width: 100%;
     font-size: 40px;
     color: #222222;
     text-transform: uppercase;
@@ -654,8 +644,6 @@ textarea:focus {
     margin-top: 0px;
 }
 .wd_about_infobox_date h3{
-    float: left;
-    width: 100%;
     font-size: 30px;
     color: #f07677;
     text-transform: uppercase;
@@ -663,13 +651,9 @@ textarea:focus {
     margin-top: 10px;
 }
 .wd_timer_wrapper{
-  float:left;
-  width:100%;
   text-align:center;
 }
 .wd_center_words{
-    float: left;
-    width: 100%;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -696,12 +680,10 @@ textarea:focus {
   background-color:#ffffff;
 }
 #clockdiv{
-    float: left;
-    width: 100%;
-    color: #f07677;
-    display: inline-block;
-    text-align: center;
-    font-size: 70px;
+  color: #f07677;
+  display: inline-block;
+  text-align: center;
+  font-size: 70px;
   padding:30px 0px 10px 0px;
 }
 #clockdiv > div{
@@ -714,8 +696,6 @@ textarea:focus {
     width: 100%;
 }
 .smalltext{
-    float: left;
-    width: 100%;
   padding-top: 20px;
   font-size: 18px;
   color:#222222;
@@ -725,8 +705,6 @@ textarea:focus {
 }
 /*-- Story css Start --*/
 .wd_story_wrapper{
-  float:left;
-  width:100%;
   background-image:url(../images/content/story_bg.jpg);
   background-size:cover;
   background-position:100% 100%;
@@ -750,8 +728,6 @@ textarea:focus {
     right: 0;
 }
 .wd_story_covers{
-  float:left;
-  width:100%;
   position:relative;
 }
 .wd_story_line{
@@ -869,8 +845,6 @@ textarea:focus {
   }
 
   h3 {
-    float: left;
-    width: 100%;
     font-size: 30px;
     color: #ffffff;
     text-transform: capitalize;
@@ -885,8 +859,6 @@ textarea:focus {
 }
 /*-- Event css Start --*/
 .wd_event_wrapper{
-  float:left;
-  width:100%;
   background-image:url(../images/content/event_bg.jpg);
   background-size:cover;
   background-position:100% 100%;
@@ -895,13 +867,10 @@ textarea:focus {
   z-index:0;
 }
 .wd_event_infobox{
-  float:left;
-  width:100%;
   text-align:center;
   margin-bottom:30px;
 }
 .wd_event_infobox h2{
-    float: left;
     width: 100%;
     color: #f07677;
     font-size: 30px;
@@ -919,16 +888,12 @@ textarea:focus {
     font-size: 30px;
 }
 .wd_event_infobox span{
-    float: left;
-    width: 100%;
     font-size: 18px;
     color: #111111;
     margin-bottom: 15px;
     padding: 0px 60px;
 }
 .wd_event_infobox p{
-  float:left;
-  width:100%;
   margin-bottom:30px;
 }
 .wd_event_infobox p a{
@@ -944,8 +909,6 @@ textarea:focus {
 }
 /*-- Guest css Start --*/
 .wd_guest_wrapper{
-  float:left;
-  width:100%;
   background-image:url(../images/content/guest_bg.jpg);
   background-size:cover;
   background-position:100% 100%;
@@ -1006,7 +969,7 @@ textarea:focus {
 .wd_guest_wrapper .wd_guest_formbox  .wd_heading h2 {
   color:#111111;
 }
-.wd_guest_form{
+.wd_guest_form {
   background-color:#ffffff;
   padding: 45px 70px;
   text-align: left;
@@ -1030,6 +993,10 @@ textarea:focus {
     padding:0px 10px;
     border:1px solid #e4e4e4;
     border-radius:0;
+
+    &.invalid {
+      border-color: red;
+    }
   }
 
   .wd_btn{
@@ -1038,8 +1005,6 @@ textarea:focus {
   }
 }
 .wd_guest_slider{
-  float:left;
-  width:100%;
   text-align:center;
     margin-bottom: 30px;
 }
@@ -1054,17 +1019,11 @@ textarea:focus {
 }
 /*-- Testimomnial css Start --*/
 .wd_testimonial_wrapper{
-  float:left;
-  width:100%;
   background-color:#f07677;
 }
 .wd_testimonial_slider{
-  float:left;
-  width:100%;
 }
 .wd_testimo_box{
-  float:left;
-  width:100%;
   text-align:center;
 }
 .wd_testimo_box img{
@@ -1077,8 +1036,6 @@ textarea:focus {
     animation-name: pulse;
 }
 .wd_testimo_box p {
-  float:left;
-  width:100%;
   font-size:46px;
   color:#ffffff;
     font-family: 'Great Vibes', cursive;
@@ -1086,8 +1043,6 @@ textarea:focus {
     line-height: 46px;
 }
 .wd_testimo_box h4 {
-  float:left;
-  width:100%;
   font-size:18px;
   color:#ffffff;
     font-family: 'Lora', serif;
@@ -1098,20 +1053,12 @@ textarea:focus {
 }
 /*-- Family css Start --*/
 .wd_family_wrapper{
-  float:left;
-  width:100%;
   background-image:url(../images/content/family_bg.jpg);
   background-size:cover;
   background-position:100% 100%;
   background-repeat:no-repeat;
 }
-.wd_family_tabbox{
-  float:left;
-  width:100%;
-}
 .wd_family_tabbox ul.nav{
-  float:left;
-  width:100%;
   margin:0px;
   padding:0px;
   border:none;
@@ -1207,8 +1154,7 @@ textarea:focus {
     transition: all 0.5s;
 }
 .wd_family_tabbox .nav > li > a  > p{
-  float:left;
-  width:100%;
+
   margin:0px;
     font-family: 'Great Vibes', cursive;
   font-size:24px;
@@ -1232,10 +1178,6 @@ textarea:focus {
     right: 0;
     border: 1px solid #e4e4e4;
   margin: 0px auto;
-}
-.wd_family_slider{
-  float:left;
-  width:100%;
 }
 .wd_family_slider .owl-theme .owl-dots{
   display:none;
@@ -1273,8 +1215,6 @@ textarea:focus {
     transition: all 0.5s;
 }
 .wd_family_infobox{
-  float:left;
-  width:100%;
   text-align:center;
     margin-bottom: 40px;
     -webkit-transition: all 0.5s;
@@ -1284,8 +1224,6 @@ textarea:focus {
     transition: all 0.5s;
 }
 .wd_family_infobox_img{
-  float:left;
-  width:100%;
   text-align:center;
   margin-bottom:20px;
   position:relative;
@@ -1327,8 +1265,6 @@ textarea:focus {
     transition: all 0.5s;
 }
 .wd_family_infobox h2{
-  float:left;
-  width:100%;
   font-size:30px;
   text-transform:capitalize;
   color:#111111;
@@ -1342,13 +1278,9 @@ textarea:focus {
     transition: all 0.5s;
 }
 .wd_family_infobox p{
-  float:left;
-  width:100%;
   text-transform:capitalize;
 }
 .wd_family_infobox ul{
-  float:left;
-  width:100%;
   margin:0px;
   padding:0px;
 }
@@ -1387,8 +1319,6 @@ textarea:focus {
     transition: all 0.5s;
 }
 .wd_family_infobox h1{
-  float:left;
-  width:100%;
   font-size:60px;
   margin:0px;
   position:relative;
@@ -1408,8 +1338,6 @@ textarea:focus {
 }
 /*-- Gallery css Start --*/
 .wd_gallery_wrapper{
-  float:left;
-  width:100%;
   background-color:#0c0c0c;
     position: relative;
   z-index:0;
@@ -1418,8 +1346,7 @@ textarea:focus {
   color:#ffffff;
 }
 .wd_gallery_slider{
-  float:left;
-  width:100%;
+
 }
 .wd_gallery_slide{
   float: left;
@@ -1685,34 +1612,40 @@ textarea:focus {
   color: #fff;
 }
 .wd_contact_form{
-  float:left;
-  width:100%;
-}
-.wd_contact_form  input, .wd_contact_form  select, .wd_contact_form textarea{
-    float: left;
+  .form-group {
+    margin-bottom: 20px;
+  }
+  input,
+  select,
+  textarea {
     width: 100%;
     height: 50px;
     padding: 0px 15px;
     color: #ffffff;
-    border: 0px;
-    margin-bottom: 20px;
-    border-radius: 0px;
-    background-color: rgba(255, 255, 255, 0.20);
-}
-.wd_contact_form textarea{
-  padding:15px;
-  height:auto;
-  resize:none;
-}
-.wd_contact_form .wd_btn{
-  text-align:center;
-  margin-top:20px;
-}
-.wd_contact_form .wd_btn button{
-  border:1px solid transparent;
-}
-.wd_contact_form .wd_btn button:hover{
-  border:1px solid #f07677;
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, .20);
+
+    &.invalid {
+      border-color: red;
+    }
+  }
+  textarea {
+    padding: 15px;
+    height: 185px;
+    resize:none;
+  }
+  .wd_btn{
+    text-align:center;
+
+    .button {
+      border: 1px solid transparent;
+
+      &:hover {
+        border-color: #f07677;
+      }
+    }
+  }
 }
 .wd_contact_form input::-webkit-input-placeholder, .wd_contact_form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ffffff;
@@ -1732,8 +1665,7 @@ textarea:focus {
 }
 /*-- Footer css Start --*/
 .wd_footer_wrapper{
-  float:left;
-  width:100%;
+
   background-image:url(../images/content/footer_bg.jpg);
   background-size:cover;
   background-position:100% 100%;
@@ -1742,14 +1674,12 @@ textarea:focus {
   z-index:0;
 }
 .wd_footer_infobox{
-  float:left;
-  width:100%;
+
   text-align:center;
   margin-bottom:30px;
 }
 .wd_footer_infobox h2{
-  float:left;
-  width:100%;
+
 }
 .wd_footer_infobox p{
     float: left;
@@ -1757,8 +1687,7 @@ textarea:focus {
     padding: 0px 70px;
 }
 .wd_footicon{
-  float:left;
-  width:100%;
+
   position:relative;
   text-align:center;
 }
@@ -1790,47 +1719,41 @@ textarea:focus {
     transform: rotate(-51deg);
 }
 .wd_footer_bottom_wrapper{
-  float:left;
-  width:100%;
   background-color:#0c0c0c;
   position:relative;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.wd_footer_section{
-  float:left;
-  width:100%;
-}
-.wd_footer_section img{
-  float:left;
-  width:auto;
-}
-.wd_footer_section p{
-  float:right;
-  width:auto;
-  padding-top:20px;
-  margin:0px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  .position-footer {
+    float: left;
+    width: 40%;
+  }
+
+  .copyright {
+    float: right;
     color: #cccccc;
+    padding-top: 25px;
+    margin: 0;
+  }
 }
-#scroll {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0px auto;
-    top: -50px;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    line-height: 80px;
-    color: #ffffff;
-    font-size: 24px;
-    border: 10px solid #ffffff;
-    text-align: center;
-    display: none;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    background-color: #f07677;
+#toTop {
+  position: absolute !important;
+  left: 50%;
+  margin-left: -50px;
+  bottom: 130px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  line-height: 80px;
+  color: #ffffff;
+  font-size: 24px;
+  border: 10px solid #ffffff;
+  text-align: center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background: #f07677;
+  text-indent: 0;
 }
 /*-- Responsive css Start --*/
 
@@ -1955,7 +1878,7 @@ textarea:focus {
     margin-top: 10px;
 }
 .wd_footer_infobox p {
-    padding: 0px 0px;
+    padding: 0;
 }
 .wd_footer_section {
     text-align: center;
@@ -1966,7 +1889,6 @@ textarea:focus {
     margin-top: 25px;
 }
 .wd_footer_section p {
-    width: 100%;
     padding-top: 30px;
 }
 .wd_gallery_slide {

@@ -9,16 +9,15 @@
  # Technical Support:  http://www.joomlavi.com/my-tickets.html
 -------------------------------------------------------------------------*/
 function formsubmit(formid){
-	var 
+	var
 		form = $(formid),
 		reg,
 		flag = true,
 		msg = ''
 	;
-	
+
 	//form.submit();
 	form.getElements('.email').each(function(el){
-		console.log(el);
 		reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 		if(reg.test(el.value) == false){
 			flag = false;
@@ -28,10 +27,10 @@ function formsubmit(formid){
 			el.removeClass('invalid');
 		}
 	});
-	
-	
+
+
 	form.getElements('.require').each(function(el){
-		
+
 		if(el.value==''){
 			flag = false;
 			msg = 'Please input valid data in red fields!';
@@ -40,7 +39,7 @@ function formsubmit(formid){
 			el.removeClass('invalid');
 		}
 	});
-	
+
 	if($('recaptcha_response_field')){
 		if($('recaptcha_response_field').value==''){
 			flag=false;
@@ -50,7 +49,7 @@ function formsubmit(formid){
 			$('recaptcha_response_field').removeClass('invalid');
 		}
 	}
-	
+
 
 	if(flag){
 		form.submit();
