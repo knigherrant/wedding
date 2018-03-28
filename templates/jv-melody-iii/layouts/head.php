@@ -28,6 +28,7 @@ else
 
 $this['asset']->addLess('font-awesome');;
 if($this['option']->get('global.k2css')) $this['asset']->addLess('k2');
+$this['asset']->addStyle($this['path']->url('theme::css/magnific-popup.css'));
 $this['asset']->addLess('template');
 
 if($this['option']->isRTL()){

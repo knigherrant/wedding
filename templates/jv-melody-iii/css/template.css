@@ -1029,6 +1029,14 @@ textarea:focus {
 .wd_story_covers {
   position: relative;
 }
+.wd_story_covers:before,
+.wd_story_covers:after {
+  display: table;
+  content: "";
+}
+.wd_story_covers:after {
+  clear: both;
+}
 .wd_story_line {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1774,6 +1782,66 @@ textarea:focus {
   background: url(../images/content/blog_bg.jpg) center no-repeat;
   background-size: cover;
 }
+.jvlatestnews-container.default li {
+  margin-bottom: 30px;
+}
+.jvlatestnews-container.default li:before,
+.jvlatestnews-container.default li:after {
+  display: table;
+  content: "";
+}
+.jvlatestnews-container.default li:after {
+  clear: both;
+}
+.jvlatestnews-container.default li .thumbnail {
+  width: 50%;
+  border: 0;
+  padding: 0;
+  padding-right: 15px;
+  border-radius: 50px 0 50px 0;
+  overflow: hidden;
+}
+.jvlatestnews-container.default li .thumbnail img {
+  display: block;
+  border-radius: 50px 0 50px 0;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.jvlatestnews-container.default li .thumbnail:hover img {
+  -ms-transform: scale(1.1) rotate(2deg);
+  -moz-transform: scale(1.1) rotate(2deg);
+  -o-transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+  transform: scale(1.1) rotate(2deg);
+}
+.jvlatestnews-container.default li .intro-title {
+  font-size: 30px;
+}
+.jvlatestnews-container.default li .intro-title a {
+  color: #222;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.jvlatestnews-container.default li .intro-title a:hover {
+  color: #f07677;
+}
+.jvlatestnews-container.default li .intro-detail {
+  margin-bottom: 30px;
+  font-size: 100%;
+  font-style: normal;
+  color: #111;
+}
+.jvlatestnews-container.default li .intro-detail span {
+  display: inline-block;
+  vertical-align: top;
+}
+.jvlatestnews-container.default li .readmore {
+  margin-top: 20px;
+}
 .blog .items-leading > div {
   margin-bottom: 50px;
 }
@@ -1805,6 +1873,7 @@ textarea:focus {
   position: relative;
   overflow: hidden;
   width: 50%;
+  padding-right: 15px;
   border-radius: 50px 0 50px 0;
 }
 .blog .item-image img,

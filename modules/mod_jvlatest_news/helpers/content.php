@@ -28,7 +28,7 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
         switch($this->source){
             case 'content':
                 $ids = $this->getSPId('article');
-                
+
                 if(count($ids) > 0 && $this->limitstart < 1){
                     $this->sp_content = $ids;
                     $sp_condition = $this->buildConditionSP($ids);
@@ -45,17 +45,17 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
                 }
             break;
         }
-        
+
         if($this->params->get('group_cat')){
             $items = $this->groupByCategory($items);
-            foreach ($items as $catid=>&$item)  $item = $this->prepare($item); 
+            foreach ($items as $catid=>&$item)  $item = $this->prepare($item);
         }else{
-            if(count($items)) $items = $this->prepare($items); 
+            if(count($items)) $items = $this->prepare($items);
         }
 
-        return $items;     
-    } 
-    
+        return $items;
+    }
+
     function shortItems($items, $ids){
 		$data = array();
                 if(!isset($items)) return $data;
@@ -68,28 +68,28 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
 		}
 		return $data;
 	}
-	
+
     function getCategories(){
         $catid = (array) $this->params->get('catid', '0');
         $db = JFactory::getDbo();
         return $db->setQuery('SELECT * FROM #__categories WHERE id IN (' . implode(',', $catid) . ' ) ORDER BY rgt')->loadObjectList();
-     }   
-     
+     }
+
     function prepare($items){
-        $intros   = $links = array(); 
+        $intros   = $links = array();
         if(count($items)){
             foreach ($items as $index => $item) {
-		$item->slug    = $item->id.':'.$item->alias;
-                $item->catslug = $item->catid.':'.$item->category_alias;    
+                $item->slug    = $item->id.':'.$item->alias;
+                $item->catslug = $item->catid.':'.$item->category_alias;
                 $item->linkcat = JRoute::_(ContentHelperRoute::getCategoryRoute($item->catid));
                 $item->link    = JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catslug));
-                $item->text    = $item->introtext.$item->fulltext;  
+                $item->text    = $item->introtext.$item->fulltext;
                 $item->emailLink  = JURI::base().ContentHelperRoute::getArticleRoute($item->slug, $item->catslug);
                 if ($index < ($this->num_intro)){
-                    
-                    if((bool)$this->params->get('intro_thumbnail')){      
+
+                    if((bool)$this->params->get('intro_thumbnail')){
                         $thumbnail_width  = (int) $this->params->get('intro_thumbnail_width', 64);
-                        $thumbnail_height = (int) $this->params->get('intro_thumbnail_height', 64);   
+                        $thumbnail_height = (int) $this->params->get('intro_thumbnail_height', 64);
                         $images = json_decode($item->images);
 
                         if(@$images->image_intro){
@@ -103,7 +103,7 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
                         //$images = json_decode($item->image);
                         //$item->thumbnails = $images[0];
                     }
-                    
+
                     if($this->params->get('cut_intro') > 0){
                         $item->text =  cut_html_string($this->clearContentImage( $item->introtext ) ,(int)$this->params->get('cut_intro'));
                     }else{
@@ -115,15 +115,15 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
                 } elseif($this->nums_link > 0 ){
                     $links[] = $item;
                 }
-    		    
+
             }
         }
         $items = new stdClass;
         $items->intros   = $intros;
         $items->links    = $links;
         return $items;
-    }        
-            
+    }
+
     function getCategory($id){
         $db	   = JFactory::getDbo();
         $query = $db->getQuery(true);
@@ -137,29 +137,29 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
         $db->setQuery($query);
         $item = $db->loadObject();
         $item->link = JRoute::_(ContentHelperRoute::getCategoryRoute($item->slug));
-        return $item;        
+        return $item;
     }
-    
-    function getPagination($total = null, $limit = null, $limitstart = null){   
+
+    function getPagination($total = null, $limit = null, $limitstart = null){
         $limitstart = $limitstart != null ? $limitstart : $this->limitstart;
         $limit      = $limit != null ? $limit : $this->limit;
-        $total      = $total != null ? $total : $this->getTotal();   
+        $total      = $total != null ? $total : $this->getTotal();
         $pagination = new JVLNewPagination($total, $limitstart, $limit);
         return $pagination;
     }
-    
+
     function getTotal(){
         $total = 0;
         //Build condition
-        
+
         //if($this->sp_content) $condition = self::buildConditionSP($this->sp_content);
         $condition = self::buildCondition();
         $total  = count($this->getArticles(0, 0 , $condition)) + count($this->sp_content);
         return $total;
     }
-    
+
     function getArticles($offset = 0, $limit = 0, $condition){
-        $db    = JFactory::getDBO();        
+        $db    = JFactory::getDBO();
     	$query =' SELECT a.id, a.fulltext, a.title,a.images, a.alias, a.introtext, a.checked_out, a.checked_out_time, a.catid, a.created, a.created_by, a.created_by_alias,' .
                 ' CASE WHEN a.modified = 0 THEN a.created ELSE a.modified END as modified, a.modified_by, uam.name as modified_by_name,'.
                 ' CASE WHEN a.publish_up = 0 THEN a.created ELSE a.publish_up END as publish_up, '.
@@ -167,8 +167,8 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
                 ' CASE WHEN badcats.id is not null THEN 0 ELSE a.state END AS state,c.title AS category_title, c.path AS category_route, c.access AS category_access, c.alias AS category_alias,'.
                 ' CASE WHEN a.created_by_alias > " " THEN a.created_by_alias ELSE ua.name END AS author,ua.email AS author_email,contact.id as contactid,parent.title as parent_title, '.
                 ' parent.id as parent_id, parent.path as parent_route, parent.alias as parent_alias,ROUND( v.rating_sum / v.rating_count ) AS rating, v.rating_count as rating_count,c.published, '.
-                ' CASE WHEN badcats.id is null THEN c.published ELSE 0 END AS parents_published'.				
-                ' FROM #__content AS a' .			
+                ' CASE WHEN badcats.id is null THEN c.published ELSE 0 END AS parents_published'.
+                ' FROM #__content AS a' .
                 ' LEFT JOIN #__categories AS c ON c.id = a.catid' .
                 ' LEFT JOIN #__users AS ua ON ua.id = a.created_by' .
                 ' LEFT JOIN #__users AS uam ON uam.id = a.modified_by'.
@@ -179,28 +179,28 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
                 ' JOIN #__categories AS parent ON cat.lft BETWEEN parent.lft AND parent.rgt WHERE parent.extension = "com_content" AND parent.published != 1 GROUP BY cat.id ) AS badcats ON badcats.id = c.id '
                 . $condition
         ;
-        $db->setQuery($query, $offset, $limit);      
+        $db->setQuery($query, $offset, $limit);
         $articles = $db->loadObjectList();
         if(!$articles)return;
         return $articles;
-    }                            
-        
+    }
+
     function buildConditionSP($ids){
         $catids  = isset($this->options['catids'])  ? (array) $this->options['catids'] : (array) $this->params->get('catid', '0');
-        $condition = ' ';  
-        $where     = array();  
+        $condition = ' ';
+        $where     = array();
         $where[]    = "a.id in (".implode(',', $ids).")";
         $where[]    = "a.state > 0";
         $where[]    = "c.published = 1";
         $condition .= ' WHERE '.implode(" AND ", $where). ' ' ;
-        return $condition;      
+        return $condition;
     }
-  
+
     function buildCondition(){
         $catids  = isset($this->options['catids'])  ? (array) $this->options['catids'] : (array) $this->params->get('catid', '0');
         $order     = $this->buildContentOrderBy();
-        $condition = ' ';  
-        $where     = array();  
+        $condition = ' ';
+        $where     = array();
         $catids    = $catids != null ? (array) $catids : (array) $this->params->get('catid', '0');
         $typeContent = $this->params->get('type_content',0);
         if($typeContent == '1'){
@@ -213,10 +213,10 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
         $where[]    = "a.state > 0";
         $where[]    = "c.published = 1";
         $condition .= ' WHERE '.implode(" AND ", $where). ' ' .$order;
-        return $condition;      
+        return $condition;
     }
-    
-    function buildContentOrderBy(){   
+
+    function buildContentOrderBy(){
         $orderby        = array();
         $orderby_sec	= $this->params->def('orderby_sec', 'rdate');
             if($orderby_sec	== 'random'){
@@ -232,5 +232,5 @@ class modJVLNewsContent extends modJVLatestNewsHelper {
             }
             return ' ORDER BY ' . implode(',', $orderby);
         }
-    }          
+    }
 }
