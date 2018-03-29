@@ -26,6 +26,19 @@
 					description="Select Category"
 				/>
                                 
+                                <field
+					name="orderby"
+					type="list"
+					label="Order By"
+					description="Order By"
+					default="ordering"
+					>
+					<option value="ordering">Ordering</option>
+					<option value="created">Date Created</option>
+                                        <option value="title">Title</option>
+				</field>
+                                
+                                
 			</fieldset>
                         <fieldset name="advanced">
 				<field

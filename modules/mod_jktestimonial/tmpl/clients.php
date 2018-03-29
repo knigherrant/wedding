@@ -12,7 +12,7 @@
 // No direct access to this file
 defined( '_JEXEC' ) or die( 'Restricted access' );
 $doc   = JFactory::getDocument();
-$items = jkCustomfields::getItems($params->get('catid'));
+$items = jkCustomfields::getItems($params->get('catid'), $params);
 ?>
 <?php if($items){ ?>
 <div class="wd_guest_slider <?php echo $params->get('moduleclass_sfx'); ?>">

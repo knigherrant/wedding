@@ -12,8 +12,8 @@
 // No direct access to this file
 defined( '_JEXEC' ) or die( 'Restricted access' );
 $doc   = JFactory::getDocument();
-$items_man = jkCustomfields::getItems($params->get('catid_man'));
-$items_woman = jkCustomfields::getItems($params->get('catid_woman'));
+$items_man = jkCustomfields::getItems($params->get('catid_man'), $params);
+$items_woman = jkCustomfields::getItems($params->get('catid_woman'), $params);
 ?>
 <div class="wd_family_tabbox <?php echo $params->get('moduleclass_sfx'); ?>">
 <!-- Nav tabs -->
