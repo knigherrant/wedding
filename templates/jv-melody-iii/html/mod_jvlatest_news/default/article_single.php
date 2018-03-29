@@ -55,7 +55,7 @@ if( ($columns > 6) ){
             <?php endif; ?>
                 <span class="hits">
                     <em class="fa fa-eye" aria-hidden="true"></em>
-                  <?php if($tem->hits > 0): ?>
+                  <?php if($item->hits > 0): ?>
                        <?php echo $item->hits. ' ' . JText::_( 'COM_CONTENT_VIEWS' ); ?>
                   <?php else: ?>
                     <?php echo $item->hits. ' ' . JText::_( 'COM_CONTENT_VIEW' ); ?>
