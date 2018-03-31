@@ -33,7 +33,7 @@ body, html{
   font-family: 'Lora', serif;
   font-size: 16px;
   line-height: 23px;
-  color: #797979;
+  color: @text-color;
   overflow-x: hidden;
 }
 body {
@@ -44,21 +44,24 @@ section, .sidebar .jv-module {
   margin-bottom: 0;
 }
 a {
-  color: #797979;
+  color: @text-color;
   text-decoration: none;
-}
-a:hover, a:focus {
-  color: #707070;
-  text-decoration: none;
-}
-a:focus {
-  outline: none;
+
+  &:hover,
+  &:focus {
+    color: @link-color;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Great Vibes', cursive;
   line-height: 1.1;
   font-weight:400;
-  color: #222222;
+  color: @heading-color;
 }
 input, select, button {
   outline: none;
@@ -164,12 +167,9 @@ textarea:focus {
 .wd_bottompadder100{
   padding-bottom:100px;
 }
-.wd_scroll_wrap{
-
-}
 /*-- Preloader css start --*/
 #preloader {
-  background-color: #fff;
+  background-color: @white;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -327,59 +327,53 @@ textarea:focus {
 
 }
 .wd_main_menu{
-
-}
-.wd_main_menu ul{
+  ul{
+    list-style: none;
     float: right;
     width: auto;
     margin: 0px;
     padding: 0px;
-}
-.wd_main_menu ul li{
-    list-style: none;
+  }
+  li{
     float: left;
-    width: auto;
-}
-.wd_main_menu ul li a{
-    float: left;
-    padding: 70px 16px;
-    margin: 0px;
-    color: #111111;
-    font-size: 18px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.wd_main_menu ul li a:hover, .wd_main_menu ul li.active a{
-  color: #f07677;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.menu_fixed .wd_main_menu ul li a{
-  padding:30px 16px;
-}
-.menu_fixed .wd_logo {
-    padding-top: 10px;
+
+    a{
+      display: inline-block;
+      padding: 70px 16px;
+      color: @menu-color;
+      font-size: 18px;
+      .transition(all .5s);
+
+      &:hover {
+        color: @link-color;
+      }
+    }
+
+    &.active {
+      a {
+        color: @link-color;
+      }
+    }
+  }
 }
 .wd_menu_btn{
   display:none;
 }
 .menu_fixed{
   position: fixed;
+  top: 0;
   z-index:1000;
-  padding:0px 0px;
-    top: 0;
+  padding: 0;
+  width: 100%;
   background-color:rgba(255, 255, 255, 0.9);
-  -o-box-shadow:0px 0px 25px -10px;
-  -ms-box-shadow:0px 0px 25px -10px;
-  -moz-box-shadow:0px 0px 25px -10px;
-  -webkit-box-shadow:0px 0px 25px -10px;
-  box-shadow:0px 0px 25px -10px;
+  .box-shadow(0 0 25px -10px);
+
+  .wd_logo {
+    padding-top: 10px;
+  }
+  .wd_main_menu ul li a{
+    padding:30px 16px;
+  }
 }
 /*-- Button Css Start --*/
 .wd_btn {

@@ -23,14 +23,14 @@
             <span class="flexMenuToggle" ></span>
             <?php  echo $this['template']->render('top'); ?>
             <?php if( $this['block']->count('full-webding-conent-5') ):?>
-                <div class="wd_scroll_wrap">
+                <div section-scroll="9" id="block-gallery" class="wd_scroll_wrap">
                     <div class="wd_gallery_wrapper wd_toppadder90 wd_bottompadder90">
                         <jdoc:include type="position" name="full-webding-conent-5"  style="jvxhtml"  />
                     </div>
                 </div>
             <?php endif;?>
             <?php if( $this['block']->count('content-top') ):?>
-                <div class="wd_scroll_wrap">
+                <div section-scroll="10" id="block-blog" class="wd_scroll_wrap">
                     <div class="wd_blog_wrapper wd_toppadder90 wd_bottompadder40">
                         <div class="container">
                             <jdoc:include type="position" name="content-top"  />
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             <?php endif;?>
-             <div id="block-main" class="<?php echo $blogClass; ?>">
+             <div section-scroll="11" id="block-main" class="<?php echo $blogClass; ?>">
                 <div class="container">
                     <div class="row">
                         <?php echo $this['template']->render('content'); ?>
