@@ -22,6 +22,16 @@
 <?php endif;?>
 <!--/Block bottomb-->
 
+<!--Block footer-top -->
+<?php if( $this['block']->count('footer-top') ):?>
+    <section id="block-footer-top" class="wd_footer_wrapper wd_toppadder90 wd_bottompadder100">
+        <div class="container">
+            <jdoc:include type="position" name="footer-top" />
+        </div>
+    </section>
+<?php endif;?>
+<!--/Block footer-top-->
+
 <!--Block Footer-->
 <?php if( $this['position']->count('footer') ):?>
 	<footer id="block-footer" class="wd_footer_bottom_wrapper wd_toppadder50 wd_bottompadder50">

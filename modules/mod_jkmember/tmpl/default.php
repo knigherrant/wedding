@@ -49,8 +49,8 @@ $items_woman = jkCustomfields::getItems($params->get('catid_woman'), $params);
                                                                 <span><img src="<?php echo JURI::root(); ?>modules/mod_jkmember/assets/images/line2.png" alt="Line"></span>
                                                                 <?php if($iman->thumb){ ?><img src="<?php echo $iman->thumb; ?>" alt="<?php echo $iman->title; ?>"><?php } ?>
                                                         </div>
-                                                        <?php if($iman->subtitle){ ?><h2><?php echo $iman->subtitle; ?></h2><?php } ?>
-                                                       <?php if($iman->description){ ?> <p><?php echo $iman->description; ?></p><?php } ?>
+                                                        <?php if($iman->title){ ?><h2><?php echo $iman->title; ?></h2><?php } ?>
+                                                        <?php if($iman->subtitle){ ?><p><?php echo $iman->subtitle; ?></p><?php } ?>
                                                         <ul>
                                                                 <?php if($iman->icon_fb){ ?><li><a href="<?php echo $iman->icon_fb; ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><?php } ?>
                                                                 <?php if($iman->icon_tw){ ?><li><a href="<?php echo $iman->icon_tw; ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><?php } ?>
@@ -75,7 +75,7 @@ $items_woman = jkCustomfields::getItems($params->get('catid_woman'), $params);
                                                                 <?php if($iwoman->thumb){ ?><img src="<?php echo $iwoman->thumb; ?>" alt="<?php echo $iwoman->title; ?>"><?php } ?>
                                                         </div>
                                                         <?php if($iwoman->subtitle){ ?><h2><?php echo $iwoman->subtitle; ?></h2><?php } ?>
-                                                       <?php if($iwoman->description){ ?> <p><?php echo $iwoman->description; ?></p><?php } ?>
+                                                        <?php if($iwoman->subtitle){ ?><p><?php echo $iwoman->subtitle; ?></p><?php } ?>
                                                         <ul>
                                                                 <?php if($iwoman->icon_fb){ ?><li><a href="<?php echo $iwoman->icon_fb; ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><?php } ?>
                                                                 <?php if($iwoman->icon_tw){ ?><li><a href="<?php echo $iwoman->icon_tw; ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><?php } ?>

@@ -39,7 +39,7 @@
         <jdoc:include type="position" name="slideshow"  style="raw"  />
         <div class="wd_single_index_menu_down">
             <ul>
-                <li><a href="#1" id="headbottom"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
+                <li><a href="#down" data-scroll=""><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     <?php endif;?>
