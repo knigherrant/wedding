@@ -24,7 +24,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
                     </p>
                 <?php } ?>
                 <div class="clearfix"></div>
-                <?php if($params->get('main_map')){ ?><a href="#"><img src="<?php echo JURI::root(); ?>modules/mod_jkevent/assets/images/map.png" alt="Map" class="img-responsive"></a><?php } ?>
+                <?php if($params->get('main_map')){ ?><a href="<?php echo $params->get('main_map'); ?>" target="_blank"><img src="<?php echo JURI::root(); ?>modules/mod_jkevent/assets/images/map.png" alt="Map" class="openmap img-responsive"></a><?php } ?>
         </div>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-0">
@@ -38,7 +38,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
                     </p>
                 <?php } ?>
                 <div class="clearfix"></div>
-                <?php if($params->get('party_map')){ ?><a href="#"><img src="<?php echo JURI::root(); ?>modules/mod_jkevent/assets/images/map.png" alt="Map" class="img-responsive"></a><?php } ?>
+                <?php if($params->get('party_map')){ ?><a  href="<?php echo $params->get('party_map'); ?>" target="_blank"><img src="<?php echo JURI::root(); ?>modules/mod_jkevent/assets/images/map.png" alt="Map" class="openmap img-responsive"></a><?php } ?>
         </div>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-pull-4 col-md-pull-4 col-sm-pull-0">

@@ -30,17 +30,8 @@
                                 <field name="main_address" type="text"  class="inputbox" label="Address"  description="Address" />
                                 <field name="main_intro" type="textarea"  class="inputbox" label="Description"  description="Description" />
                                 <field name="main_more" type="menuitem"  class="inputbox" label="Link Readmore"  description="Link Readmore" />
-                                <field
-					name="main_map"
-					type="radio"
-					label="Show Open Map"
-					description="Show Open Map"
-					class="btn-group btn-group-yesno"
-					default="1"
-					>
-					<option value="1">JSHOW</option>
-					<option value="0">JHIDE</option>
-				</field>
+                                <field name="main_map" type="text"  class="inputbox" label="Link Open Map"  description="Link Open Map" />
+                                
 			</fieldset>
                         <fieldset name="party" label="Wedding Party">
 				<field name="party_title" type="text"  class="inputbox" label="Wedding Party"  description="Wedding Party" />
@@ -48,17 +39,8 @@
                                 <field name="party_address" type="text"  class="inputbox" label="Address"  description="Address" />
                                 <field name="party_intro" type="textarea"  class="inputbox" label="Description"  description="Description" />
                                 <field name="party_more" type="menuitem"  class="inputbox" label="Link Readmore"  description="Link Readmore" />
-                                <field
-					name="party_map"
-					type="radio"
-					label="Show Open Map"
-					description="Show Open Map"
-					class="btn-group btn-group-yesno"
-					default="1"
-					>
-					<option value="1">JSHOW</option>
-					<option value="0">JHIDE</option>
-				</field>
+                                <field name="party_map" type="text"  class="inputbox" label="Link Open Map"  description="Link Open Map" />
+                                
 			</fieldset>
 		</fields>
 	</config>
