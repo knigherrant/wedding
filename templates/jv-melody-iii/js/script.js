@@ -26,7 +26,11 @@
 				navLiA = nav.find('li a'),
 				headerHeight = 82;
 
-		function scrollToAnchor (sectionHash) {
+            function jsHome(a){
+                return a.text() == 'Home'? true : false;
+            }
+
+            function scrollToAnchor (sectionHash) {
 	    var offTop = Math.round(sectionHash.offset().top);
 	    $('html,body').animate({scrollTop: offTop - headerHeight}, 600,'swing', function() {
 	      history.pushState("", document.title, window.location.pathname);
@@ -34,10 +38,10 @@
 	  }
 		//Single page scroll js
 		navLiA.on('click' , function(e){
-			e.preventDefault();
+                    e.preventDefault();
 		  navLi.removeClass('active');
 		  $(this).parent().addClass('active');
-		  var target = $($(this).attr('href'));
+		  var target = (jsHome($(this)))? $('#site-header') : $($(this).attr('href'));
 		  scrollToAnchor(target);
 		});
 
@@ -53,10 +57,9 @@
                     var scrollPos = Math.round($(document).scrollTop());
                     navLi.each(function () {
                         var currLink = $(this).children('a'),
-                            isHome = (currLink.text() == 'Home')? true : false,
-                            href = (isHome)? '#site-header' : currLink.attr('href')
+                            href = (jsHome(currLink))? '#site-header' : currLink.attr('href')
                         ;
-                        if(/^#/.test(href) === true || isHome) {
+                        if(/^#/.test(href) === true || jsHome(currLink)) {
                             if(scrollPos > 0){
                                 var refElement = $(href),
                                    offsetRef = Math.round(refElement.position().top)
