@@ -42,31 +42,35 @@
 		});
 
 		$(window).on('scroll',  function() {
-			// fixed menu
-			var window_top = $(window).scrollTop() + 1;
-			if (window_top > 500) {
-				$('.wd_header_wrapper').addClass('menu_fixed animated fadeInDown');
-			} else {
-				$('.wd_header_wrapper').removeClass('menu_fixed animated fadeInDown');
-			}
-			// active menu section
-			var scrollPos = Math.round($(document).scrollTop());
-	    navLi.each(function () {
-        var currLink = $(this).children('a');
-        var href = currLink.attr('href');
-        if(/^#/.test(href) === true) {
-       	 var refElement = $(href),
-       	 		offsetRef = Math.round(refElement.position().top);
-       	 if (offsetRef <= (scrollPos + headerHeight) && Math.round(offsetRef + refElement.innerHeight()) > scrollPos) {
-            navLi.removeClass("active");
-            currLink.parent('li').addClass("active");
-	        }
-	        else{
-	          currLink.parent('li').removeClass("active");
-	          //navLi.first().addClass('active');
-	        }
-        }
-	    });
+                    // fixed menu
+                    var window_top = $(window).scrollTop() + 1;
+                    if (window_top > 500) {
+                            $('.wd_header_wrapper').addClass('menu_fixed animated fadeInDown');
+                    } else {
+                            $('.wd_header_wrapper').removeClass('menu_fixed animated fadeInDown');
+                    }
+                    // active menu section
+                    var scrollPos = Math.round($(document).scrollTop());
+                    navLi.each(function () {
+                        var currLink = $(this).children('a'),
+                            isHome = (currLink.text() == 'Home')? true : false,
+                            href = (isHome)? '#site-header' : currLink.attr('href')
+                        ;
+                        if(/^#/.test(href) === true || isHome) {
+                            if(scrollPos > 0){
+                                var refElement = $(href),
+                                   offsetRef = Math.round(refElement.position().top)
+                                ;
+                                if (offsetRef <= (scrollPos + headerHeight) /*&& Math.round(offsetRef + refElement.innerHeight()) > scrollPos*/ ) {
+                                    navLi.removeClass("active");
+                                    currLink.parent('li').addClass("active");
+                                }
+                            } else{
+                                currLink.parent('li').removeClass("active");
+                                navLi.first().addClass('active');
+                            }
+                        }
+                    });
 		});
 
 		// Magnific Popup js
