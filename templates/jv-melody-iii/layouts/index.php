@@ -25,7 +25,9 @@
             <?php if( $this['block']->count('full-webding-conent-5') ):?>
                 <div section-scroll="9" id="block-gallery" class="wd_scroll_wrap">
                     <div class="wd_gallery_wrapper wd_toppadder90 wd_bottompadder90">
-                        <jdoc:include type="position" name="full-webding-conent-5"  style="jvxhtml"  />
+                        <div class="container">
+                            <jdoc:include type="position" name="full-webding-conent-5"  style="jvxhtml"  />
+                        </div>
                     </div>
                 </div>
             <?php endif;?>
