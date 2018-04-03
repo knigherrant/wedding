@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2018 at 11:48 AM
--- Server version: 10.1.9-MariaDB
--- PHP Version: 5.6.15
+-- Generation Time: Apr 03, 2018 at 12:03 PM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -42,7 +42,7 @@ CREATE TABLE `jv_assets` (
 --
 
 INSERT INTO `jv_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `title`, `rules`) VALUES
-(1, 0, 0, 165, 0, 'root.1', 'Root Asset', '{"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
+(1, 0, 0, 181, 0, 'root.1', 'Root Asset', '{"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
 (2, 1, 1, 2, 1, 'com_admin', 'com_admin', '{}'),
 (3, 1, 3, 6, 1, 'com_banners', 'com_banners', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
 (4, 1, 7, 8, 1, 'com_cache', 'com_cache', '{"core.admin":{"7":1},"core.manage":{"7":1}}'),
@@ -59,25 +59,25 @@ INSERT INTO `jv_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `titl
 (15, 1, 53, 54, 1, 'com_media', 'com_media', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":{"5":1}}'),
 (16, 1, 55, 60, 1, 'com_menus', 'com_menus', '{"core.admin":{"7":1}}'),
 (17, 1, 61, 62, 1, 'com_messages', 'com_messages', '{"core.admin":{"7":1},"core.manage":{"7":1}}'),
-(18, 1, 63, 130, 1, 'com_modules', 'com_modules', '{"core.admin":{"7":1}}'),
-(19, 1, 131, 134, 1, 'com_newsfeeds', 'com_newsfeeds', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(20, 1, 135, 136, 1, 'com_plugins', 'com_plugins', '{"core.admin":{"7":1}}'),
-(21, 1, 137, 138, 1, 'com_redirect', 'com_redirect', '{"core.admin":{"7":1}}'),
-(22, 1, 139, 140, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(23, 1, 141, 142, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1}}'),
-(24, 1, 143, 146, 1, 'com_users', 'com_users', '{"core.admin":{"7":1}}'),
-(26, 1, 147, 148, 1, 'com_wrapper', 'com_wrapper', '{}'),
+(18, 1, 63, 144, 1, 'com_modules', 'com_modules', '{"core.admin":{"7":1}}'),
+(19, 1, 145, 148, 1, 'com_newsfeeds', 'com_newsfeeds', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(20, 1, 149, 150, 1, 'com_plugins', 'com_plugins', '{"core.admin":{"7":1}}'),
+(21, 1, 151, 152, 1, 'com_redirect', 'com_redirect', '{"core.admin":{"7":1}}'),
+(22, 1, 153, 154, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(23, 1, 155, 156, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1}}'),
+(24, 1, 157, 160, 1, 'com_users', 'com_users', '{"core.admin":{"7":1}}'),
+(26, 1, 161, 162, 1, 'com_wrapper', 'com_wrapper', '{}'),
 (27, 8, 18, 19, 2, 'com_content.category.2', 'Uncategorised', '{}'),
 (28, 3, 4, 5, 2, 'com_banners.category.3', 'Uncategorised', '{}'),
 (29, 7, 14, 15, 2, 'com_contact.category.4', 'Uncategorised', '{}'),
-(30, 19, 132, 133, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{}'),
-(32, 24, 144, 145, 2, 'com_users.category.7', 'Uncategorised', '{}'),
-(33, 1, 149, 150, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(34, 1, 151, 152, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{}'),
-(35, 1, 153, 154, 1, 'com_tags', 'com_tags', '{}'),
-(36, 1, 155, 156, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
-(37, 1, 157, 158, 1, 'com_ajax', 'com_ajax', '{}'),
-(38, 1, 159, 160, 1, 'com_postinstall', 'com_postinstall', '{}'),
+(30, 19, 146, 147, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{}'),
+(32, 24, 158, 159, 2, 'com_users.category.7', 'Uncategorised', '{}'),
+(33, 1, 163, 164, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(34, 1, 165, 166, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{}'),
+(35, 1, 167, 168, 1, 'com_tags', 'com_tags', '{}'),
+(36, 1, 169, 170, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
+(37, 1, 171, 172, 1, 'com_ajax', 'com_ajax', '{}'),
+(38, 1, 173, 174, 1, 'com_postinstall', 'com_postinstall', '{}'),
 (39, 18, 64, 65, 2, 'com_modules.module.1', 'Main Menu', '{}'),
 (40, 18, 66, 67, 2, 'com_modules.module.2', 'Login', '{}'),
 (41, 18, 68, 69, 2, 'com_modules.module.3', 'Popular Articles', '{}'),
@@ -95,7 +95,7 @@ INSERT INTO `jv_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `titl
 (53, 18, 92, 93, 2, 'com_modules.module.86', 'Joomla Version', '{}'),
 (54, 16, 56, 57, 2, 'com_menus.menu.1', 'Main Menu', '{}'),
 (55, 18, 94, 95, 2, 'com_modules.module.87', 'Sample Data', '{}'),
-(56, 1, 161, 162, 1, 'com_jvframework', 'JVFRAMEWORK', '{}'),
+(56, 1, 175, 176, 1, 'com_jvframework', 'JVFRAMEWORK', '{}'),
 (57, 16, 58, 59, 2, 'com_menus.menu.2', 'Hidden menu', '{}'),
 (58, 18, 96, 97, 2, 'com_modules.module.88', 'Slider textinfo', '{}'),
 (59, 8, 20, 31, 2, 'com_content.category.8', 'Our true love story', '{}'),
@@ -116,7 +116,7 @@ INSERT INTO `jv_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `titl
 (74, 71, 33, 34, 3, 'com_content.article.6', 'Planning Honeymoon Trip', '{}'),
 (75, 71, 35, 36, 3, 'com_content.article.7', 'Surprises For Guests', '{}'),
 (76, 71, 37, 38, 3, 'com_content.article.8', 'Bachelor Party!', '{}'),
-(77, 1, 163, 164, 1, 'com_jkcustomfields', 'com_jkcustomfields', '{}'),
+(77, 1, 177, 178, 1, 'com_jkcustomfields', 'com_jkcustomfields', '{}'),
 (78, 18, 114, 115, 2, 'com_modules.module.97', 'MEMORABLE PHOTO GALLERY || JENNY & MARK', '{}'),
 (79, 18, 116, 117, 2, 'com_modules.module.98', 'LOVABLE FAMILY || MOST IMP. PERSONS', '{}'),
 (80, 18, 118, 119, 2, 'com_modules.module.99', 'JK Testimonial', '{}'),
@@ -124,7 +124,15 @@ INSERT INTO `jv_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `titl
 (82, 18, 122, 123, 2, 'com_modules.module.101', 'Lovable family members', '{}'),
 (83, 18, 124, 125, 2, 'com_modules.module.102', 'CONTACT US || IF ANY QUERY', '{}'),
 (84, 18, 126, 127, 2, 'com_modules.module.103', 'FROM OUR BLOG || WEDDING JOURNAL', '{}'),
-(85, 18, 128, 129, 2, 'com_modules.module.104', 'THE WEDDING EVENT || CEREMONY & PARTY', '{}');
+(85, 18, 128, 129, 2, 'com_modules.module.104', 'THE WEDDING EVENT || CEREMONY & PARTY', '{}'),
+(86, 1, 179, 180, 1, 'com_k2', 'COM_K2', '{}'),
+(87, 18, 130, 131, 2, 'com_modules.module.105', 'K2 Comments', '{}'),
+(88, 18, 132, 133, 2, 'com_modules.module.106', 'K2 Content', '{}'),
+(89, 18, 134, 135, 2, 'com_modules.module.107', 'K2 Tools', '{}'),
+(90, 18, 136, 137, 2, 'com_modules.module.108', 'K2 Users', '{}'),
+(91, 18, 138, 139, 2, 'com_modules.module.109', 'K2 User', '{}'),
+(92, 18, 140, 141, 2, 'com_modules.module.110', 'K2 Quick Icons (admin)', '{}'),
+(93, 18, 142, 143, 2, 'com_modules.module.111', 'K2 Stats (admin)', '{}');
 
 -- --------------------------------------------------------
 
@@ -364,7 +372,7 @@ CREATE TABLE `jv_content` (
 
 INSERT INTO `jv_content` (`id`, `asset_id`, `title`, `alias`, `introtext`, `fulltext`, `state`, `catid`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `images`, `urls`, `attribs`, `version`, `ordering`, `metakey`, `metadesc`, `access`, `hits`, `metadata`, `featured`, `language`, `xreference`) VALUES
 (1, 60, 'Our First Met', 'our-first-met', '<p class="wd_story_highlight">That day changed life</p>\r\n<p>This is Photoshop''s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor...</p>', '', 1, 8, '2010-05-20 21:18:56', 196, '', '2018-03-20 14:32:45', 196, 0, '0000-00-00 00:00:00', '2010-03-20 14:25:24', '0000-00-00 00:00:00', '{"image_intro":"images\\/jv-sampledata\\/content\\/story_1.jpg","float_intro":"left","image_intro_alt":"Our First Met","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"article_layout":"","show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","info_block_show_title":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_associations":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_page_title":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 2, 2, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
-(2, 61, 'Our First Dating', 'our-first-dating', '<p class="wd_story_highlight">Our best dinner ever</p>\r\n<p>This is Photoshop''s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor...</p>', '', 1, 8, '2012-05-20 21:18:56', 196, '', '2018-03-20 14:32:07', 196, 196, '2018-03-21 14:43:47', '2012-05-20 21:18:56', '0000-00-00 00:00:00', '{"image_intro":"images\\/jv-sampledata\\/content\\/story_2.jpg","float_intro":"left","image_intro_alt":"Our First Dating","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"article_layout":"","show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","info_block_show_title":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_associations":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_page_title":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 3, 1, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
+(2, 61, 'Our First Dating', 'our-first-dating', '<p class="wd_story_highlight">Our best dinner ever</p>\r\n<p>This is Photoshop''s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor...</p>', '', 1, 8, '2012-05-20 21:18:56', 196, '', '2018-03-20 14:32:07', 196, 0, '0000-00-00 00:00:00', '2012-05-20 21:18:56', '0000-00-00 00:00:00', '{"image_intro":"images\\/jv-sampledata\\/content\\/story_2.jpg","float_intro":"left","image_intro_alt":"Our First Dating","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"article_layout":"","show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","info_block_show_title":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_associations":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_page_title":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 3, 1, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (3, 62, 'How He Proposed', 'how-he-proposed', '<p class="wd_story_highlight">That was so wonderful</p>\r\n<p>This is Photoshop''s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor...</p>', '', 1, 8, '2014-05-10 21:18:56', 196, '', '2018-03-21 14:44:08', 196, 0, '0000-00-00 00:00:00', '2014-03-20 14:25:24', '0000-00-00 00:00:00', '{"image_intro":"images\\/jv-sampledata\\/content\\/story_3.jpg","float_intro":"left","image_intro_alt":"How He Proposed","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"article_layout":"","show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","info_block_show_title":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_associations":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_page_title":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 4, 0, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (4, 63, 'Our First Kiss', 'our-first-kiss', '<p class="wd_story_highlight">Feeling awesome :)</p>\r\n<p>This is Photoshop''s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor...</p>', '', 1, 8, '2016-03-20 21:18:56', 196, '', '2018-03-21 14:44:39', 196, 0, '0000-00-00 00:00:00', '2016-03-20 14:25:24', '0000-00-00 00:00:00', '{"image_intro":"images\\/jv-sampledata\\/content\\/story_4.jpg","float_intro":"left","image_intro_alt":"Our First Kiss","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"article_layout":"","show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","info_block_show_title":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_associations":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_page_title":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 6, 0, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (5, 64, 'Now We Together', 'now-we-together', '<p class="wd_story_highlight">We''re waiting for the best</p>\r\n<p>This is Photoshop''s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor...</p>', '', 1, 8, '2018-03-20 21:18:56', 196, '', '2018-03-21 14:44:59', 196, 0, '0000-00-00 00:00:00', '2018-03-20 14:25:24', '0000-00-00 00:00:00', '{"image_intro":"images\\/jv-sampledata\\/content\\/story_5.jpg","float_intro":"left","image_intro_alt":"Now We Together","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"article_layout":"","show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","info_block_show_title":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_associations":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_page_title":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 9, 0, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
@@ -532,7 +540,7 @@ INSERT INTO `jv_extensions` (`extension_id`, `package_id`, `name`, `type`, `elem
 (33, 0, 'com_fields', 'component', 'com_fields', '', 1, 1, 1, 0, '{"name":"com_fields","type":"component","creationDate":"March 2016","author":"Joomla! Project","copyright":"(C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.7.0","description":"COM_FIELDS_XML_DESCRIPTION","group":"","filename":"fields"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (34, 0, 'com_associations', 'component', 'com_associations', '', 1, 1, 1, 0, '{"name":"com_associations","type":"component","creationDate":"Januar 2017","author":"Joomla! Project","copyright":"(C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.7.0","description":"COM_ASSOCIATIONS_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (102, 0, 'LIB_PHPUTF8', 'library', 'phputf8', '', 0, 1, 1, 1, '{"name":"LIB_PHPUTF8","type":"library","creationDate":"2006","author":"Harry Fuecks","copyright":"Copyright various authors","authorEmail":"hfuecks@gmail.com","authorUrl":"http:\\/\\/sourceforge.net\\/projects\\/phputf8","version":"0.5","description":"LIB_PHPUTF8_XML_DESCRIPTION","group":"","filename":"phputf8"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(103, 0, 'LIB_JOOMLA', 'library', 'joomla', '', 0, 1, 1, 1, '{"name":"LIB_JOOMLA","type":"library","creationDate":"2008","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"https:\\/\\/www.joomla.org","version":"13.1","description":"LIB_JOOMLA_XML_DESCRIPTION","group":"","filename":"joomla"}', '{"mediaversion":"0a18d4086ced67de544be519783ff123"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(103, 0, 'LIB_JOOMLA', 'library', 'joomla', '', 0, 1, 1, 1, '{"name":"LIB_JOOMLA","type":"library","creationDate":"2008","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"https:\\/\\/www.joomla.org","version":"13.1","description":"LIB_JOOMLA_XML_DESCRIPTION","group":"","filename":"joomla"}', '{"mediaversion":"4d511c9cff8c3b88f6b8a35edeacba75"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (104, 0, 'LIB_IDNA', 'library', 'idna_convert', '', 0, 1, 1, 1, '{"name":"LIB_IDNA","type":"library","creationDate":"2004","author":"phlyLabs","copyright":"2004-2011 phlyLabs Berlin, http:\\/\\/phlylabs.de","authorEmail":"phlymail@phlylabs.de","authorUrl":"http:\\/\\/phlylabs.de","version":"0.8.0","description":"LIB_IDNA_XML_DESCRIPTION","group":"","filename":"idna_convert"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (105, 0, 'FOF', 'library', 'fof', '', 0, 1, 1, 1, '{"name":"FOF","type":"library","creationDate":"2015-04-22 13:15:32","author":"Nicholas K. Dionysopoulos \\/ Akeeba Ltd","copyright":"(C)2011-2015 Nicholas K. Dionysopoulos","authorEmail":"nicholas@akeebabackup.com","authorUrl":"https:\\/\\/www.akeebabackup.com","version":"2.4.3","description":"LIB_FOF_XML_DESCRIPTION","group":"","filename":"fof"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (106, 0, 'LIB_PHPASS', 'library', 'phpass', '', 0, 1, 1, 1, '{"name":"LIB_PHPASS","type":"library","creationDate":"2004-2006","author":"Solar Designer","copyright":"","authorEmail":"solar@openwall.com","authorUrl":"http:\\/\\/www.openwall.com\\/phpass\\/","version":"0.3","description":"LIB_PHPASS_XML_DESCRIPTION","group":"","filename":"phpass"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
@@ -627,7 +635,7 @@ INSERT INTO `jv_extensions` (`extension_id`, `package_id`, `name`, `type`, `elem
 (449, 0, 'plg_authentication_cookie', 'plugin', 'cookie', 'authentication', 0, 1, 1, 0, '{"name":"plg_authentication_cookie","type":"plugin","creationDate":"July 2013","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.0.0","description":"PLG_AUTH_COOKIE_XML_DESCRIPTION","group":"","filename":"cookie"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (450, 0, 'plg_twofactorauth_yubikey', 'plugin', 'yubikey', 'twofactorauth', 0, 0, 1, 0, '{"name":"plg_twofactorauth_yubikey","type":"plugin","creationDate":"September 2013","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.2.0","description":"PLG_TWOFACTORAUTH_YUBIKEY_XML_DESCRIPTION","group":"","filename":"yubikey"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (451, 0, 'plg_search_tags', 'plugin', 'tags', 'search', 0, 1, 1, 0, '{"name":"plg_search_tags","type":"plugin","creationDate":"March 2014","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.0.0","description":"PLG_SEARCH_TAGS_XML_DESCRIPTION","group":"","filename":"tags"}', '{"search_limit":"50","show_tagged_items":"1"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(452, 0, 'plg_system_updatenotification', 'plugin', 'updatenotification', 'system', 0, 1, 1, 0, '{"name":"plg_system_updatenotification","type":"plugin","creationDate":"May 2015","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_SYSTEM_UPDATENOTIFICATION_XML_DESCRIPTION","group":"","filename":"updatenotification"}', '{"lastrun":1522487406}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(452, 0, 'plg_system_updatenotification', 'plugin', 'updatenotification', 'system', 0, 1, 1, 0, '{"name":"plg_system_updatenotification","type":"plugin","creationDate":"May 2015","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_SYSTEM_UPDATENOTIFICATION_XML_DESCRIPTION","group":"","filename":"updatenotification"}', '{"lastrun":1522747917}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (453, 0, 'plg_editors-xtd_module', 'plugin', 'module', 'editors-xtd', 0, 1, 1, 0, '{"name":"plg_editors-xtd_module","type":"plugin","creationDate":"October 2015","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_MODULE_XML_DESCRIPTION","group":"","filename":"module"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (454, 0, 'plg_system_stats', 'plugin', 'stats', 'system', 0, 1, 1, 0, '{"name":"plg_system_stats","type":"plugin","creationDate":"November 2013","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_SYSTEM_STATS_XML_DESCRIPTION","group":"","filename":"stats"}', '{"mode":3,"lastrun":1522309788,"unique_id":"5fa285d0841f9a33a41fd6f84a2b72de3f341230","interval":12}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (455, 0, 'plg_installer_packageinstaller', 'plugin', 'packageinstaller', 'installer', 0, 1, 1, 1, '{"name":"plg_installer_packageinstaller","type":"plugin","creationDate":"May 2016","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.6.0","description":"PLG_INSTALLER_PACKAGEINSTALLER_PLUGIN_XML_DESCRIPTION","group":"","filename":"packageinstaller"}', '', '', '', 0, '0000-00-00 00:00:00', 1, 0),
@@ -698,7 +706,19 @@ INSERT INTO `jv_extensions` (`extension_id`, `package_id`, `name`, `type`, `elem
 (10030, 0, 'JK Gallery', 'module', 'mod_jkgallery', '', 0, 1, 0, 0, '{"name":"JK Gallery","type":"module","creationDate":"March 2018","author":"PHPKungfu! Project","copyright":"Copyright (C) PHPKungfu. All rights reserved","authorEmail":"info@phpkungfu.club","authorUrl":"www.phpkungfu.club","version":"1.0.0","description":"JK Gallery","group":"","filename":"mod_jkgallery"}', '{"cache":"1","cache_time":"900","cachemode":"static"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10031, 0, 'JK Member', 'module', 'mod_jkmember', '', 0, 1, 0, 0, '{"name":"JK Member","type":"module","creationDate":"March 2018","author":"PHPKungfu! Project","copyright":"Copyright (C) PHPKungfu. All rights reserved","authorEmail":"info@phpkungfu.club","authorUrl":"www.phpkungfu.club","version":"1.0.0","description":"JK Member","group":"","filename":"mod_jkmember"}', '{"cache":"1","cache_time":"900","cachemode":"static"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10032, 0, 'JK Testimonial', 'module', 'mod_jktestimonial', '', 0, 1, 0, 0, '{"name":"JK Testimonial","type":"module","creationDate":"March 2018","author":"PHPKungfu! Project","copyright":"Copyright (C) PHPKungfu. All rights reserved","authorEmail":"info@phpkungfu.club","authorUrl":"www.phpkungfu.club","version":"1.0.0","description":"JK Testimonial","group":"","filename":"mod_jktestimonial"}', '{"cache":"1","cache_time":"900","cachemode":"static"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(10033, 0, 'JK Event', 'module', 'mod_jkevent', '', 0, 1, 0, 0, '{"name":"JK Event","type":"module","creationDate":"May 2014","author":"PHPKungfu! Project","copyright":"Copyright (C) PHPKungfu. All rights reserved","authorEmail":"info@phpkungfu.club","authorUrl":"www.phpkungfu.club","version":"1.0.0","description":"JK Event","group":"","filename":"mod_jkevent"}', '{"key":"AIzaSyBGBtfnKJ3Bbn5ITz9L4i1UedivZVRPBJk","main_map":"1","party_map":"1"}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+(10033, 0, 'JK Event', 'module', 'mod_jkevent', '', 0, 1, 0, 0, '{"name":"JK Event","type":"module","creationDate":"May 2014","author":"PHPKungfu! Project","copyright":"Copyright (C) PHPKungfu. All rights reserved","authorEmail":"info@phpkungfu.club","authorUrl":"www.phpkungfu.club","version":"1.0.0","description":"JK Event","group":"","filename":"mod_jkevent"}', '{"key":"AIzaSyBGBtfnKJ3Bbn5ITz9L4i1UedivZVRPBJk","main_map":"1","party_map":"1"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10034, 0, 'COM_K2', 'component', 'com_k2', '', 1, 1, 0, 0, '{"name":"COM_K2","type":"component","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"Thank you for installing K2 by JoomlaWorks, the powerful content extension for Joomla","group":"","filename":"k2"}', '{"enable_css":"1","jQueryHandling":"1.9.1","userName":"1","userImage":"1","userDescription":"1","userURL":"1","userEmail":"0","userFeedLink":"1","userFeedIcon":"1","userItemCount":"10","userItemTitle":"1","userItemTitleLinked":"1","userItemDateCreated":"1","userItemImage":"1","userItemIntroText":"1","userItemCategory":"1","userItemTags":"1","userItemCommentsAnchor":"1","userItemReadMore":"1","userItemK2Plugins":"1","tagItemCount":"10","tagItemTitle":"1","tagItemTitleLinked":"1","tagItemDateCreated":"1","tagItemImage":"1","tagItemIntroText":"1","tagItemCategory":"1","tagItemReadMore":"1","tagItemExtraFields":"0","tagOrdering":"","tagFeedLink":"1","tagFeedIcon":"1","genericItemCount":"10","genericItemTitle":"1","genericItemTitleLinked":"1","genericItemDateCreated":"1","genericItemImage":"1","genericItemIntroText":"1","genericItemCategory":"1","genericItemReadMore":"1","genericItemExtraFields":"0","genericFeedLink":"1","genericFeedIcon":"1","feedLimit":"10","feedItemImage":"1","feedImgSize":"S","feedItemIntroText":"1","feedTextWordLimit":"","feedItemFullText":"1","feedItemTags":"0","feedItemVideo":"0","feedItemGallery":"0","feedItemAttachments":"0","feedBogusEmail":"","introTextCleanup":"0","introTextCleanupExcludeTags":"","introTextCleanupTagAttr":"","fullTextCleanup":"0","fullTextCleanupExcludeTags":"","fullTextCleanupTagAttr":"","xssFiltering":"0","linkPopupWidth":"900","linkPopupHeight":"600","imagesQuality":"100","itemImageXS":"100","itemImageS":"200","itemImageM":"400","itemImageL":"600","itemImageXL":"900","itemImageGeneric":"300","catImageWidth":"100","catImageDefault":"1","userImageWidth":"100","userImageDefault":"1","commenterImgWidth":"48","onlineImageEditor":"picozu","imageTimestamp":"0","imageMemoryLimit":"","socialButtonCode":"","twitterUsername":"","facebookMetatags":"1","facebookImage":"Medium","comments":"1","commentsOrdering":"DESC","commentsLimit":"10","commentsFormPosition":"below","commentsPublishing":"0","commentsReporting":"2","commentsReportRecipient":"","inlineCommentsModeration":"0","gravatar":"1","recaptcha":"0","recaptchaForRegistered":"1","commentsFormNotes":"1","commentsFormNotesText":"","frontendEditing":"1","showImageTab":"1","showImageGalleryTab":"1","showVideoTab":"1","showExtraFieldsTab":"1","showAttachmentsTab":"1","showK2Plugins":"1","sideBarDisplayFrontend":"0","mergeEditors":"1","sideBarDisplay":"1","attachmentsFolder":"","hideImportButton":"0","googleSearch":"0","googleSearchContainer":"k2GoogleSearchContainer","K2UserProfile":"1","K2UserGroup":"","redirect":"","adminSearch":"simple","cookieDomain":"","gatherStatistics":"1","taggingSystem":"1","lockTags":"0","showTagFilter":"0","k2TagNorm":"0","k2TagNormCase":"lower","k2TagNormAdditionalReplacements":"","recaptcha_public_key":"","recaptcha_private_key":"","recaptcha_theme":"clean","recaptchaOnRegistration":"0","stopForumSpam":"0","stopForumSpamApiKey":"","profilePageDisplay":"","showItemsCounterAdmin":"1","showChildCatItems":"1","disableCompactOrdering":"0","metaDescLimit":"150","enforceSEFReplacements":"0","SEFReplacements":"","k2Sef":"0","k2SefLabelCat":"content","k2SefLabelTag":"tag","k2SefLabelUser":"author","k2SefLabelSearch":"search","k2SefLabelDate":"date","k2SefLabelItem":"0","k2SefLabelItemCustomPrefix":"","k2SefInsertItemId":"1","k2SefItemIdTitleAliasSep":"dash","k2SefUseItemTitleAlias":"1","k2SefInsertCatId":"1","k2SefCatIdTitleAliasSep":"dash","k2SefUseCatTitleAlias":"1"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10035, 0, 'plg_finder_k2', 'plugin', 'k2', 'finder', 0, 0, 1, 0, '{"name":"plg_finder_k2","type":"plugin","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"PLG_FINDER_K2_DESCRIPTION","group":"","filename":"k2"}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10036, 0, 'Search - K2', 'plugin', 'k2', 'search', 0, 1, 1, 0, '{"name":"Search - K2","type":"plugin","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_THIS_PLUGIN_EXTENDS_THE_DEFAULT_JOOMLA_SEARCH_FUNCTIONALITY_TO_K2_CONTENT","group":"","filename":"k2"}', '{"search_limit":"50","search_tags":"0"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10037, 0, 'System - K2', 'plugin', 'k2', 'system', 0, 1, 1, 0, '{"name":"System - K2","type":"plugin","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_THE_K2_SYSTEM_PLUGIN_IS_USED_TO_ASSIST_THE_PROPER_FUNCTIONALITY_OF_THE_K2_COMPONENT_SITE_WIDE_MAKE_SURE_ITS_ALWAYS_PUBLISHED_WHEN_THE_K2_COMPONENT_IS_INSTALLED","group":"","filename":"k2"}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10038, 0, 'User - K2', 'plugin', 'k2', 'user', 0, 1, 1, 0, '{"name":"User - K2","type":"plugin","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_A_USER_SYNCHRONIZATION_PLUGIN_FOR_K2","group":"","filename":"k2"}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10039, 0, 'K2 Comments', 'module', 'mod_k2_comments', '', 0, 1, 0, 0, '{"name":"K2 Comments","type":"module","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"MOD_K2_COMMENTS_DESCRIPTION","group":"","filename":"mod_k2_comments.j25"}', '{"moduleclass_sfx":"","module_usage":"","":"K2_TOP_COMMENTERS","catfilter":"0","category_id":"","comments_limit":"5","comments_word_limit":"10","commenterName":"1","commentAvatar":"1","commentAvatarWidthSelect":"custom","commentAvatarWidth":"50","commentDate":"1","commentDateFormat":"absolute","commentLink":"1","itemTitle":"1","itemCategory":"1","feed":"1","commenters_limit":"5","commenterNameOrUsername":"1","commenterAvatar":"1","commenterAvatarWidthSelect":"custom","commenterAvatarWidth":"50","commenterLink":"1","commenterCommentsCounter":"1","commenterLatestComment":"1","cache":"1","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10040, 0, 'K2 Content', 'module', 'mod_k2_content', '', 0, 1, 0, 0, '{"name":"K2 Content","type":"module","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_MOD_K2_CONTENT_DESCRIPTION","group":"","filename":"mod_k2_content.j25"}', '{"moduleclass_sfx":"","getTemplate":"Default","source":"filter","":"K2_OTHER_OPTIONS","catfilter":"0","category_id":"","getChildren":"0","itemCount":"5","itemsOrdering":"","FeaturedItems":"1","popularityRange":"","videosOnly":"0","items":"","itemTitle":"1","itemAuthor":"1","itemAuthorAvatar":"1","itemAuthorAvatarWidthSelect":"custom","itemAuthorAvatarWidth":"50","userDescription":"1","itemIntroText":"1","itemIntroTextWordLimit":"","itemImage":"1","itemImgSize":"Small","itemVideo":"1","itemVideoCaption":"1","itemVideoCredits":"1","itemAttachments":"1","itemTags":"1","itemCategory":"1","itemDateCreated":"1","itemHits":"1","itemReadMore":"1","itemExtraFields":"0","itemCommentsCounter":"1","feed":"1","itemPreText":"","itemCustomLink":"0","itemCustomLinkTitle":"","itemCustomLinkURL":"http:\\/\\/","itemCustomLinkMenuItem":"","K2Plugins":"1","JPlugins":"1","cache":"1","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10041, 0, 'K2 Tools', 'module', 'mod_k2_tools', '', 0, 1, 0, 0, '{"name":"K2 Tools","type":"module","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_TOOLS","group":"","filename":"mod_k2_tools.j25"}', '{"moduleclass_sfx":"","module_usage":"0","":"K2_CUSTOM_CODE_SETTINGS","archiveItemsCounter":"1","archiveCategory":"","authors_module_category":"","authorItemsCounter":"1","authorAvatar":"1","authorAvatarWidthSelect":"custom","authorAvatarWidth":"50","authorLatestItem":"1","calendarCategory":"","home":"","seperator":"","root_id":"","end_level":"","categoriesListOrdering":"","categoriesListItemsCounter":"1","root_id2":"","catfilter":"0","category_id":"","getChildren":"0","liveSearch":"0","text":"","button":"0","imagebutton":"0","button_text":"","searchItemId":"","min_size":"75","max_size":"300","cloud_limit":"30","cloud_category":"0","cloud_category_recursive":"0","customCode":"","parsePhp":"0","K2Plugins":"0","JPlugins":"0","cache":"1","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10042, 0, 'K2 Users', 'module', 'mod_k2_users', '', 0, 1, 0, 0, '{"name":"K2 Users","type":"module","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_MOD_K2_USERS_DESCRTIPTION","group":"","filename":"mod_k2_users.j25"}', '{"moduleclass_sfx":"","getTemplate":"Default","source":"0","":"K2_DISPLAY_OPTIONS","filter":"1","K2UserGroup":"","ordering":"1","limit":"4","userIDs":"","userName":"1","userAvatar":"1","userAvatarWidthSelect":"custom","userAvatarWidth":"50","userDescription":"1","userDescriptionWordLimit":"","userURL":"1","userEmail":"0","userFeed":"1","userItemCount":"1","cache":"1","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10043, 0, 'K2 User', 'module', 'mod_k2_user', '', 0, 1, 0, 0, '{"name":"K2 User","type":"module","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_MOD_K2_USER_DESCRIPTION","group":"","filename":"mod_k2_user.j25"}', '{"moduleclass_sfx":"","pretext":"","":"K2_LOGIN_LOGOUT_REDIRECTION","name":"1","userAvatar":"1","userAvatarWidthSelect":"custom","userAvatarWidth":"50","menu":"","login":"","logout":"","usesecure":"0","cache":"0","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10044, 0, 'K2 Quick Icons (admin)', 'module', 'mod_k2_quickicons', '', 1, 1, 2, 0, '{"name":"K2 Quick Icons (admin)","type":"module","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_QUICKICONS_FOR_USE_IN_THE_JOOMLA_CONTROL_PANEL_DASHBOARD_PAGE","group":"","filename":"mod_k2_quickicons.j25"}', '{"modCSSStyling":"1","modLogo":"1","cache":"0","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10045, 0, 'K2 Stats (admin)', 'module', 'mod_k2_stats', '', 1, 1, 2, 0, '{"name":"K2 Stats (admin)","type":"module","creationDate":"August 18th, 2017","author":"JoomlaWorks","copyright":"Copyright (c) 2006 - 2017 JoomlaWorks Ltd. All rights reserved.","authorEmail":"please-use-the-contact-form@joomlaworks.net","authorUrl":"www.joomlaworks.net","version":"2.8.0","description":"K2_STATS_FOR_USE_IN_THE_K2_DASHBOARD_PAGE","group":"","filename":"mod_k2_stats.j25"}', '{"latestItems":"1","popularItems":"1","mostCommentedItems":"1","latestComments":"1","statistics":"1","cache":"0","cache_time":"900"}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1251,6 +1271,17 @@ CREATE TABLE `jv_finder_types` (
   `mime` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `jv_finder_types`
+--
+
+INSERT INTO `jv_finder_types` (`id`, `title`, `mime`) VALUES
+(1, 'Tag', ''),
+(2, 'Category', ''),
+(3, 'Contact', ''),
+(4, 'Article', ''),
+(5, 'News Feed', '');
+
 -- --------------------------------------------------------
 
 --
@@ -1415,6 +1446,237 @@ INSERT INTO `jv_jv_typos` (`id`, `title`, `tag`, `replacement`, `example`, `orde
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `jv_k2_attachments`
+--
+
+CREATE TABLE `jv_k2_attachments` (
+  `id` int(11) NOT NULL,
+  `itemID` int(11) NOT NULL,
+  `filename` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `titleAttribute` text NOT NULL,
+  `hits` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_categories`
+--
+
+CREATE TABLE `jv_k2_categories` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `alias` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `parent` int(11) DEFAULT '0',
+  `extraFieldsGroup` int(11) NOT NULL,
+  `published` smallint(6) NOT NULL DEFAULT '0',
+  `access` int(11) NOT NULL DEFAULT '0',
+  `ordering` int(11) NOT NULL DEFAULT '0',
+  `image` varchar(255) NOT NULL,
+  `params` text NOT NULL,
+  `trash` smallint(6) NOT NULL DEFAULT '0',
+  `plugins` text NOT NULL,
+  `language` char(7) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `jv_k2_categories`
+--
+
+INSERT INTO `jv_k2_categories` (`id`, `name`, `alias`, `description`, `parent`, `extraFieldsGroup`, `published`, `access`, `ordering`, `image`, `params`, `trash`, `plugins`, `language`) VALUES
+(1, 'From our blog', 'from-our-blog', '', 0, 0, 1, 1, 1, '', '{"inheritFrom":"0","catMetaDesc":"","catMetaKey":"","catMetaRobots":"","catMetaAuthor":"","theme":"","num_leading_items":"0","num_leading_columns":"1","leadingImgSize":"Large","num_primary_items":"3","num_primary_columns":"1","primaryImgSize":"Large","num_secondary_items":"0","num_secondary_columns":"1","secondaryImgSize":"Small","num_links":"4","num_links_columns":"1","linksImgSize":"XSmall","catCatalogMode":"0","catFeaturedItems":"1","catOrdering":"","catPagination":"2","catPaginationResults":"1","catTitle":"1","catTitleItemCounter":"1","catDescription":"1","catImage":"1","catFeedLink":"0","catFeedIcon":"0","subCategories":"1","subCatColumns":"2","subCatOrdering":"","subCatTitle":"1","subCatTitleItemCounter":"1","subCatDescription":"1","subCatImage":"1","itemImageXS":"","itemImageS":"","itemImageM":"","itemImageL":"","itemImageXL":"","catItemTitle":"1","catItemTitleLinked":"1","catItemFeaturedNotice":"0","catItemAuthor":"1","catItemDateCreated":"1","catItemRating":"0","catItemImage":"1","catItemIntroText":"1","catItemIntroTextWordLimit":"","catItemExtraFields":"0","catItemHits":"0","catItemCategory":"1","catItemTags":"1","catItemAttachments":"0","catItemAttachmentsCounter":"0","catItemVideo":"0","catItemVideoWidth":"","catItemVideoHeight":"","catItemAudioWidth":"","catItemAudioHeight":"","catItemVideoAutoPlay":"0","catItemImageGallery":"0","catItemImageGalleryWidth":"","catItemImageGalleryHeight":"","catItemDateModified":"0","catItemReadMore":"1","catItemCommentsAnchor":"1","catItemK2Plugins":"1","itemDateCreated":"1","itemTitle":"1","itemFeaturedNotice":"1","itemAuthor":"1","itemFontResizer":"1","itemPrintButton":"1","itemEmailButton":"1","itemSocialButton":"1","itemVideoAnchor":"1","itemImageGalleryAnchor":"1","itemCommentsAnchor":"1","itemRating":"1","itemImage":"1","itemImgSize":"Large","itemImageMainCaption":"1","itemImageMainCredits":"1","itemIntroText":"1","itemFullText":"1","itemExtraFields":"1","itemDateModified":"1","itemHits":"1","itemCategory":"1","itemTags":"1","itemAttachments":"1","itemAttachmentsCounter":"1","itemVideo":"1","itemVideoWidth":"","itemVideoHeight":"","itemAudioWidth":"","itemAudioHeight":"","itemVideoAutoPlay":"0","itemVideoCaption":"1","itemVideoCredits":"1","itemImageGallery":"1","itemImageGalleryWidth":"","itemImageGalleryHeight":"","itemNavigation":"1","itemComments":"1","itemTwitterButton":"1","itemFacebookButton":"1","itemGooglePlusOneButton":"1","itemAuthorBlock":"1","itemAuthorImage":"1","itemAuthorDescription":"1","itemAuthorURL":"1","itemAuthorEmail":"0","itemAuthorLatest":"1","itemAuthorLatestLimit":"5","itemRelated":"1","itemRelatedLimit":"5","itemRelatedTitle":"1","itemRelatedCategory":"0","itemRelatedImageSize":"0","itemRelatedIntrotext":"0","itemRelatedFulltext":"0","itemRelatedAuthor":"0","itemRelatedMedia":"0","itemRelatedImageGallery":"0","itemK2Plugins":"1"}', 0, '', '*');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_comments`
+--
+
+CREATE TABLE `jv_k2_comments` (
+  `id` int(11) NOT NULL,
+  `itemID` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
+  `userName` varchar(255) NOT NULL,
+  `commentDate` datetime NOT NULL,
+  `commentText` text NOT NULL,
+  `commentEmail` varchar(255) NOT NULL,
+  `commentURL` varchar(255) NOT NULL,
+  `published` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_extra_fields`
+--
+
+CREATE TABLE `jv_k2_extra_fields` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `value` text NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `group` int(11) NOT NULL,
+  `published` tinyint(4) NOT NULL,
+  `ordering` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_extra_fields_groups`
+--
+
+CREATE TABLE `jv_k2_extra_fields_groups` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_items`
+--
+
+CREATE TABLE `jv_k2_items` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `alias` varchar(255) DEFAULT NULL,
+  `catid` int(11) NOT NULL,
+  `published` smallint(6) NOT NULL DEFAULT '0',
+  `introtext` mediumtext NOT NULL,
+  `fulltext` mediumtext NOT NULL,
+  `video` text,
+  `gallery` varchar(255) DEFAULT NULL,
+  `extra_fields` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+  `extra_fields_search` text NOT NULL,
+  `created` datetime NOT NULL,
+  `created_by` int(11) NOT NULL DEFAULT '0',
+  `created_by_alias` varchar(255) NOT NULL,
+  `checked_out` int(10) UNSIGNED NOT NULL,
+  `checked_out_time` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `modified_by` int(11) NOT NULL DEFAULT '0',
+  `publish_up` datetime NOT NULL,
+  `publish_down` datetime NOT NULL,
+  `trash` smallint(6) NOT NULL DEFAULT '0',
+  `access` int(11) NOT NULL DEFAULT '0',
+  `ordering` int(11) NOT NULL DEFAULT '0',
+  `featured` smallint(6) NOT NULL DEFAULT '0',
+  `featured_ordering` int(11) NOT NULL DEFAULT '0',
+  `image_caption` text NOT NULL,
+  `image_credits` varchar(255) NOT NULL,
+  `video_caption` text NOT NULL,
+  `video_credits` varchar(255) NOT NULL,
+  `hits` int(10) UNSIGNED NOT NULL,
+  `params` text NOT NULL,
+  `metadesc` text NOT NULL,
+  `metadata` text NOT NULL,
+  `metakey` text NOT NULL,
+  `plugins` text NOT NULL,
+  `language` char(7) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `jv_k2_items`
+--
+
+INSERT INTO `jv_k2_items` (`id`, `title`, `alias`, `catid`, `published`, `introtext`, `fulltext`, `video`, `gallery`, `extra_fields`, `extra_fields_search`, `created`, `created_by`, `created_by_alias`, `checked_out`, `checked_out_time`, `modified`, `modified_by`, `publish_up`, `publish_down`, `trash`, `access`, `ordering`, `featured`, `featured_ordering`, `image_caption`, `image_credits`, `video_caption`, `video_credits`, `hits`, `params`, `metadesc`, `metadata`, `metakey`, `plugins`, `language`) VALUES
+(1, 'Bachelor Party!', 'bachelor-party', 1, 1, '<p>This is Photoshop''s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>\r\n', '\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloe magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comdo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto tae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed qia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>\r\n<blockquote>\r\n<p>" The Education of Tomorrow, Rooted in Tradition Invite You Learning Management System"<br />- by Jhon Doe</p>\r\n</blockquote>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloe magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comdo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>\r\n<p><img src="blog_sinlge01.jpg" alt="" /><img src="images/jv-sampledata/content/blog_sinlge01.jpg" width="300" height="218" />Duis et nibh blat, eifend liberost amet, suscipit enim. Sed rutrum suere orci. Lorem ipsum dolor sitt amet.  This is Photoshop''s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqet. Aenean sollicitudin, lorem quis bibendum.</p>\r\n<ul>\r\n<li>Sollicitudin, lorem quis bibendum auctor, nisi elit consequat</li>\r\n<li>Sollicitudin, lorem quis bibendum auctor, nisi elit consequat</li>\r\n<li>Sollicitudin, lorem quis bibendum auctor, nisi elit consequat</li>\r\n</ul>\r\n<p><img class="pull-right" src="images/jv-sampledata/content/blog_sinlge02.jpg" alt="" />Duis et nibh blat, eifend liberost amet, suscipit enim. Sed rutrum suere orci. Lorem ipsum dolor sitt amet.  This is Photoshop''s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqet. Aenean sollicitudin, lorem quis bibendum.</p>\r\n<ul>\r\n<li>Sollicitudin, lorem quis bibendum auctor, nisi elit consequat</li>\r\n<li>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</li>\r\n<li>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</li>\r\n</ul>\r\n<p> </p>', NULL, NULL, '[]', '', '2018-04-03 09:48:24', 196, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2018-04-03 09:48:24', '0000-00-00 00:00:00', 0, 1, 1, 0, 0, '', '', '', '', 0, '{"catItemTitle":"","catItemTitleLinked":"","catItemFeaturedNotice":"","catItemAuthor":"","catItemDateCreated":"","catItemRating":"","catItemImage":"","catItemIntroText":"","catItemExtraFields":"","catItemHits":"","catItemCategory":"","catItemTags":"","catItemAttachments":"","catItemAttachmentsCounter":"","catItemVideo":"","catItemVideoWidth":"","catItemVideoHeight":"","catItemAudioWidth":"","catItemAudioHeight":"","catItemVideoAutoPlay":"","catItemImageGallery":"","catItemImageGalleryWidth":"","catItemImageGalleryHeight":"","catItemDateModified":"","catItemReadMore":"","catItemCommentsAnchor":"","catItemK2Plugins":"","itemDateCreated":"","itemTitle":"","itemFeaturedNotice":"","itemAuthor":"","itemFontResizer":"","itemPrintButton":"","itemEmailButton":"","itemSocialButton":"","itemVideoAnchor":"","itemImageGalleryAnchor":"","itemCommentsAnchor":"","itemRating":"","itemImage":"","itemImgSize":"","itemImageMainCaption":"","itemImageMainCredits":"","itemIntroText":"","itemFullText":"","itemExtraFields":"","itemDateModified":"","itemHits":"","itemCategory":"","itemTags":"","itemAttachments":"","itemAttachmentsCounter":"","itemVideo":"","itemVideoWidth":"","itemVideoHeight":"","itemAudioWidth":"","itemAudioHeight":"","itemVideoAutoPlay":"","itemVideoCaption":"","itemVideoCredits":"","itemImageGallery":"","itemImageGalleryWidth":"","itemImageGalleryHeight":"","itemNavigation":"","itemComments":"","itemTwitterButton":"","itemFacebookButton":"","itemGooglePlusOneButton":"","itemAuthorBlock":"","itemAuthorImage":"","itemAuthorDescription":"","itemAuthorURL":"","itemAuthorEmail":"","itemAuthorLatest":"","itemAuthorLatestLimit":"","itemRelated":"","itemRelatedLimit":"","itemRelatedTitle":"","itemRelatedCategory":"","itemRelatedImageSize":"","itemRelatedIntrotext":"","itemRelatedFulltext":"","itemRelatedAuthor":"","itemRelatedMedia":"","itemRelatedImageGallery":"","itemK2Plugins":""}', '', 'robots=\nauthor=', '', '', '*');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_log`
+--
+
+CREATE TABLE `jv_k2_log` (
+  `status` int(11) NOT NULL,
+  `response` text NOT NULL,
+  `timestamp` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `jv_k2_log`
+--
+
+INSERT INTO `jv_k2_log` (`status`, `response`, `timestamp`) VALUES
+(200, 'OK', '2018-04-03 09:46:12');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_rating`
+--
+
+CREATE TABLE `jv_k2_rating` (
+  `itemID` int(11) NOT NULL DEFAULT '0',
+  `rating_sum` int(11) UNSIGNED NOT NULL DEFAULT '0',
+  `rating_count` int(11) UNSIGNED NOT NULL DEFAULT '0',
+  `lastip` varchar(50) NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_tags`
+--
+
+CREATE TABLE `jv_k2_tags` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `published` smallint(6) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_tags_xref`
+--
+
+CREATE TABLE `jv_k2_tags_xref` (
+  `id` int(11) NOT NULL,
+  `tagID` int(11) NOT NULL,
+  `itemID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_users`
+--
+
+CREATE TABLE `jv_k2_users` (
+  `id` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
+  `userName` varchar(255) DEFAULT NULL,
+  `gender` enum('m','f') NOT NULL DEFAULT 'm',
+  `description` text NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `group` int(11) NOT NULL DEFAULT '0',
+  `plugins` text NOT NULL,
+  `ip` varchar(15) NOT NULL,
+  `hostname` varchar(255) NOT NULL,
+  `notes` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jv_k2_user_groups`
+--
+
+CREATE TABLE `jv_k2_user_groups` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `permissions` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `jv_languages`
 --
 
@@ -1480,7 +1742,7 @@ CREATE TABLE `jv_menu` (
 --
 
 INSERT INTO `jv_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `link`, `type`, `published`, `parent_id`, `level`, `component_id`, `checked_out`, `checked_out_time`, `browserNav`, `access`, `img`, `template_style_id`, `params`, `lft`, `rgt`, `home`, `language`, `client_id`) VALUES
-(1, '', 'Menu_Item_Root', 'root', '', '', '', '', 1, 0, 0, 0, 0, '0000-00-00 00:00:00', 0, 0, '', 0, '', 0, 67, 0, '*', 0),
+(1, '', 'Menu_Item_Root', 'root', '', '', '', '', 1, 0, 0, 0, 0, '0000-00-00 00:00:00', 0, 0, '', 0, '', 0, 89, 0, '*', 0),
 (2, 'main', 'com_banners', 'Banners', '', 'Banners', 'index.php?option=com_banners', 'component', 1, 1, 1, 4, 0, '0000-00-00 00:00:00', 0, 0, 'class:banners', 0, '', 1, 10, 0, '*', 1),
 (3, 'main', 'com_banners', 'Banners', '', 'Banners/Banners', 'index.php?option=com_banners', 'component', 1, 2, 2, 4, 0, '0000-00-00 00:00:00', 0, 0, 'class:banners', 0, '', 2, 3, 0, '*', 1),
 (4, 'main', 'com_banners_categories', 'Categories', '', 'Banners/Categories', 'index.php?option=com_categories&extension=com_banners', 'component', 1, 2, 2, 6, 0, '0000-00-00 00:00:00', 0, 0, 'class:banners-cat', 0, '', 4, 5, 0, '*', 1),
@@ -1513,7 +1775,18 @@ INSERT INTO `jv_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `link
 (111, 'mainmenu', 'Family', 'family', '', 'family', '#block-topb', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu-anchor_rel":"","menu_image":"","menu_image_css":"","menu_text":1,"menu_show":1,"menu_image_type":"img","fxmenu_item":"0","fxmenu_title":"1","fxmenu_description":"","fxmenu_column":"1","fxmenu_width":"","fxmenu_module_style":"jvxhtml"}', 59, 60, 0, '*', 0),
 (112, 'mainmenu', 'Gallery', 'gallery', '', 'gallery', '#block-gallery', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu-anchor_rel":"","menu_image":"","menu_image_css":"","menu_text":1,"menu_show":1,"menu_image_type":"img","fxmenu_item":"0","fxmenu_title":"1","fxmenu_description":"","fxmenu_column":"1","fxmenu_width":"","fxmenu_module_style":"jvxhtml"}', 61, 62, 0, '*', 0),
 (113, 'mainmenu', 'Blog', 'blog', '', 'blog', '#block-blog', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu-anchor_rel":"","menu_image":"","menu_image_css":"","menu_text":1,"menu_show":1,"menu_image_type":"img","fxmenu_item":"0","fxmenu_title":"1","fxmenu_description":"","fxmenu_column":"1","fxmenu_width":"","fxmenu_module_style":"jvxhtml"}', 63, 64, 0, '*', 0),
-(114, 'mainmenu', 'Contact us', 'contact-us', '', 'contact-us', '#block-bottomb', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu-anchor_rel":"","menu_image":"","menu_image_css":"","menu_text":1,"menu_show":1,"menu_image_type":"img","fxmenu_item":"0","fxmenu_title":"1","fxmenu_description":"","fxmenu_column":"1","fxmenu_width":"","fxmenu_module_style":"jvxhtml"}', 65, 66, 0, '*', 0);
+(114, 'mainmenu', 'Contact us', 'contact-us', '', 'contact-us', '#block-bottomb', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu-anchor_rel":"","menu_image":"","menu_image_css":"","menu_text":1,"menu_show":1,"menu_image_type":"img","fxmenu_item":"0","fxmenu_title":"1","fxmenu_description":"","fxmenu_column":"1","fxmenu_width":"","fxmenu_module_style":"jvxhtml"}', 65, 66, 0, '*', 0),
+(115, 'main', 'COM_K2', 'com-k2', '', 'com-k2', 'index.php?option=com_k2', 'component', 1, 1, 1, 10034, 0, '0000-00-00 00:00:00', 0, 1, '../media/k2/assets/images/backend/k2_logo_16x16.png', 0, '{}', 67, 88, 0, '', 1),
+(116, 'main', 'K2_ITEMS', 'k2-items', '', 'com-k2/k2-items', 'index.php?option=com_k2&view=items', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 68, 69, 0, '', 1),
+(117, 'main', 'K2_CATEGORIES', 'k2-categories', '', 'com-k2/k2-categories', 'index.php?option=com_k2&view=categories', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 70, 71, 0, '', 1),
+(118, 'main', 'K2_TAGS', 'k2-tags', '', 'com-k2/k2-tags', 'index.php?option=com_k2&view=tags', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 72, 73, 0, '', 1),
+(119, 'main', 'K2_COMMENTS', 'k2-comments', '', 'com-k2/k2-comments', 'index.php?option=com_k2&view=comments', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 74, 75, 0, '', 1),
+(120, 'main', 'K2_USERS', 'k2-users', '', 'com-k2/k2-users', 'index.php?option=com_k2&view=users', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 76, 77, 0, '', 1),
+(121, 'main', 'K2_USER_GROUPS', 'k2-user-groups', '', 'com-k2/k2-user-groups', 'index.php?option=com_k2&view=usergroups', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 78, 79, 0, '', 1),
+(122, 'main', 'K2_EXTRA_FIELDS', 'k2-extra-fields', '', 'com-k2/k2-extra-fields', 'index.php?option=com_k2&view=extrafields', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 80, 81, 0, '', 1),
+(123, 'main', 'K2_EXTRA_FIELD_GROUPS', 'k2-extra-field-groups', '', 'com-k2/k2-extra-field-groups', 'index.php?option=com_k2&view=extrafieldsgroups', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 82, 83, 0, '', 1),
+(124, 'main', 'K2_MEDIA_MANAGER', 'k2-media-manager', '', 'com-k2/k2-media-manager', 'index.php?option=com_k2&view=media', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 84, 85, 0, '', 1),
+(125, 'main', 'K2_INFORMATION', 'k2-information', '', 'com-k2/k2-information', 'index.php?option=com_k2&view=info', 'component', 1, 115, 2, 10034, 0, '0000-00-00 00:00:00', 0, 1, 'class:component', 0, '{}', 86, 87, 0, '', 1);
 
 -- --------------------------------------------------------
 
@@ -1632,7 +1905,14 @@ INSERT INTO `jv_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orderin
 (101, 82, 'Lovable family members', '', '', 1, 'topb-2', 0, '0000-00-00 00:00:00', '2018-03-28 14:16:51', '0000-00-00 00:00:00', -2, 'mod_jktestimonial', 1, 0, '{"catid":"7","layout":"_:clients","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0","module_assignment":{"content":{"customtitle":{"custom":"0"},"pagetype":{"enable":"0","include":"1","query":{"option":"com_content"}},"categories":{"enable":"0","include":"1","query":{"view":"category","option":"com_content"}},"article":{"enable":"0","include":"1","query":{"view":"article","option":"com_content"}}}}}', 0, '*'),
 (102, 83, 'CONTACT US || IF ANY QUERY', '', '', 1, 'bottomb-1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_jvcontact', 1, 1, '{"moduleclass_sfx":" wd_contact_form","textheader":"","textfooter":"","thankyou":"Thank you!","textsubmit":"Send a Message","moreinfo":"","mailsubject":"Mail from JENNY & MARK","mailcopy":"","layout":"_:custom","customlayout":" <div class=\\"row\\">\\r\\n      <div class=\\"col-sm-6\\">\\r\\n        <div class=\\"form-group\\">\\r\\n          {inpname}\\r\\n        <\\/div>\\r\\n        <div class=\\"form-group\\">\\r\\n          {inpemail}\\r\\n        <\\/div>\\r\\n        <div class=\\"form-group\\">\\r\\n          {inpphone}\\r\\n        <\\/div>\\r\\n      <\\/div>\\r\\n      <div class=\\"col-sm-6\\">\\r\\n<div class=\\"form-group\\">\\r\\n          {inpmessage}\\r\\n <\\/div>\\r\\n      <\\/div>\\r\\n    <\\/div>\\r\\n    <div class=\\"response\\"><\\/div>\\r\\n    <div class=\\"wd_btn\\">\\r\\n      {submitbutton}\\r\\n    <\\/div>","customcss":"","mailto":["196"],"mailto2":"","showform":"1","textinfield":"1","customfield":{"1":{"type":"name","name":"name","title":"Full Name","validate":"require"},"2":{"type":"email","name":"email","title":"Email","validate":"email"},"3":{"type":"textarea","name":"message","title":"Message","validate":"require"},"4":{"type":"text","name":"phone","title":"Phone","validate":"numberic"}},"showsocial":"0","showfacebook":"1","showtweeter":"1","showgplus":"1","showlikein":"1","showaddthismore":"1","showcaptcha":"0","captchapublickey":"","captchaprivatekey":"","captchatheme":"white","captcha_instructions_visual":"Instructions visual","captcha_instructions_audio":"Instructions audio","captcha_play_again":"Play again","captcha_cant_hear_this":"Cant hear this","captcha_visual_challenge":"Visual challenge","captcha_audio_challenge":"Audio challenge","captcha_refresh_btn":"Refresh","captcha_help_btn":"Help","captcha_incorrect_try_again":"Incorrect try again","showmap":"0","map_apikey":"AIzaSyD7KJAbPjbKDmQxCVsiTlVOmQihmbOoFdY","map_width":"100%","map_height":"200px","map_zoom":"17","map_icon":"","map_lat":"10.784513","map_long":"106.630744","map_infotext":"I''m here!","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0","module_assignment":{"content":{"customtitle":{"custom":"0"},"pagetype":{"enable":"0","include":"1","query":{"option":"com_content"}},"categories":{"enable":"0","include":"1","query":{"view":"category","option":"com_content"}},"article":{"enable":"0","include":"1","query":{"view":"article","option":"com_content"}}}}}', 0, '*'),
 (103, 84, 'FROM OUR BLOG || WEDDING JOURNAL', '', '', 1, 'content-top', 196, '2018-03-28 14:37:14', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_jvlatest_news', 1, 1, '{"moduleclass_sfx":"","template":"_:default","description":"","source":"content","catid":["9"],"group_cat":"0","css_bootstrap":"0","num_intro":"3","nums_link":"0","columns":"1","type_content":"0","show_title_intro":"1","title_link_intro":"1","show_intro_date":"1","show_intro_author":"0","show_readmore_intro":"1","show_link_all":"0","orderby_sec":"published","show_tag":"0","show_content_intro":"1","cut_intro":"250","readmore_text":"","intro_thumbnail":"resize","intro_thumbnail_align":"left","intro_thumbnail_position":"before","intro_thumbnail_width":"555","intro_thumbnail_height":"320","sp_article_0":"0","item":"","items":"","show_paging":"1","auto":"0","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0","module_assignment":{"content":{"customtitle":{"custom":"0"},"pagetype":{"enable":"0","include":"1","query":{"option":"com_content"}},"categories":{"enable":"0","include":"1","query":{"view":"category","option":"com_content"}},"article":{"enable":"0","include":"1","query":{"view":"article","option":"com_content"}}}}}', 0, '*'),
-(104, 85, 'THE WEDDING EVENT || CEREMONY & PARTY', '', '', 1, 'full-webding-conent-3', 196, '2018-03-31 04:21:44', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_jkevent', 1, 0, '{"image":"images\\/jv-sampledata\\/content\\/event_img.gif","rsvp":"#","key":"AIzaSyBGBtfnKJ3Bbn5ITz9L4i1UedivZVRPBJk","moduleclass_sfx":"","main_title":"Main Ceremony","main_time":"7:30 pm","main_address":"St. Thomas''s Church, London, U.K.","main_intro":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor vel velit auctor aliquet. Aenean sollicitudin, lorem quis","main_more":"106","main_map":"1","party_title":"Wedding Party","party_time":"7:30 pm","party_address":"St. Thomas''s Church, London, U.K.","party_intro":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor vel velit auctor aliquet. Aenean sollicitudin, lorem quis","party_more":"106","party_map":"1","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0","module_assignment":{"content":{"customtitle":{"custom":"0"},"pagetype":{"enable":"0","include":"1","query":{"option":"com_content"}},"categories":{"enable":"0","include":"1","query":{"view":"category","option":"com_content"}},"article":{"enable":"0","include":"1","query":{"view":"article","option":"com_content"}}}}}', 0, '*');
+(104, 85, 'THE WEDDING EVENT || CEREMONY & PARTY', '', '', 1, 'full-webding-conent-3', 196, '2018-03-31 04:21:44', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_jkevent', 1, 0, '{"image":"images\\/jv-sampledata\\/content\\/event_img.gif","rsvp":"#","key":"AIzaSyBGBtfnKJ3Bbn5ITz9L4i1UedivZVRPBJk","moduleclass_sfx":"","main_title":"Main Ceremony","main_time":"7:30 pm","main_address":"St. Thomas''s Church, London, U.K.","main_intro":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor vel velit auctor aliquet. Aenean sollicitudin, lorem quis","main_more":"106","main_map":"1","party_title":"Wedding Party","party_time":"7:30 pm","party_address":"St. Thomas''s Church, London, U.K.","party_intro":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor vel velit auctor aliquet. Aenean sollicitudin, lorem quis","party_more":"106","party_map":"1","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0","module_assignment":{"content":{"customtitle":{"custom":"0"},"pagetype":{"enable":"0","include":"1","query":{"option":"com_content"}},"categories":{"enable":"0","include":"1","query":{"view":"category","option":"com_content"}},"article":{"enable":"0","include":"1","query":{"view":"article","option":"com_content"}}}}}', 0, '*'),
+(105, 87, 'K2 Comments', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_k2_comments', 1, 1, '', 0, '*'),
+(106, 88, 'K2 Content', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_k2_content', 1, 1, '', 0, '*'),
+(107, 89, 'K2 Tools', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_k2_tools', 1, 1, '', 0, '*'),
+(108, 90, 'K2 Users', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_k2_users', 1, 1, '', 0, '*'),
+(109, 91, 'K2 User', '', '', 0, '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_k2_user', 1, 1, '', 0, '*'),
+(110, 92, 'K2 Quick Icons (admin)', '', '', 0, 'cpanel', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_k2_quickicons', 1, 1, '', 1, '*'),
+(111, 93, 'K2 Stats (admin)', '', '', 0, 'cpanel', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_k2_stats', 1, 1, '', 1, '*');
 
 -- --------------------------------------------------------
 
@@ -1684,7 +1964,9 @@ INSERT INTO `jv_modules_menu` (`moduleid`, `menuid`) VALUES
 (101, 101),
 (102, 101),
 (103, 101),
-(104, 101);
+(104, 101),
+(110, 0),
+(111, 0);
 
 -- --------------------------------------------------------
 
@@ -1832,12 +2114,7 @@ CREATE TABLE `jv_session` (
 --
 
 INSERT INTO `jv_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`) VALUES
-('22nckhmths30u0eglmmtmem935', 1, 0, '1522488885', 'joomla|s:1600:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTozNTtzOjU6InRva2VuIjtzOjMyOiJqS1dBcmFyeWppM2pRZ0J3YzVCRUhHY3ZucEpmaDFmNCI7czo1OiJ0aW1lciI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo1OiJzdGFydCI7aToxNTIyNDg4NDIwO3M6NDoibGFzdCI7aToxNTIyNDg4ODg0O3M6Mzoibm93IjtpOjE1MjI0ODg4ODU7fX1zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjM6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo5OiJjb21fbWVudXMiO086ODoic3RkQ2xhc3MiOjI6e3M6NToiaXRlbXMiO086ODoic3RkQ2xhc3MiOjc6e3M6ODoibWVudXR5cGUiO3M6ODoibWFpbm1lbnUiO3M6NDoibGlzdCI7YToyOntzOjEyOiJmdWxsb3JkZXJpbmciO3M6OToiYS5sZnQgQVNDIjtzOjU6ImxpbWl0IjtzOjI6IjIwIjt9czo2OiJzZWFyY2giO3M6MDoiIjtzOjk6InB1Ymxpc2hlZCI7czowOiIiO3M6NjoiZmlsdGVyIjthOjY6e3M6Njoic2VhcmNoIjtzOjA6IiI7czo5OiJwdWJsaXNoZWQiO3M6MDoiIjtzOjY6ImFjY2VzcyI7czowOiIiO3M6ODoibGFuZ3VhZ2UiO3M6MDoiIjtzOjU6ImxldmVsIjtzOjA6IiI7czo5OiJwYXJlbnRfaWQiO3M6MDoiIjt9czo5OiJjbGllbnRfaWQiO2k6MDtzOjEwOiJsaW1pdHN0YXJ0IjtpOjA7fXM6NDoiZWRpdCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJpdGVtIjtPOjg6InN0ZENsYXNzIjo0OntzOjQ6ImRhdGEiO047czo0OiJ0eXBlIjtOO3M6NDoibGluayI7TjtzOjI6ImlkIjthOjc6e2k6MDtpOjEwODtpOjE7aToxMDk7aToyO2k6MTEwO2k6MztpOjExMTtpOjQ7aToxMTI7aTo1O2k6MTEzO2k6NjtpOjExNDt9fX19fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7TzoyMDoiSm9vbWxhXENNU1xVc2VyXFVzZXIiOjE6e3M6MjoiaWQiO3M6MzoiMTk2Ijt9czoxMToiYXBwbGljYXRpb24iO086ODoic3RkQ2xhc3MiOjE6e3M6NToicXVldWUiO2E6MDp7fX19fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==";', 196, 'admin'),
-('ejkov8lil8d80hc5jbskcb4rc1', 0, 1, '1522469625', 'joomla|s:736:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjozOntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTo0O3M6NToidG9rZW4iO3M6MzI6ImhlQ1FOd0lRS3pvdHEyem50VGoyN2hLSjZyWFNGS2N5IjtzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE1MjI0NjkyODg7czo0OiJsYXN0IjtpOjE1MjI0Njk0ODA7czozOiJub3ciO2k6MTUyMjQ2OTYyNDt9fXM6ODoicmVnaXN0cnkiO086MjQ6Ikpvb21sYVxSZWdpc3RyeVxSZWdpc3RyeSI6Mzp7czo3OiIAKgBkYXRhIjtPOjg6InN0ZENsYXNzIjowOnt9czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czo0OiJ1c2VyIjtPOjIwOiJKb29tbGFcQ01TXFVzZXJcVXNlciI6MTp7czoyOiJpZCI7aTowO319fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==";', 0, ''),
-('ii49n378qmh0e80o4j1nebpck3', 1, 0, '1522469748', 'joomla|s:2300:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTo5MztzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE1MjI0NjU4OTM7czo0OiJsYXN0IjtpOjE1MjI0Njk3NDM7czozOiJub3ciO2k6MTUyMjQ2OTc0ODt9czo1OiJ0b2tlbiI7czozMjoiNnR2UXJNMDBHSWRHWWhFY2J6OVNkRzkzNnRNelFIOXQiO31zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjM6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6NTp7czoxMzoiY29tX2luc3RhbGxlciI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo3OiJtZXNzYWdlIjtzOjA6IiI7czoxNzoiZXh0ZW5zaW9uX21lc3NhZ2UiO3M6MDoiIjtzOjEyOiJyZWRpcmVjdF91cmwiO047fXM6MTE6ImNvbV9tb2R1bGVzIjtPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NjoibW9kdWxlIjtPOjg6InN0ZENsYXNzIjoyOntzOjI6ImlkIjthOjA6e31zOjQ6ImRhdGEiO047fX1zOjM6ImFkZCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo2OiJtb2R1bGUiO086ODoic3RkQ2xhc3MiOjI6e3M6MTI6ImV4dGVuc2lvbl9pZCI7TjtzOjY6InBhcmFtcyI7Tjt9fX1zOjE4OiJjb21famtjdXN0b21maWVsZHMiO086ODoic3RkQ2xhc3MiOjI6e3M6NToiaXRlbXMiO086ODoic3RkQ2xhc3MiOjM6e3M6NjoiZmlsdGVyIjthOjM6e3M6Njoic2VhcmNoIjtzOjA6IiI7czo5OiJwdWJsaXNoZWQiO3M6MDoiIjtzOjg6ImNhdGVnb3J5IjtzOjE6IjciO31zOjQ6Imxpc3QiO2E6Mjp7czo1OiJsaW1pdCI7czoyOiIyMCI7czoxMjoiZnVsbG9yZGVyaW5nIjtzOjg6Im51bGwgQVNDIjt9czoxMDoibGltaXRzdGFydCI7aTowO31zOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NDoiaXRlbSI7Tzo4OiJzdGRDbGFzcyI6Mjp7czoyOiJpZCI7YToxOntpOjA7aToxNzt9czo0OiJkYXRhIjtOO319fXM6MTE6ImNvbV9jb250ZW50IjtPOjg6InN0ZENsYXNzIjoxOntzOjg6ImFydGljbGVzIjtPOjg6InN0ZENsYXNzIjozOntzOjY6ImZpbHRlciI7YTo0OntzOjY6InNlYXJjaCI7czowOiIiO3M6OToicHVibGlzaGVkIjtzOjA6IiI7czo4OiJsYW5ndWFnZSI7czowOiIiO3M6NToibGV2ZWwiO3M6MDoiIjt9czo0OiJsaXN0IjthOjI6e3M6MTI6ImZ1bGxvcmRlcmluZyI7czoxNToiYS5vcmRlcmluZyBERVNDIjtzOjU6ImxpbWl0IjtzOjI6IjIwIjt9czoxMDoibGltaXRzdGFydCI7aTowO319czoxNToiY29tX2p2ZnJhbWV3b3JrIjtPOjg6InN0ZENsYXNzIjoxOntzOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NToic3R5bGUiO086ODoic3RkQ2xhc3MiOjI6e3M6MjoiaWQiO2E6MTp7aTowO2k6OTt9czo0OiJkYXRhIjtOO319fX1zOjE0OiIAKgBpbml0aWFsaXplZCI7YjowO3M6OToic2VwYXJhdG9yIjtzOjE6Ii4iO31zOjQ6InVzZXIiO086MjA6Ikpvb21sYVxDTVNcVXNlclxVc2VyIjoxOntzOjI6ImlkIjtzOjM6IjE5NiI7fXM6MTE6ImFwcGxpY2F0aW9uIjtPOjg6InN0ZENsYXNzIjoxOntzOjU6InF1ZXVlIjthOjA6e319fX1zOjE0OiIAKgBpbml0aWFsaXplZCI7YjowO3M6OToic2VwYXJhdG9yIjtzOjE6Ii4iO30=";', 196, 'admin'),
-('r51hc4je6mlkodh5v04jkdlu27', 1, 0, '1522470947', 'joomla|s:1480:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo1OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToxOTtzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE1MjI0Njk4NzY7czo0OiJsYXN0IjtpOjE1MjI0NzAxMDc7czozOiJub3ciO2k6MTUyMjQ3MDk0Nzt9czo1OiJ0b2tlbiI7czozMjoidkNrbFNCTGxxWXVVSFBQNzBrMXVURDVsQTVodERGd0ciO31zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjM6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6Mjp7czoxMzoiY29tX2luc3RhbGxlciI7Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJtZXNzYWdlIjtzOjA6IiI7czoxNzoiZXh0ZW5zaW9uX21lc3NhZ2UiO3M6MDoiIjt9czoxMToiY29tX21vZHVsZXMiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoiZWRpdCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo2OiJtb2R1bGUiO086ODoic3RkQ2xhc3MiOjI6e3M6MjoiaWQiO2E6MTp7aTowO2k6MTA0O31zOjQ6ImRhdGEiO047fX1zOjM6ImFkZCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo2OiJtb2R1bGUiO086ODoic3RkQ2xhc3MiOjI6e3M6MTI6ImV4dGVuc2lvbl9pZCI7TjtzOjY6InBhcmFtcyI7Tjt9fX19czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czo0OiJ1c2VyIjtPOjIwOiJKb29tbGFcQ01TXFVzZXJcVXNlciI6MTp7czoyOiJpZCI7czozOiIxOTYiO31zOjk6ImNvbV9tZWRpYSI7Tzo4OiJzdGRDbGFzcyI6MTp7czoxMDoicmV0dXJuX3VybCI7czoxMDU6ImluZGV4LnBocD9vcHRpb249Y29tX21lZGlhJnZpZXc9aW1hZ2VzJnRtcGw9Y29tcG9uZW50JmZpZWxkaWQ9amZvcm1fcGFyYW1zX2ltYWdlJmVfbmFtZT0mYXNzZXQ9ODUmYXV0aG9yPSI7fXM6MTE6ImFwcGxpY2F0aW9uIjtPOjg6InN0ZENsYXNzIjoxOntzOjU6InF1ZXVlIjthOjA6e319fX1zOjE0OiIAKgBpbml0aWFsaXplZCI7YjowO3M6OToic2VwYXJhdG9yIjtzOjE6Ii4iO30=";', 196, 'admin'),
-('tjg7cpm9h8kaobc5q8iav9fi27', 0, 1, '1522489590', 'joomla|s:736:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjozOntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTo4NTtzOjU6InRva2VuIjtzOjMyOiJ6WVNmVU41ZDdjSmFUMzFBZmtpYWsxcVd3M0VOOTVzdiI7czo1OiJ0aW1lciI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo1OiJzdGFydCI7aToxNTIyNDgzNTAzO3M6NDoibGFzdCI7aToxNTIyNDg5NDkxO3M6Mzoibm93IjtpOjE1MjI0ODk1OTA7fX1zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjM6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6MDp7fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7TzoyMDoiSm9vbWxhXENNU1xVc2VyXFVzZXIiOjE6e3M6MjoiaWQiO2k6MDt9fX1zOjE0OiIAKgBpbml0aWFsaXplZCI7YjowO3M6OToic2VwYXJhdG9yIjtzOjE6Ii4iO30=";', 0, ''),
-('vpi3h8p9g8o2lc15npuv6m9cj7', 0, 1, '1522471287', 'joomla|s:736:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjozOntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToyO3M6NToidG9rZW4iO3M6MzI6Iktwbm92ZnExb29EaGt5d1poNHZCdU5yaWNUc3MwZGZjIjtzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE1MjI0NzEyODY7czo0OiJsYXN0IjtpOjE1MjI0NzEyODY7czozOiJub3ciO2k6MTUyMjQ3MTI4Njt9fXM6ODoicmVnaXN0cnkiO086MjQ6Ikpvb21sYVxSZWdpc3RyeVxSZWdpc3RyeSI6Mzp7czo3OiIAKgBkYXRhIjtPOjg6InN0ZENsYXNzIjowOnt9czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czo0OiJ1c2VyIjtPOjIwOiJKb29tbGFcQ01TXFVzZXJcVXNlciI6MTp7czoyOiJpZCI7aTowO319fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==";', 0, '');
+('n47ekt86rm4saca7uphrg9t2j0', 1, 0, '1522749703', 'joomla|s:2436:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo1OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTo1NztzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE1MjI3NDgyNzQ7czo0OiJsYXN0IjtpOjE1MjI3NDk3MDE7czozOiJub3ciO2k6MTUyMjc0OTcwMjt9czo1OiJ0b2tlbiI7czozMjoiRWtqQ0prOEIzSlNXYjM1ZnlGRWVoZzJuTWROUGc4R0YiO31zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjM6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6Njp7czoxNToiY29tX2p2ZnJhbWV3b3JrIjtPOjg6InN0ZENsYXNzIjoxOntzOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NToic3R5bGUiO086ODoic3RkQ2xhc3MiOjI6e3M6MjoiaWQiO2E6MTp7aTowO2k6OTt9czo0OiJkYXRhIjtOO319fXM6MTM6ImNvbV9pbnN0YWxsZXIiO086ODoic3RkQ2xhc3MiOjM6e3M6NzoibWVzc2FnZSI7czowOiIiO3M6MTc6ImV4dGVuc2lvbl9tZXNzYWdlIjtzOjA6IiI7czoxMjoicmVkaXJlY3RfdXJsIjtOO31zOjE0OiJjb21fY2F0ZWdvcmllcyI7Tzo4OiJzdGRDbGFzcyI6MTp7czoxMDoiY2F0ZWdvcmllcyI7Tzo4OiJzdGRDbGFzcyI6MTp7czo3OiJjb250ZW50IjtPOjg6InN0ZENsYXNzIjoyOntzOjY6ImZpbHRlciI7Tzo4OiJzdGRDbGFzcyI6MTp7czo5OiJleHRlbnNpb24iO3M6MTE6ImNvbV9jb250ZW50Ijt9czo0OiJsaXN0IjthOjQ6e3M6OToiZGlyZWN0aW9uIjtzOjM6ImFzYyI7czo1OiJsaW1pdCI7czoyOiIyMCI7czo4OiJvcmRlcmluZyI7czo1OiJhLmxmdCI7czo1OiJzdGFydCI7ZDowO319fX1zOjE2OiJjb21fazJjYXRlZ29yaWVzIjtPOjg6InN0ZENsYXNzIjoxOntzOjEwOiJsaW1pdHN0YXJ0IjtpOjA7fXM6MTE6ImNvbV9jb250ZW50IjtPOjg6InN0ZENsYXNzIjoyOntzOjg6ImFydGljbGVzIjtPOjg6InN0ZENsYXNzIjozOntzOjY6ImZpbHRlciI7YTo1OntzOjY6InNlYXJjaCI7czowOiIiO3M6OToicHVibGlzaGVkIjtzOjA6IiI7czoxMToiY2F0ZWdvcnlfaWQiO2E6MTp7aTowO3M6MToiOSI7fXM6ODoibGFuZ3VhZ2UiO3M6MDoiIjtzOjU6ImxldmVsIjtzOjA6IiI7fXM6NDoibGlzdCI7YToyOntzOjEyOiJmdWxsb3JkZXJpbmciO3M6OToiYS5pZCBERVNDIjtzOjU6ImxpbWl0IjtzOjI6IjIwIjt9czoxMDoibGltaXRzdGFydCI7aTowO31zOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NzoiYXJ0aWNsZSI7Tzo4OiJzdGRDbGFzcyI6Mjp7czoyOiJpZCI7YTowOnt9czo0OiJkYXRhIjtOO319fXM6MTE6ImNvbV9rMml0ZW1zIjtPOjg6InN0ZENsYXNzIjoxOntzOjEwOiJsaW1pdHN0YXJ0IjtpOjA7fX1zOjE0OiIAKgBpbml0aWFsaXplZCI7YjowO3M6OToic2VwYXJhdG9yIjtzOjE6Ii4iO31zOjQ6InVzZXIiO086MjA6Ikpvb21sYVxDTVNcVXNlclxVc2VyIjoxOntzOjI6ImlkIjtzOjM6IjE5NiI7fXM6MTE6ImFwcGxpY2F0aW9uIjtPOjg6InN0ZENsYXNzIjoxOntzOjU6InF1ZXVlIjthOjA6e319czo5OiJjb21fbWVkaWEiO086ODoic3RkQ2xhc3MiOjE6e3M6MTA6InJldHVybl91cmwiO3M6ODk6ImluZGV4LnBocD9vcHRpb249Y29tX21lZGlhJnZpZXc9aW1hZ2VzJnRtcGw9Y29tcG9uZW50JmZpZWxkaWQ9JmVfbmFtZT10ZXh0JmFzc2V0PSZhdXRob3I9Ijt9fX1zOjE0OiIAKgBpbml0aWFsaXplZCI7YjowO3M6OToic2VwYXJhdG9yIjtzOjE6Ii4iO30=";', 196, 'admin');
 
 -- --------------------------------------------------------
 
@@ -1909,7 +2186,7 @@ INSERT INTO `jv_template_styles` (`id`, `template`, `client_id`, `home`, `title`
 (5, 'hathor', 1, '0', 'Hathor - Default', '{"showSiteName":"0","colourChoice":"","boldText":"0"}'),
 (7, 'protostar', 0, '0', 'protostar - Default', '{"templateColor":"","logoFile":"","googleFont":"1","googleFontName":"Open+Sans","fluidContainer":"0"}'),
 (8, 'isis', 1, '1', 'isis - Default', '{"templateColor":"","logoFile":""}'),
-(9, 'jv-melody-iii', 0, '1', 'JV-Melody-III - Default', '{"extension":{"logo":{"type":"image","image":"images\\/jv-sampledata\\/header\\/logo.png","text":"Mrs. Jeniffer & Mr. Clark Wills","slogan":""},"analytic":{"google":{"enable":"0","id":"UA-XXXXX-Y"},"yahoo":{"enable":"0","id":"1000XXXXXXXX","secure":"0"}},"date":{"enable":"0","pretext":"Today:","type":"0","position":"search","format":"d-m-Y"},"fontsizer":{"enable":"0","position":"search","zoomlevel":"3","selector":"body"},"lazyload":{"enable":"0","selector":"img"}},"global":{"devmode":"0","type":"c-sb-sb","direction":"0","retina":"1","k2css":"0","cache":"0","copyright":{"enable":"1","joomlacopyright":"0","fwcopyright":"0","content":"&copy; Copyright 2017 All Rights Reserved. By Webstrot"},"mobile":{"allmobile":{"enable":"2"}},"compress":{"css_js":"0","html":"0","deferload":"1","gzip":"1"},"totop":{"enable":"1"}},"owl_version":"2.0.0","owl_params":"{\\"list\\":[{\\"enable\\":true,\\"element\\":\\".wd_gallery_slider .owl-carousel\\",\\"title\\":\\"Gallery slider\\",\\"params\\":\\"animateOut: ''fadeOut''\\\\nloop:true\\\\nmargin:10\\\\nnav:false\\\\nresponsive:{0:{items:1},600:{items:1},1000:{items:1}}\\"},{\\"enable\\":true,\\"element\\":\\".wd_family_slider .owl-carousel\\",\\"title\\":\\"Member slider\\",\\"params\\":\\"loop:true\\\\nmargin:10\\\\nnav:true\\\\nnavText:[\\\\\\"\\\\\\" , \\\\\\"\\\\\\"]\\\\nresponsive:{0:{items:1},600:{items:2},1000:{items:4}}\\"},{\\"enable\\":true,\\"element\\":\\".wd_guest_slider .owl-carousel\\",\\"title\\":\\"Client slider\\",\\"params\\":\\"loop:true\\\\nmargin:45\\\\nnav:false\\\\nresponsive:{0:{items:1},600:{items:3},1000:{items:3}}\\"},{\\"enable\\":true,\\"element\\":\\".wd_testimonial_slider .owl-carousel\\",\\"title\\":\\"JV-Title-1\\",\\"params\\":\\"loop:true\\\\nmargin:0\\\\nnav:false\\\\nautoplay:true\\\\nresponsive:{0:{items:1},600:{items:1},1000:{items:1}}\\"}]}","fonts":{"@data":[],"@state":{"checks":[],"field":"multi"}},"layouts":{"middle":"{\\"3\\":[3,6,1]}","block":{"panel":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,1,1]}"},"top":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,1,1]}"},"topb":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,1,1]}"},"contenttop":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,1,1]}"},"contentbottom":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,1,1]}"},"bottom":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,1,1]}"},"bottomb":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,1,1]}"}}},"menu":{"main_delay":"300","main_duration":"300","main_effect":"fade","main_easing":"linear","sub_delay":"300","sub_duration":"300","sub_effect":"fade","sub_easing":"linear","responsive":"940"},"related":{"num_intro":"2","nums_link":"3","show_title_intro":"1","show_intro_text":"1","title_link_intro":"1","cut_intro":"100","columns":"2","show_intro_date":"1","date_format":"d F Y","intro_thumbnail":"1","intro_thumbnail_align":"left","intro_thumbnail_position":"before","intro_thumbnail_width":"100","intro_thumbnail_height":"100"},"scrolling":{"@data":[],"@state":{"checks":[],"field":"multi"}},"styles":{"themestyle":"wide","bgcolor":"","background":"1","colorchooser":{"enable":"1","position":"color"},"themecolor":"color-1","classstyle":"","customcolor":{"enable":"0"},"defaultcss":"","cthemecolor":"{\\"list\\":[{\\"css\\":\\"a\\",\\"color\\":\\"#538e0f\\",\\"selector\\":\\"color\\"},{\\"css\\":\\"#block-mainnav\\",\\"color\\":\\"#538e0f\\",\\"selector\\":\\"border-color\\"},{\\"css\\":\\"#block-mainnav ul.fxmenu .fx-subitem, #block-mainnav ul.fxmenu li:hover .level1, #block-mainnav ul.fxmenu li.active .level1, h3.title-module , button:hover, .btn:hover, input[type=\\\\\\"submit\\\\\\"]:hover, input[type=\\\\\\"button\\\\\\"]:hover, div.pagination ul li a, div.pagination .counter, a.flexMenuToggle\\",\\"color\\":\\"#538e0f\\",\\"selector\\":\\"background-color\\"}]}"}}');
+(9, 'jv-melody-iii', 0, '1', 'JV-Melody-III - Default', '{"extension":{"logo":{"type":"image","image":"images\\/jv-sampledata\\/header\\/logo.png","text":"Mrs. Jeniffer & Mr. Clark Wills","slogan":""},"analytic":{"google":{"enable":"0","id":"UA-XXXXX-Y"},"yahoo":{"enable":"0","id":"1000XXXXXXXX","secure":"0"}},"date":{"enable":"0","pretext":"Today:","type":"0","position":"search","format":"d-m-Y"},"fontsizer":{"enable":"0","position":"search","zoomlevel":"3","selector":"body"},"lazyload":{"enable":"0","selector":"img"}},"global":{"devmode":"0","type":"c-sb-sb","direction":"0","retina":"0","k2css":"0","cache":"0","copyright":{"enable":"1","joomlacopyright":"0","fwcopyright":"0","content":"&copy; Copyright 2017 All Rights Reserved. By Webstrot"},"mobile":{"allmobile":{"enable":"2"}},"compress":{"css_js":"0","html":"0","deferload":"1","gzip":"1"},"totop":{"enable":"1"}},"owl_version":"2.0.0","owl_params":"{\\"list\\":[{\\"enable\\":true,\\"element\\":\\".wd_gallery_slider .owl-carousel\\",\\"title\\":\\"Gallery slider\\",\\"params\\":\\"animateOut: ''fadeOut''\\\\nloop:true\\\\nmargin:10\\\\nnav:false\\\\nresponsive:{0:{items:1},600:{items:1},1000:{items:1}}\\"},{\\"enable\\":true,\\"element\\":\\".wd_family_slider .owl-carousel\\",\\"title\\":\\"Member slider\\",\\"params\\":\\"loop:true\\\\nmargin:10\\\\nnav:true\\\\nnavText:[\\\\\\"\\\\\\" , \\\\\\"\\\\\\"]\\\\nresponsive:{0:{items:1},600:{items:2},1000:{items:4}}\\"},{\\"enable\\":true,\\"element\\":\\".wd_guest_slider .owl-carousel\\",\\"title\\":\\"Client slider\\",\\"params\\":\\"loop:true\\\\nmargin:45\\\\nnav:false\\\\nresponsive:{0:{items:1},600:{items:3},1000:{items:3}}\\"},{\\"enable\\":true,\\"element\\":\\".wd_testimonial_slider .owl-carousel\\",\\"title\\":\\"JV-Title-1\\",\\"params\\":\\"loop:true\\\\nmargin:0\\\\nnav:false\\\\nautoplay:true\\\\nresponsive:{0:{items:1},600:{items:1},1000:{items:1}}\\"}]}","fonts":{"@data":[],"@state":{"checks":[],"field":"multi"}},"layouts":{"middle":"{\\"3\\":[3,6,1]}","block":{"panel":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,0,1]}"},"top":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,0,1]}"},"topb":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,0,1]}"},"contenttop":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,0,1]}"},"contentbottom":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,0,1]}"},"bottom":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,0,1]}"},"bottomb":{"grid":"{\\"1\\":[12],\\"2\\":[6,6],\\"3\\":[4,4,4],\\"4\\":[3,3,3,3],\\"5\\":[2,2,2,2,4],\\"6\\":[1,2,1,1,0,1]}"}}},"menu":{"main_delay":"300","main_duration":"300","main_effect":"fade","main_easing":"linear","sub_delay":"300","sub_duration":"300","sub_effect":"fade","sub_easing":"linear","responsive":"940"},"related":{"num_intro":"2","nums_link":"3","show_title_intro":"1","show_intro_text":"1","title_link_intro":"1","cut_intro":"100","columns":"2","show_intro_date":"1","date_format":"d F Y","intro_thumbnail":"1","intro_thumbnail_align":"left","intro_thumbnail_position":"before","intro_thumbnail_width":"100","intro_thumbnail_height":"100"},"scrolling":{"@data":[],"@state":{"checks":[],"field":"multi"}},"styles":{"themestyle":"wide","bgcolor":"","background":"1","colorchooser":{"enable":"1","position":"color"},"themecolor":"color-1","classstyle":"","customcolor":{"enable":"0"},"defaultcss":"","cthemecolor":"{\\"list\\":[{\\"css\\":\\"a\\",\\"color\\":\\"#538e0f\\",\\"selector\\":\\"color\\"},{\\"css\\":\\"#block-mainnav\\",\\"color\\":\\"#538e0f\\",\\"selector\\":\\"border-color\\"},{\\"css\\":\\"#block-mainnav ul.fxmenu .fx-subitem, #block-mainnav ul.fxmenu li:hover .level1, #block-mainnav ul.fxmenu li.active .level1, h3.title-module , button:hover, .btn:hover, input[type=\\\\\\"submit\\\\\\"]:hover, input[type=\\\\\\"button\\\\\\"]:hover, div.pagination ul li a, div.pagination .counter, a.flexMenuToggle\\",\\"color\\":\\"#538e0f\\",\\"selector\\":\\"background-color\\"}]}"}}');
 
 -- --------------------------------------------------------
 
@@ -2048,77 +2325,81 @@ CREATE TABLE `jv_updates` (
 --
 
 INSERT INTO `jv_updates` (`update_id`, `update_site_id`, `extension_id`, `name`, `description`, `element`, `type`, `folder`, `client_id`, `version`, `data`, `detailsurl`, `infourl`, `extra_query`) VALUES
-(1, 2, 0, 'Chinese Traditional', '', 'pkg_zh-TW', 'package', '', 0, '3.8.0.1', '', 'https://update.joomla.org/language/details3/zh-TW_details.xml', '', ''),
-(2, 2, 0, 'French', '', 'pkg_fr-FR', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/fr-FR_details.xml', '', ''),
-(3, 2, 0, 'Galician', '', 'pkg_gl-ES', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/gl-ES_details.xml', '', ''),
-(4, 2, 0, 'Georgian', '', 'pkg_ka-GE', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/ka-GE_details.xml', '', ''),
-(5, 2, 0, 'Greek', '', 'pkg_el-GR', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/el-GR_details.xml', '', ''),
-(6, 2, 0, 'Japanese', '', 'pkg_ja-JP', 'package', '', 0, '3.8.6.2', '', 'https://update.joomla.org/language/details3/ja-JP_details.xml', '', ''),
-(7, 2, 0, 'Hebrew', '', 'pkg_he-IL', 'package', '', 0, '3.1.1.2', '', 'https://update.joomla.org/language/details3/he-IL_details.xml', '', ''),
-(8, 2, 0, 'Bengali', '', 'pkg_bn-BD', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/bn-BD_details.xml', '', ''),
-(9, 2, 0, 'Hungarian', '', 'pkg_hu-HU', 'package', '', 0, '3.8.4.1', '', 'https://update.joomla.org/language/details3/hu-HU_details.xml', '', ''),
-(10, 2, 0, 'Afrikaans', '', 'pkg_af-ZA', 'package', '', 0, '3.8.4.1', '', 'https://update.joomla.org/language/details3/af-ZA_details.xml', '', ''),
-(11, 2, 0, 'Arabic Unitag', '', 'pkg_ar-AA', 'package', '', 0, '3.7.5.1', '', 'https://update.joomla.org/language/details3/ar-AA_details.xml', '', ''),
-(12, 2, 0, 'Belarusian', '', 'pkg_be-BY', 'package', '', 0, '3.2.1.2', '', 'https://update.joomla.org/language/details3/be-BY_details.xml', '', ''),
-(13, 2, 0, 'Bulgarian', '', 'pkg_bg-BG', 'package', '', 0, '3.6.5.2', '', 'https://update.joomla.org/language/details3/bg-BG_details.xml', '', ''),
-(14, 2, 0, 'Catalan', '', 'pkg_ca-ES', 'package', '', 0, '3.8.3.3', '', 'https://update.joomla.org/language/details3/ca-ES_details.xml', '', ''),
-(15, 2, 0, 'Chinese Simplified', '', 'pkg_zh-CN', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/zh-CN_details.xml', '', ''),
-(16, 2, 0, 'Croatian', '', 'pkg_hr-HR', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/hr-HR_details.xml', '', ''),
-(17, 2, 0, 'Czech', '', 'pkg_cs-CZ', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/cs-CZ_details.xml', '', ''),
-(18, 2, 0, 'Danish', '', 'pkg_da-DK', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/da-DK_details.xml', '', ''),
-(19, 2, 0, 'Dutch', '', 'pkg_nl-NL', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/nl-NL_details.xml', '', ''),
-(20, 2, 0, 'Esperanto', '', 'pkg_eo-XX', 'package', '', 0, '3.8.3.1', '', 'https://update.joomla.org/language/details3/eo-XX_details.xml', '', ''),
-(21, 2, 0, 'Estonian', '', 'pkg_et-EE', 'package', '', 0, '3.7.0.1', '', 'https://update.joomla.org/language/details3/et-EE_details.xml', '', ''),
-(22, 2, 0, 'Italian', '', 'pkg_it-IT', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/it-IT_details.xml', '', ''),
-(23, 2, 0, 'Khmer', '', 'pkg_km-KH', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/km-KH_details.xml', '', ''),
-(24, 2, 0, 'Korean', '', 'pkg_ko-KR', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/ko-KR_details.xml', '', ''),
-(25, 2, 0, 'Latvian', '', 'pkg_lv-LV', 'package', '', 0, '3.7.3.1', '', 'https://update.joomla.org/language/details3/lv-LV_details.xml', '', ''),
-(26, 2, 0, 'Macedonian', '', 'pkg_mk-MK', 'package', '', 0, '3.6.5.1', '', 'https://update.joomla.org/language/details3/mk-MK_details.xml', '', ''),
-(27, 2, 0, 'Norwegian Bokmal', '', 'pkg_nb-NO', 'package', '', 0, '3.8.4.1', '', 'https://update.joomla.org/language/details3/nb-NO_details.xml', '', ''),
-(28, 2, 0, 'Norwegian Nynorsk', '', 'pkg_nn-NO', 'package', '', 0, '3.4.2.1', '', 'https://update.joomla.org/language/details3/nn-NO_details.xml', '', ''),
-(29, 2, 0, 'Persian', '', 'pkg_fa-IR', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/fa-IR_details.xml', '', ''),
-(30, 2, 0, 'Polish', '', 'pkg_pl-PL', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/pl-PL_details.xml', '', ''),
-(31, 2, 0, 'Portuguese', '', 'pkg_pt-PT', 'package', '', 0, '3.8.2.1', '', 'https://update.joomla.org/language/details3/pt-PT_details.xml', '', ''),
-(32, 2, 0, 'Russian', '', 'pkg_ru-RU', 'package', '', 0, '3.8.2.1', '', 'https://update.joomla.org/language/details3/ru-RU_details.xml', '', ''),
-(33, 2, 0, 'English AU', '', 'pkg_en-AU', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/en-AU_details.xml', '', ''),
-(34, 2, 0, 'Slovak', '', 'pkg_sk-SK', 'package', '', 0, '3.8.6.4', '', 'https://update.joomla.org/language/details3/sk-SK_details.xml', '', ''),
-(35, 2, 0, 'English US', '', 'pkg_en-US', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/en-US_details.xml', '', ''),
-(36, 2, 0, 'Swedish', '', 'pkg_sv-SE', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/sv-SE_details.xml', '', ''),
-(37, 2, 0, 'Syriac', '', 'pkg_sy-IQ', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/sy-IQ_details.xml', '', ''),
-(38, 2, 0, 'Tamil', '', 'pkg_ta-IN', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/ta-IN_details.xml', '', ''),
-(39, 2, 0, 'Thai', '', 'pkg_th-TH', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/th-TH_details.xml', '', ''),
-(40, 2, 0, 'Turkish', '', 'pkg_tr-TR', 'package', '', 0, '3.8.2.1', '', 'https://update.joomla.org/language/details3/tr-TR_details.xml', '', ''),
-(41, 2, 0, 'Ukrainian', '', 'pkg_uk-UA', 'package', '', 0, '3.7.1.1', '', 'https://update.joomla.org/language/details3/uk-UA_details.xml', '', ''),
-(42, 2, 0, 'Uyghur', '', 'pkg_ug-CN', 'package', '', 0, '3.7.5.1', '', 'https://update.joomla.org/language/details3/ug-CN_details.xml', '', ''),
-(43, 2, 0, 'Albanian', '', 'pkg_sq-AL', 'package', '', 0, '3.1.1.2', '', 'https://update.joomla.org/language/details3/sq-AL_details.xml', '', ''),
-(44, 2, 0, 'Basque', '', 'pkg_eu-ES', 'package', '', 0, '3.7.5.1', '', 'https://update.joomla.org/language/details3/eu-ES_details.xml', '', ''),
-(45, 2, 0, 'Hindi', '', 'pkg_hi-IN', 'package', '', 0, '3.3.6.2', '', 'https://update.joomla.org/language/details3/hi-IN_details.xml', '', ''),
-(46, 2, 0, 'German DE', '', 'pkg_de-DE', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-DE_details.xml', '', ''),
-(47, 2, 0, 'Portuguese Brazil', '', 'pkg_pt-BR', 'package', '', 0, '3.8.6.2', '', 'https://update.joomla.org/language/details3/pt-BR_details.xml', '', ''),
-(48, 2, 0, 'Serbian Latin', '', 'pkg_sr-YU', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/sr-YU_details.xml', '', ''),
-(49, 2, 0, 'Spanish', '', 'pkg_es-ES', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/es-ES_details.xml', '', ''),
-(50, 2, 0, 'Bosnian', '', 'pkg_bs-BA', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/bs-BA_details.xml', '', ''),
-(51, 2, 0, 'Serbian Cyrillic', '', 'pkg_sr-RS', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/sr-RS_details.xml', '', ''),
-(52, 2, 0, 'Vietnamese', '', 'pkg_vi-VN', 'package', '', 0, '3.2.1.2', '', 'https://update.joomla.org/language/details3/vi-VN_details.xml', '', ''),
-(53, 2, 0, 'Bahasa Indonesia', '', 'pkg_id-ID', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/id-ID_details.xml', '', ''),
-(54, 2, 0, 'Finnish', '', 'pkg_fi-FI', 'package', '', 0, '3.8.1.1', '', 'https://update.joomla.org/language/details3/fi-FI_details.xml', '', ''),
-(55, 2, 0, 'Swahili', '', 'pkg_sw-KE', 'package', '', 0, '3.7.0.1', '', 'https://update.joomla.org/language/details3/sw-KE_details.xml', '', ''),
-(56, 2, 0, 'Montenegrin', '', 'pkg_srp-ME', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/srp-ME_details.xml', '', ''),
-(57, 2, 0, 'English CA', '', 'pkg_en-CA', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/en-CA_details.xml', '', ''),
-(58, 2, 0, 'French CA', '', 'pkg_fr-CA', 'package', '', 0, '3.6.5.1', '', 'https://update.joomla.org/language/details3/fr-CA_details.xml', '', ''),
-(59, 2, 0, 'Welsh', '', 'pkg_cy-GB', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/cy-GB_details.xml', '', ''),
-(60, 2, 0, 'Sinhala', '', 'pkg_si-LK', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/si-LK_details.xml', '', ''),
-(61, 2, 0, 'Dari Persian', '', 'pkg_prs-AF', 'package', '', 0, '3.4.4.2', '', 'https://update.joomla.org/language/details3/prs-AF_details.xml', '', ''),
-(62, 2, 0, 'Turkmen', '', 'pkg_tk-TM', 'package', '', 0, '3.5.0.2', '', 'https://update.joomla.org/language/details3/tk-TM_details.xml', '', ''),
-(63, 2, 0, 'Irish', '', 'pkg_ga-IE', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/ga-IE_details.xml', '', ''),
-(64, 2, 0, 'Dzongkha', '', 'pkg_dz-BT', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/dz-BT_details.xml', '', ''),
-(65, 2, 0, 'Slovenian', '', 'pkg_sl-SI', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/sl-SI_details.xml', '', ''),
-(66, 2, 0, 'Spanish CO', '', 'pkg_es-CO', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/es-CO_details.xml', '', ''),
-(67, 2, 0, 'German CH', '', 'pkg_de-CH', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-CH_details.xml', '', ''),
-(68, 2, 0, 'German AT', '', 'pkg_de-AT', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-AT_details.xml', '', ''),
-(69, 2, 0, 'German LI', '', 'pkg_de-LI', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-LI_details.xml', '', ''),
-(70, 2, 0, 'German LU', '', 'pkg_de-LU', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-LU_details.xml', '', ''),
-(71, 2, 0, 'English NZ', '', 'pkg_en-NZ', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/en-NZ_details.xml', '', '');
+(1, 2, 0, 'Armenian', '', 'pkg_hy-AM', 'package', '', 0, '3.4.4.1', '', 'https://update.joomla.org/language/details3/hy-AM_details.xml', '', ''),
+(2, 2, 0, 'Malay', '', 'pkg_ms-MY', 'package', '', 0, '3.4.1.2', '', 'https://update.joomla.org/language/details3/ms-MY_details.xml', '', ''),
+(3, 2, 0, 'Romanian', '', 'pkg_ro-RO', 'package', '', 0, '3.7.3.1', '', 'https://update.joomla.org/language/details3/ro-RO_details.xml', '', ''),
+(4, 2, 0, 'Flemish', '', 'pkg_nl-BE', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/nl-BE_details.xml', '', ''),
+(5, 2, 0, 'Chinese Traditional', '', 'pkg_zh-TW', 'package', '', 0, '3.8.0.1', '', 'https://update.joomla.org/language/details3/zh-TW_details.xml', '', ''),
+(6, 2, 0, 'French', '', 'pkg_fr-FR', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/fr-FR_details.xml', '', ''),
+(7, 2, 0, 'Galician', '', 'pkg_gl-ES', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/gl-ES_details.xml', '', ''),
+(8, 2, 0, 'Georgian', '', 'pkg_ka-GE', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/ka-GE_details.xml', '', ''),
+(9, 2, 0, 'Greek', '', 'pkg_el-GR', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/el-GR_details.xml', '', ''),
+(10, 2, 0, 'Japanese', '', 'pkg_ja-JP', 'package', '', 0, '3.8.6.2', '', 'https://update.joomla.org/language/details3/ja-JP_details.xml', '', ''),
+(11, 2, 0, 'Hebrew', '', 'pkg_he-IL', 'package', '', 0, '3.1.1.2', '', 'https://update.joomla.org/language/details3/he-IL_details.xml', '', ''),
+(12, 2, 0, 'Bengali', '', 'pkg_bn-BD', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/bn-BD_details.xml', '', ''),
+(13, 2, 0, 'Hungarian', '', 'pkg_hu-HU', 'package', '', 0, '3.8.4.1', '', 'https://update.joomla.org/language/details3/hu-HU_details.xml', '', ''),
+(14, 2, 0, 'Afrikaans', '', 'pkg_af-ZA', 'package', '', 0, '3.8.4.1', '', 'https://update.joomla.org/language/details3/af-ZA_details.xml', '', ''),
+(15, 2, 0, 'Arabic Unitag', '', 'pkg_ar-AA', 'package', '', 0, '3.7.5.1', '', 'https://update.joomla.org/language/details3/ar-AA_details.xml', '', ''),
+(16, 2, 0, 'Belarusian', '', 'pkg_be-BY', 'package', '', 0, '3.2.1.2', '', 'https://update.joomla.org/language/details3/be-BY_details.xml', '', ''),
+(17, 2, 0, 'Bulgarian', '', 'pkg_bg-BG', 'package', '', 0, '3.6.5.2', '', 'https://update.joomla.org/language/details3/bg-BG_details.xml', '', ''),
+(18, 2, 0, 'Catalan', '', 'pkg_ca-ES', 'package', '', 0, '3.8.3.3', '', 'https://update.joomla.org/language/details3/ca-ES_details.xml', '', ''),
+(19, 2, 0, 'Chinese Simplified', '', 'pkg_zh-CN', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/zh-CN_details.xml', '', ''),
+(20, 2, 0, 'Croatian', '', 'pkg_hr-HR', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/hr-HR_details.xml', '', ''),
+(21, 2, 0, 'Czech', '', 'pkg_cs-CZ', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/cs-CZ_details.xml', '', ''),
+(22, 2, 0, 'Danish', '', 'pkg_da-DK', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/da-DK_details.xml', '', ''),
+(23, 2, 0, 'Dutch', '', 'pkg_nl-NL', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/nl-NL_details.xml', '', ''),
+(24, 2, 0, 'Esperanto', '', 'pkg_eo-XX', 'package', '', 0, '3.8.3.1', '', 'https://update.joomla.org/language/details3/eo-XX_details.xml', '', ''),
+(25, 2, 0, 'Estonian', '', 'pkg_et-EE', 'package', '', 0, '3.7.0.1', '', 'https://update.joomla.org/language/details3/et-EE_details.xml', '', ''),
+(26, 2, 0, 'Italian', '', 'pkg_it-IT', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/it-IT_details.xml', '', ''),
+(27, 2, 0, 'Khmer', '', 'pkg_km-KH', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/km-KH_details.xml', '', ''),
+(28, 2, 0, 'Korean', '', 'pkg_ko-KR', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/ko-KR_details.xml', '', ''),
+(29, 2, 0, 'Latvian', '', 'pkg_lv-LV', 'package', '', 0, '3.7.3.1', '', 'https://update.joomla.org/language/details3/lv-LV_details.xml', '', ''),
+(30, 2, 0, 'Macedonian', '', 'pkg_mk-MK', 'package', '', 0, '3.6.5.1', '', 'https://update.joomla.org/language/details3/mk-MK_details.xml', '', ''),
+(31, 2, 0, 'Norwegian Bokmal', '', 'pkg_nb-NO', 'package', '', 0, '3.8.4.1', '', 'https://update.joomla.org/language/details3/nb-NO_details.xml', '', ''),
+(32, 2, 0, 'Norwegian Nynorsk', '', 'pkg_nn-NO', 'package', '', 0, '3.4.2.1', '', 'https://update.joomla.org/language/details3/nn-NO_details.xml', '', ''),
+(33, 2, 0, 'Persian', '', 'pkg_fa-IR', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/fa-IR_details.xml', '', ''),
+(34, 2, 0, 'Polish', '', 'pkg_pl-PL', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/pl-PL_details.xml', '', ''),
+(35, 2, 0, 'Portuguese', '', 'pkg_pt-PT', 'package', '', 0, '3.8.2.1', '', 'https://update.joomla.org/language/details3/pt-PT_details.xml', '', ''),
+(36, 2, 0, 'Russian', '', 'pkg_ru-RU', 'package', '', 0, '3.8.2.1', '', 'https://update.joomla.org/language/details3/ru-RU_details.xml', '', ''),
+(37, 2, 0, 'English AU', '', 'pkg_en-AU', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/en-AU_details.xml', '', ''),
+(38, 2, 0, 'Slovak', '', 'pkg_sk-SK', 'package', '', 0, '3.8.6.4', '', 'https://update.joomla.org/language/details3/sk-SK_details.xml', '', ''),
+(39, 2, 0, 'English US', '', 'pkg_en-US', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/en-US_details.xml', '', ''),
+(40, 2, 0, 'Swedish', '', 'pkg_sv-SE', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/sv-SE_details.xml', '', ''),
+(41, 2, 0, 'Syriac', '', 'pkg_sy-IQ', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/sy-IQ_details.xml', '', ''),
+(42, 2, 0, 'Tamil', '', 'pkg_ta-IN', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/ta-IN_details.xml', '', ''),
+(43, 2, 0, 'Thai', '', 'pkg_th-TH', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/th-TH_details.xml', '', ''),
+(44, 2, 0, 'Turkish', '', 'pkg_tr-TR', 'package', '', 0, '3.8.2.1', '', 'https://update.joomla.org/language/details3/tr-TR_details.xml', '', ''),
+(45, 2, 0, 'Ukrainian', '', 'pkg_uk-UA', 'package', '', 0, '3.7.1.1', '', 'https://update.joomla.org/language/details3/uk-UA_details.xml', '', ''),
+(46, 2, 0, 'Uyghur', '', 'pkg_ug-CN', 'package', '', 0, '3.7.5.1', '', 'https://update.joomla.org/language/details3/ug-CN_details.xml', '', ''),
+(47, 2, 0, 'Albanian', '', 'pkg_sq-AL', 'package', '', 0, '3.1.1.2', '', 'https://update.joomla.org/language/details3/sq-AL_details.xml', '', ''),
+(48, 2, 0, 'Basque', '', 'pkg_eu-ES', 'package', '', 0, '3.7.5.1', '', 'https://update.joomla.org/language/details3/eu-ES_details.xml', '', ''),
+(49, 2, 0, 'Hindi', '', 'pkg_hi-IN', 'package', '', 0, '3.3.6.2', '', 'https://update.joomla.org/language/details3/hi-IN_details.xml', '', ''),
+(50, 2, 0, 'German DE', '', 'pkg_de-DE', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-DE_details.xml', '', ''),
+(51, 2, 0, 'Portuguese Brazil', '', 'pkg_pt-BR', 'package', '', 0, '3.8.6.2', '', 'https://update.joomla.org/language/details3/pt-BR_details.xml', '', ''),
+(52, 2, 0, 'Serbian Latin', '', 'pkg_sr-YU', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/sr-YU_details.xml', '', ''),
+(53, 2, 0, 'Spanish', '', 'pkg_es-ES', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/es-ES_details.xml', '', ''),
+(54, 2, 0, 'Bosnian', '', 'pkg_bs-BA', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/bs-BA_details.xml', '', ''),
+(55, 2, 0, 'Serbian Cyrillic', '', 'pkg_sr-RS', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/sr-RS_details.xml', '', ''),
+(56, 2, 0, 'Vietnamese', '', 'pkg_vi-VN', 'package', '', 0, '3.2.1.2', '', 'https://update.joomla.org/language/details3/vi-VN_details.xml', '', ''),
+(57, 2, 0, 'Bahasa Indonesia', '', 'pkg_id-ID', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/id-ID_details.xml', '', ''),
+(58, 2, 0, 'Finnish', '', 'pkg_fi-FI', 'package', '', 0, '3.8.1.1', '', 'https://update.joomla.org/language/details3/fi-FI_details.xml', '', ''),
+(59, 2, 0, 'Swahili', '', 'pkg_sw-KE', 'package', '', 0, '3.7.0.1', '', 'https://update.joomla.org/language/details3/sw-KE_details.xml', '', ''),
+(60, 2, 0, 'Montenegrin', '', 'pkg_srp-ME', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/srp-ME_details.xml', '', ''),
+(61, 2, 0, 'English CA', '', 'pkg_en-CA', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/en-CA_details.xml', '', ''),
+(62, 2, 0, 'French CA', '', 'pkg_fr-CA', 'package', '', 0, '3.6.5.1', '', 'https://update.joomla.org/language/details3/fr-CA_details.xml', '', ''),
+(63, 2, 0, 'Welsh', '', 'pkg_cy-GB', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/cy-GB_details.xml', '', ''),
+(64, 2, 0, 'Sinhala', '', 'pkg_si-LK', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/si-LK_details.xml', '', ''),
+(65, 2, 0, 'Dari Persian', '', 'pkg_prs-AF', 'package', '', 0, '3.4.4.2', '', 'https://update.joomla.org/language/details3/prs-AF_details.xml', '', ''),
+(66, 2, 0, 'Turkmen', '', 'pkg_tk-TM', 'package', '', 0, '3.5.0.2', '', 'https://update.joomla.org/language/details3/tk-TM_details.xml', '', ''),
+(67, 2, 0, 'Irish', '', 'pkg_ga-IE', 'package', '', 0, '3.8.5.1', '', 'https://update.joomla.org/language/details3/ga-IE_details.xml', '', ''),
+(68, 2, 0, 'Dzongkha', '', 'pkg_dz-BT', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/dz-BT_details.xml', '', ''),
+(69, 2, 0, 'Slovenian', '', 'pkg_sl-SI', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/sl-SI_details.xml', '', ''),
+(70, 2, 0, 'Spanish CO', '', 'pkg_es-CO', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/es-CO_details.xml', '', ''),
+(71, 2, 0, 'German CH', '', 'pkg_de-CH', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-CH_details.xml', '', ''),
+(72, 2, 0, 'German AT', '', 'pkg_de-AT', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-AT_details.xml', '', ''),
+(73, 2, 0, 'German LI', '', 'pkg_de-LI', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-LI_details.xml', '', ''),
+(74, 2, 0, 'German LU', '', 'pkg_de-LU', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/de-LU_details.xml', '', ''),
+(75, 2, 0, 'English NZ', '', 'pkg_en-NZ', 'package', '', 0, '3.8.6.1', '', 'https://update.joomla.org/language/details3/en-NZ_details.xml', '', '');
 
 -- --------------------------------------------------------
 
@@ -2141,10 +2422,11 @@ CREATE TABLE `jv_update_sites` (
 --
 
 INSERT INTO `jv_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`, `extra_query`) VALUES
-(1, 'Joomla! Core', 'collection', 'https://update.joomla.org/core/list.xml', 1, 1522481621, ''),
-(2, 'Accredited Joomla! Translations', 'collection', 'https://update.joomla.org/language/translationlist_3.xml', 1, 1522481624, ''),
-(3, 'Joomla! Update Component Update Site', 'extension', 'https://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 1522481624, ''),
-(4, '', 'collection', 'http://update.phpkungfu.club/list.xml', 1, 1522481624, '');
+(1, 'Joomla! Core', 'collection', 'https://update.joomla.org/core/list.xml', 1, 1522748288, ''),
+(2, 'Accredited Joomla! Translations', 'collection', 'https://update.joomla.org/language/translationlist_3.xml', 1, 1522748292, ''),
+(3, 'Joomla! Update Component Update Site', 'extension', 'https://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 1522748293, ''),
+(4, '', 'collection', 'http://update.phpkungfu.club/list.xml', 1, 1522748294, ''),
+(5, 'K2 Updates', 'extension', 'http://getk2.org/app/update.xml', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -2187,7 +2469,8 @@ INSERT INTO `jv_update_sites_extensions` (`update_site_id`, `extension_id`) VALU
 (4, 10021),
 (4, 10022),
 (4, 10023),
-(4, 10024);
+(4, 10024),
+(5, 10034);
 
 -- --------------------------------------------------------
 
@@ -2248,7 +2531,7 @@ CREATE TABLE `jv_users` (
 --
 
 INSERT INTO `jv_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`, `requireReset`) VALUES
-(196, 'Super User', 'admin', 'joomlavi.thuytien@gmail.com', '$2y$10$GAUf6JzkG1ydUcJ/1WEqXectLUXXdC4j6tAeP627.TInCeXSwgM9S', 0, 1, '2018-03-19 14:07:56', '2018-03-31 09:27:00', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
+(196, 'Super User', 'admin', 'joomlavi.thuytien@gmail.com', '$2y$10$GAUf6JzkG1ydUcJ/1WEqXectLUXXdC4j6tAeP627.TInCeXSwgM9S', 0, 1, '2018-03-19 14:07:56', '2018-04-03 09:38:01', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -2760,6 +3043,111 @@ ALTER TABLE `jv_jv_typos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `jv_k2_attachments`
+--
+ALTER TABLE `jv_k2_attachments`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `hits` (`hits`),
+  ADD KEY `itemID` (`itemID`);
+
+--
+-- Indexes for table `jv_k2_categories`
+--
+ALTER TABLE `jv_k2_categories`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `access` (`access`),
+  ADD KEY `category` (`published`,`access`,`trash`),
+  ADD KEY `language` (`language`),
+  ADD KEY `ordering` (`ordering`),
+  ADD KEY `parent` (`parent`),
+  ADD KEY `published` (`published`),
+  ADD KEY `trash` (`trash`);
+
+--
+-- Indexes for table `jv_k2_comments`
+--
+ALTER TABLE `jv_k2_comments`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `commentDate` (`commentDate`),
+  ADD KEY `countComments` (`itemID`,`published`),
+  ADD KEY `itemID` (`itemID`),
+  ADD KEY `latestComments` (`published`,`commentDate`),
+  ADD KEY `published` (`published`),
+  ADD KEY `userID` (`userID`);
+
+--
+-- Indexes for table `jv_k2_extra_fields`
+--
+ALTER TABLE `jv_k2_extra_fields`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `group` (`group`),
+  ADD KEY `published` (`published`),
+  ADD KEY `ordering` (`ordering`);
+
+--
+-- Indexes for table `jv_k2_extra_fields_groups`
+--
+ALTER TABLE `jv_k2_extra_fields_groups`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `jv_k2_items`
+--
+ALTER TABLE `jv_k2_items`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `access` (`access`),
+  ADD KEY `catid` (`catid`),
+  ADD KEY `created_by` (`created_by`),
+  ADD KEY `created` (`created`),
+  ADD KEY `featured_ordering` (`featured_ordering`),
+  ADD KEY `featured` (`featured`),
+  ADD KEY `hits` (`hits`),
+  ADD KEY `item` (`published`,`publish_up`,`publish_down`,`trash`,`access`),
+  ADD KEY `language` (`language`),
+  ADD KEY `ordering` (`ordering`),
+  ADD KEY `published` (`published`),
+  ADD KEY `publish_down` (`publish_down`),
+  ADD KEY `publish_up` (`publish_up`),
+  ADD KEY `trash` (`trash`);
+
+--
+-- Indexes for table `jv_k2_rating`
+--
+ALTER TABLE `jv_k2_rating`
+  ADD PRIMARY KEY (`itemID`),
+  ADD KEY `rating_sum` (`rating_sum`),
+  ADD KEY `rating_count` (`rating_count`);
+
+--
+-- Indexes for table `jv_k2_tags`
+--
+ALTER TABLE `jv_k2_tags`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `published` (`published`);
+
+--
+-- Indexes for table `jv_k2_tags_xref`
+--
+ALTER TABLE `jv_k2_tags_xref`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `tagID` (`tagID`),
+  ADD KEY `itemID` (`itemID`);
+
+--
+-- Indexes for table `jv_k2_users`
+--
+ALTER TABLE `jv_k2_users`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `userID` (`userID`),
+  ADD KEY `group` (`group`);
+
+--
+-- Indexes for table `jv_k2_user_groups`
+--
+ALTER TABLE `jv_k2_user_groups`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `jv_languages`
 --
 ALTER TABLE `jv_languages`
@@ -3001,7 +3389,7 @@ ALTER TABLE `jv_viewlevels`
 -- AUTO_INCREMENT for table `jv_assets`
 --
 ALTER TABLE `jv_assets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=86;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=94;
 --
 -- AUTO_INCREMENT for table `jv_banners`
 --
@@ -3036,7 +3424,7 @@ ALTER TABLE `jv_content_types`
 -- AUTO_INCREMENT for table `jv_extensions`
 --
 ALTER TABLE `jv_extensions`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10034;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10046;
 --
 -- AUTO_INCREMENT for table `jv_fields`
 --
@@ -3071,7 +3459,7 @@ ALTER TABLE `jv_finder_terms`
 -- AUTO_INCREMENT for table `jv_finder_types`
 --
 ALTER TABLE `jv_finder_types`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `jv_jkcustomfields_categories`
 --
@@ -3098,6 +3486,56 @@ ALTER TABLE `jv_jkcustomfields_items`
 ALTER TABLE `jv_jv_typos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 --
+-- AUTO_INCREMENT for table `jv_k2_attachments`
+--
+ALTER TABLE `jv_k2_attachments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `jv_k2_categories`
+--
+ALTER TABLE `jv_k2_categories`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `jv_k2_comments`
+--
+ALTER TABLE `jv_k2_comments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `jv_k2_extra_fields`
+--
+ALTER TABLE `jv_k2_extra_fields`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `jv_k2_extra_fields_groups`
+--
+ALTER TABLE `jv_k2_extra_fields_groups`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `jv_k2_items`
+--
+ALTER TABLE `jv_k2_items`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `jv_k2_tags`
+--
+ALTER TABLE `jv_k2_tags`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `jv_k2_tags_xref`
+--
+ALTER TABLE `jv_k2_tags_xref`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `jv_k2_users`
+--
+ALTER TABLE `jv_k2_users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `jv_k2_user_groups`
+--
+ALTER TABLE `jv_k2_user_groups`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `jv_languages`
 --
 ALTER TABLE `jv_languages`
@@ -3106,7 +3544,7 @@ ALTER TABLE `jv_languages`
 -- AUTO_INCREMENT for table `jv_menu`
 --
 ALTER TABLE `jv_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
 --
 -- AUTO_INCREMENT for table `jv_menu_types`
 --
@@ -3121,7 +3559,7 @@ ALTER TABLE `jv_messages`
 -- AUTO_INCREMENT for table `jv_modules`
 --
 ALTER TABLE `jv_modules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
 --
 -- AUTO_INCREMENT for table `jv_newsfeeds`
 --
@@ -3166,12 +3604,12 @@ ALTER TABLE `jv_ucm_history`
 -- AUTO_INCREMENT for table `jv_updates`
 --
 ALTER TABLE `jv_updates`
-  MODIFY `update_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `update_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 --
 -- AUTO_INCREMENT for table `jv_update_sites`
 --
 ALTER TABLE `jv_update_sites`
-  MODIFY `update_site_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `update_site_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `jv_usergroups`
 --

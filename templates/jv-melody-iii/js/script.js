@@ -20,6 +20,23 @@
 			 ;
 			 p.prepend(btn) ;
 		});
+		// Menu mobile
+		var counter = 0,
+				menuWrapper = $('.wd_main_menu_wrapper');
+		$('.wd_menu_btn').on("click", function(e){
+			if( counter == '0') {
+				menuWrapper.addClass('wd_main_menu_hide');
+				$(this).children().removeAttr('class');
+				$(this).children().attr('class','fa fa-close');
+				counter++;
+			}
+			else {
+				menuWrapper.removeClass('wd_main_menu_hide');
+				$(this).children().removeAttr('class');
+				$(this).children().attr('class','fa fa-bars');
+				counter--;
+			}
+		});
 		// scroll to id
 		var nav = $('.wd_single_index_menu'),
 				navLi = $('.wd_single_index_menu li'),
