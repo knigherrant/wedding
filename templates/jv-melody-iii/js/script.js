@@ -55,7 +55,9 @@
 		}
 		//Single page scroll js
 		navLiA.on('click' , function(e){
-			e.preventDefault();
+			if(/^#/.test(target) === true) {
+        e.preventDefault();
+      }
 			navLi.removeClass('active');
 			$(this).parent().addClass('active');
 			var target = (jsHome($(this)))? $('#site-header') : $($(this).attr('href'));
