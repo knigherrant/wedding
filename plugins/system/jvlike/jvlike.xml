@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - JVLike</name>    	
+    <author>PHPKungfu! Project</author>
+    <creationDate>May 2014</creationDate>
+    <copyright>Copyright (C) PHPKungfu. All rights reserved</copyright>
+    <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL or later</license>
+    <authorEmail>info@phpkungfu.club</authorEmail>
+    <authorUrl>www.phpkungfu.club</authorUrl>
+    <version>1.0.0</version>
+	<description>JVLike for articles and K2 items</description>
+	
+	<install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update> <!-- Runs on update -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+	
+	<files>
+		<filename plugin="jvlike">jvlike.php</filename>
+		<filename>index.html</filename>
+                <folder>fields</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>sql</folder>
+	</files>
+	<languages folder="language">		
+		<language tag="en-GB">en-GB/en-GB.plg_system_jvlike.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_jvlike.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="list" multiple="true"  name="target" default="content" label="PLG_SYSTEM_JVLIKE_TARGET" description="PLG_SYSTEM_JVLIKE_TARGET_DESC">    
+					<option value="com_content">Joomla Content</option>
+					<option value="com_k2">K2 Content</option>
+                                        <option value="com_virtuemart">Virtumart</option>
+                                        <!--<option value="com_hikashop">Hikashop</option>-->
+					<option value="com_zoo">Zoo Only (must install Zoo element)</option>
+				</field>
+				<field type="textarea" name="templateCode" default="{jvlike}" cols="40" rows="8" label="PLG_SYSTEM_JVLIKE_TEMPLATE_CODE" description="PLG_SYSTEM_JVLIKE_TEMPLATE_CODE_DESC" filter="raw"/>				
+			</fieldset>
+		</fields>
+	</config>
+    <updateservers>
+        <server type="extension" priority="1" name="phpkungfu.club">http://www.phpkungfu.club/update/update.xml</server>
+    </updateservers>
+</extension>

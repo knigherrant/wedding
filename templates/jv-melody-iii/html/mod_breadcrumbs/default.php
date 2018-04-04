@@ -9,10 +9,11 @@
 
 defined('_JEXEC') or die;
 JHtml::_('bootstrap.tooltip');
-
+$app = JFactory::getApplication();
+$pageTitle = $app->getMenu()->getItem($app->getMenu()->getActive()->tree[0])->title;
 ?>
-
-<ul class="breadcrumb<?php echo $moduleclass_sfx; ?>">
+<h2 class="page-title"><?php echo $pageTitle; ?></h2>
+<ul class="wd_breadcrumb<?php echo $moduleclass_sfx; ?>">
 	<?php
 	if ($params->get('showHere', 1))
 	{

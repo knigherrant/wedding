@@ -1,0 +1,14 @@
+
+.jvlikeBtn{ 
+	border: 2px solid #ccc;padding:5px 20px;color:#888888; background:#fff;
+	transition:all .3s;
+	-moz-transition:all .3s;
+	-webkit-transition:all .3s;
+}
+.jvlikeBtn:hover{border-color:#c6552f; color:#c6552f}
+
+.uk-icon-heart {
+    color:#c6552f
+}
+.jvlikeBtn:hover .uk-icon-heart{color:#c6552f}
+img.jvlikeLoader{height: 16px}  

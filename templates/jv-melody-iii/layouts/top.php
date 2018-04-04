@@ -49,7 +49,7 @@
 
 <?php if( $this['position']->count('breadcrumb') ):?>
     <!--Block Breadcrumb-->
-	<section section-scroll="3" id="block-breadcrumb">
+	<section id="block-breadcrumb">
     	<div class="container">
 			<jdoc:include type="position" name="breadcrumb" style="none" />
 		</div>
@@ -59,7 +59,7 @@
 
 <?php if( $this['position']->count('full-webding-conent-1') ):?>
     <!--Block full-webding-conent-1-->
-    <section section-scroll="4" id="down" class="wd_scroll_wrap">
+    <section id="down" class="wd_scroll_wrap">
         <div class="wd_about_wrapper wd_toppadder90 wd_bottompadder70">
             <div class="container">
                 <jdoc:include type="position" name="full-webding-conent-1" style="jvxhtml" />
@@ -71,7 +71,7 @@
 
 <?php if( $this['position']->count('full-webding-conent-2') ):?>
     <!--Block full-webding-conent-2-->
-    <section section-scroll="5" id="block-story" class="wd_scroll_wrap">
+    <section id="block-story" class="wd_scroll_wrap">
         <div class="wd_story_wrapper wd_toppadder90 wd_bottompadder90">
             <div class="wd_overlay"></div>
             <div class="container">
@@ -84,7 +84,7 @@
 
 <?php if( $this['position']->count('full-webding-conent-3') ):?>
     <!--Block full-webding-conent-3-->
-    <section section-scroll="6" id="block-event" class="wd_scroll_wrap">
+    <section id="block-event" class="wd_scroll_wrap">
         <div class="wd_event_wrapper wd_toppadder90 wd_bottompadder50">
             <div class="container">
                 <jdoc:include type="position" name="full-webding-conent-3" style="jvxhtml" />
@@ -96,7 +96,7 @@
 
 <?php if( $this['block']->count('top') ):?>
     <!--Block top-->
-    <section section-scroll="7" id="block-top" class="wd_scroll_wrap">
+    <section id="block-top" class="wd_scroll_wrap">
         <div class="wd_guest_wrapper wd_toppadder90">
             <div class="wd_overlay"></div>
             <jdoc:include type="position" name="top-title" style="rawtitle" />
@@ -110,7 +110,7 @@
 
 <?php if( $this['position']->count('full-webding-conent-4') ):?>
     <!--Block full-webding-conent-4-->
-    <section section-scroll="8" class="wd_testimonial_wrapper wd_toppadder70 wd_bottompadder70">
+    <section class="wd_testimonial_wrapper wd_toppadder70 wd_bottompadder70">
         <div class="container">
             <jdoc:include type="position" name="full-webding-conent-4" style="jvxhtml" />
         </div>
@@ -120,7 +120,7 @@
 
 <?php if( $this['block']->count('topb') ):?>
     <!--Block topb-->
-    <section section-scroll="9" id="block-topb" class="wd_scroll_wrap">
+    <section id="block-topb" class="wd_scroll_wrap">
         <div class="wd_family_wrapper wd_toppadder90 wd_bottompadder90">
             <div class="container">
                 <jdoc:include type="block" name="topb" style="jvxhtml" />
