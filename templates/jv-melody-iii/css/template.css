@@ -4370,6 +4370,55 @@ textarea:focus {
 .wd_heading img {
   display: inline-block;
 }
+/*-- #block-breadcrumb css Start --*/
+#block-breadcrumb {
+  padding: 80px 0;
+}
+#block-breadcrumb .page-title {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 4rem;
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+}
+#block-breadcrumb .wd_breadcrumb {
+  list-style: none;
+  margin: 0;
+  padding: 5px 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: 'Lora', serif;
+}
+#block-breadcrumb .wd_breadcrumb li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding-left: 34px;
+}
+#block-breadcrumb .wd_breadcrumb li:before {
+  content: '>';
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+#block-breadcrumb .wd_breadcrumb li:first-child {
+  padding-left: 0;
+}
+#block-breadcrumb .wd_breadcrumb li:first-child:before {
+  display: none;
+}
+#block-breadcrumb .wd_breadcrumb li:last-child a {
+  color: #f07677;
+}
+#block-breadcrumb .wd_breadcrumb li a {
+  color: #000;
+}
+#block-breadcrumb .wd_breadcrumb li a:hover {
+  text-decoration: underline;
+}
+#block-breadcrumb .wd_breadcrumb li span {
+  color: #f07677;
+}
 /*-- About Wrapper css Start --*/
 .wd_about_wrapper {
   background-image: url(../images/content/about_bg.jpg);

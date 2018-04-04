@@ -11,6 +11,10 @@ defined('_JEXEC') or die;
 JHtml::_('bootstrap.tooltip');
 $app = JFactory::getApplication();
 $pageTitle = $app->getMenu()->getItem($app->getMenu()->getActive()->tree[0])->title;
+$jinput = $app->input;
+if($jinput->get('option') == 'com_k2' && $jinput->get('view') =='item') {
+	$pageTitle = 'Blog Post Single';
+}
 ?>
 <h2 class="page-title"><?php echo $pageTitle; ?></h2>
 <ul class="wd_breadcrumb<?php echo $moduleclass_sfx; ?>">
