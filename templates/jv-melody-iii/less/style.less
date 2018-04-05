@@ -200,8 +200,8 @@ textarea:focus {
 .position-slideshow {
   .clearfix();
 }
-.wd_slider {
-  &_wrapper{
+.home {
+  .wd_slider_wrapper {
     background:url(../images/header/slider.jpg);
     position:relative;
     background-attachment: fixed;
@@ -211,6 +211,26 @@ textarea:focus {
     background-repeat: no-repeat;
   }
 
+  #snow{
+    background: none;
+    background-image: url('../images/header/sn1.png'), url('../images/header/sn2.png'), url('../images/header/sn3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    -webkit-animation: snow_falling 10s linear infinite;
+    -moz-animation: snow_falling 10s linear infinite;
+    -ms-animation: snow_falling 10s linear infinite;
+    animation: snow_falling 10s linear infinite;
+  }
+}
+.site-header-outer {
+  background: url('../images/header/bg_page-header.jpg') center no-repeat;
+  background-size: cover;
+}
+.wd_slider {
   &_textinfo{
     float: left;
     width: 50%;
@@ -278,20 +298,7 @@ textarea:focus {
 .wow {
   visibility: hidden;
 }
-#snow{
-  background: none;
-  background-image: url('../images/header/sn1.png'), url('../images/header/sn2.png'), url('../images/header/sn3.png');
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index:1;
-  -webkit-animation: snow_falling 10s linear infinite;
-  -moz-animation: snow_falling 10s linear infinite;
-  -ms-animation: snow_falling 10s linear infinite;
-  animation: snow_falling 10s linear infinite;
-}
+
 @keyframes snow_falling {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
@@ -478,16 +485,17 @@ textarea:focus {
   .page-title {
     margin: 0 0 15px;
     padding: 0;
-    font-size: 4rem;
+    font-size: 36px;
     font-family: @font-family-base;
     text-transform: uppercase;
   }
 
   .wd_breadcrumb {
+    display: inline-block;
     list-style: none;
     margin: 0;
-    padding: 5px 30px;
-    border-radius: 10px;
+    padding: 5px 35px;
+    border-radius: 20px;
     background-color: @white;
     font-family: @font-family-base;
 
@@ -1729,6 +1737,20 @@ textarea:focus {
 .wd_contact_form input:-moz-placeholder, .wd_contact_form textarea::-webkit-input-placeholder { /* Firefox 18- */
   color:  @white;
     font-style: italic;
+}
+
+/*-- K2 css Start --*/
+.ItemLinks > * {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 22px;
+}
+.itemViewdetail {
+  .itemImage {
+    img {
+      border-radius: 30px;
+    }
+  }
 }
 /*-- Footer css Start --*/
 .wd_footer_wrapper{

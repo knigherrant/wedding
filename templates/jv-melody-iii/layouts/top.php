@@ -7,7 +7,7 @@
     </section>
 <?php endif;?>
 <!--/Block top-->
-
+<div class="site-header-outer">
 <!--Block Header -->
 <header id="site-header" class="wd_scroll_wap">
     <div class="wd_slider_wrapper ">
@@ -56,7 +56,7 @@
 	</section>
     <!--/Block Breadcrumb-->
 <?php endif;?>
-
+</div>
 <?php if( $this['position']->count('full-webding-conent-1') ):?>
     <!--Block full-webding-conent-1-->
     <section id="down" class="wd_scroll_wrap">

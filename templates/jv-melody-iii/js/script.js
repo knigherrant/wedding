@@ -78,7 +78,7 @@
 				var currLink = $(this).children('a'),
 						href = (jsHome(currLink))? '#site-header' : currLink.attr('href')
 				;
-				if(/^#/.test(href) === true || jsHome(currLink)) {
+				if((/^#/.test(href) === true || jsHome(currLink)) && $(href).length) {
 					if(scrollPos > 0){
 							var refElement = $(href),
 								offsetRef = Math.round(refElement.position().top);
