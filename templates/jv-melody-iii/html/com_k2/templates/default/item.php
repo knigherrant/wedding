@@ -24,108 +24,7 @@ defined('_JEXEC') or die;
 
 <div id="k2Container" class="itemViewdetail <?php echo ($this->item->featured) ? ' itemIsFeatured' : ''; ?><?php if($this->item->params->get('pageclass_sfx')) echo ' '.$this->item->params->get('pageclass_sfx'); ?>">
 
-
-
-	<?php if(
-		$this->item->params->get('itemFontResizer') ||
-		$this->item->params->get('itemPrintButton') ||
-		$this->item->params->get('itemEmailButton') ||
-		$this->item->params->get('itemSocialButton') ||
-		$this->item->params->get('itemVideoAnchor') ||
-		$this->item->params->get('itemImageGalleryAnchor') ||
-		$this->item->params->get('itemCommentsAnchor')
-	): ?>
-  <div class="itemToolbar">
-
-
-  <div class="ItemLinks">
-  		<?php if($this->item->params->get('itemDateCreated')): ?>
-		<!-- Date created -->
-         <span class="ItemDateCreated">
-         <span class="icon-calendar"></span>
-         <span class="month">  <?php  echo JHTML::_('date',$this->item->created,'F');?> </span>
-         <span class="day"> <?php echo JHTML::_('date',$this->item->created,'d'); ?> </span>
-         <span class="years"> <?php  echo JHTML::_('date',$this->item->created,'Y');?> </span>
-         </span>
-
-		<?php endif; ?>
-
-
-	<?php if($this->item->params->get('catItemCommentsAnchor') && ( ($this->item->params->get('comments') == '2' && !$this->user->guest) || ($this->item->params->get('comments') == '1')) ): ?>
-	<!-- Anchor link to comments below -->
-	<span class="ItemCommentsLink">
-		<?php if(!empty($this->item->event->K2CommentsCounter)): ?>
-			<!-- K2 Plugins: K2CommentsCounter -->
-			<?php echo $this->item->event->K2CommentsCounter; ?>
-		<?php else: ?>
-			<?php if($this->item->numOfComments > 0): ?>
-			<a href="<?php echo $this->item->link; ?>#itemCommentsAnchor">
-			<span class="icon-comments"></span>	<?php echo $this->item->numOfComments; ?> <?php echo ($this->item->numOfComments>1) ? JText::_('K2_COMMENTS') : JText::_('K2_COMMENT'); ?>
-			</a>
-			<?php else: ?>
-			<a href="<?php echo $this->item->link; ?>#itemCommentsAnchor">
-			 <span class="icon-comments"></span>	0 <?php echo JText::_('K2_COMMENT'); ?>
-			</a>
-			<?php endif; ?>
-		<?php endif; ?>
-	</span>
-	<?php endif; ?>
-   </div>
-
-        <div class="ItemLinks">
-
-			<?php if($this->item->params->get('itemFontResizer')): ?>
-			<!-- Font Resizer -->
-			<span>
-				<span class="itemTextResizerTitle"><?php echo JText::_('K2_FONT_SIZE'); ?></span>
-				<a href="#" id="fontDecrease">
-					<span class="icon-minus3"></span>
-				</a>
-				<a href="#" id="fontIncrease">
-					<span class="icon-plus3"></span>
-
-				</a>
-			</span>
-			<?php endif; ?>
-
-			<?php if($this->item->params->get('itemPrintButton') && !JRequest::getInt('print')): ?>
-				<a class="itemPrintLink" rel="nofollow" href="<?php echo $this->item->printLink; ?>" onclick="window.open(this.href,'printWindow','width=900,height=600,location=no,menubar=no,resizable=yes,scrollbars=yes'); return false;">
-					<span class="icon-printer"></span>
-				</a>
-
-			<?php endif; ?>
-
-			<?php if($this->item->params->get('itemEmailButton') && !JRequest::getInt('print')): ?>
-			<!-- Email Button -->
-				<a class="itemEmailLink" rel="nofollow" href="<?php echo $this->item->emailLink; ?>" onclick="window.open(this.href,'emailWindow','width=400,height=350,location=no,menubar=no,resizable=no,scrollbars=no'); return false;">
-					<span class="icon-mail5"></span>
-				</a>
-			<?php endif; ?>
-
-			<?php if($this->item->params->get('itemSocialButton') && !is_null($this->item->params->get('socialButtonCode', NULL))): ?>
-				<?php echo $this->item->params->get('socialButtonCode'); ?>
-			<?php endif; ?>
-
-			<?php if($this->item->params->get('itemVideoAnchor') && !empty($this->item->video)): ?>
-				<a class="itemVideoLink k2Anchor" href="<?php echo $this->item->link; ?>#itemVideoAnchor"><?php echo JText::_('K2_MEDIA'); ?></a>
-
-			<?php endif; ?>
-
-			<?php if($this->item->params->get('itemImageGalleryAnchor') && !empty($this->item->gallery)): ?>
-				<a class="itemImageGalleryLink k2Anchor" href="<?php echo $this->item->link; ?>#itemImageGalleryAnchor"><?php echo JText::_('K2_IMAGE_GALLERY'); ?></a>
-
-			<?php endif; ?>
-
-
-		</div>
-  </div>
-	<?php endif; ?>
-
-
-
-  <div class="itemBody">
-
-	  <!-- Plugins: BeforeDisplayContent -->
+	 <!-- Plugins: BeforeDisplayContent -->
 	  <?php echo $this->item->event->BeforeDisplayContent; ?>
 
 	  <!-- K2 Plugins: K2BeforeDisplayContent -->
@@ -154,6 +53,93 @@ defined('_JEXEC') or die;
 	  <!-- Plugins: BeforeDisplay -->
 	<?php echo $this->item->event->BeforeDisplay; ?>
 
+
+	<?php if(
+		$this->item->params->get('itemFontResizer') ||
+		$this->item->params->get('itemPrintButton') ||
+		$this->item->params->get('itemEmailButton') ||
+		$this->item->params->get('itemVideoAnchor') ||
+		$this->item->params->get('itemImageGalleryAnchor') ||
+		$this->item->params->get('itemCommentsAnchor')
+	): ?>
+  <div class="itemToolbar">
+
+
+  <div class="ItemLinks">
+		<?php if($this->item->params->get('catItemCommentsAnchor') && ( ($this->item->params->get('comments') == '2' && !$this->user->guest) || ($this->item->params->get('comments') == '1')) ): ?>
+		<!-- Anchor link to comments below -->
+		<span class="ItemCommentsLink">
+			<?php if(!empty($this->item->event->K2CommentsCounter)): ?>
+				<!-- K2 Plugins: K2CommentsCounter -->
+				<?php echo $this->item->event->K2CommentsCounter; ?>
+			<?php else: ?>
+				<?php if($this->item->numOfComments > 0): ?>
+				<a href="<?php echo $this->item->link; ?>#itemCommentsAnchor">
+				<span class="icon-comments"></span>	<?php echo $this->item->numOfComments; ?> <?php echo ($this->item->numOfComments>1) ? JText::_('K2_COMMENTS') : JText::_('K2_COMMENT'); ?>
+				</a>
+				<?php else: ?>
+				<a href="<?php echo $this->item->link; ?>#itemCommentsAnchor">
+				 <span class="icon-comments"></span>	0 <?php echo JText::_('K2_COMMENT'); ?>
+				</a>
+				<?php endif; ?>
+			<?php endif; ?>
+		</span>
+		<?php endif; ?>
+  </div>
+
+  <div class="ItemLinks">
+
+		<?php if($this->item->params->get('itemFontResizer')): ?>
+			<!-- Font Resizer -->
+			<span>
+				<span class="itemTextResizerTitle"><?php echo JText::_('K2_FONT_SIZE'); ?></span>
+				<a href="#" id="fontDecrease">
+					<span class="fa fa-minus-circle"></span>
+				</a>
+				<a href="#" id="fontIncrease">
+					<span class="fa fa-plus-circle"></span>
+
+				</a>
+			</span>
+		<?php endif; ?>
+
+			<?php if($this->item->params->get('itemPrintButton') && !JRequest::getInt('print')): ?>
+				<a class="itemPrintLink" rel="nofollow" href="<?php echo $this->item->printLink; ?>" onclick="window.open(this.href,'printWindow','width=900,height=600,location=no,menubar=no,resizable=yes,scrollbars=yes'); return false;">
+					<span class="fa fa-print"></span>
+				</a>
+
+			<?php endif; ?>
+
+			<?php if($this->item->params->get('itemEmailButton') && !JRequest::getInt('print')): ?>
+			<!-- Email Button -->
+				<a class="itemEmailLink" rel="nofollow" href="<?php echo $this->item->emailLink; ?>" onclick="window.open(this.href,'emailWindow','width=400,height=350,location=no,menubar=no,resizable=no,scrollbars=no'); return false;">
+					<span class="fa fa-envelope"></span>
+				</a>
+			<?php endif; ?>
+
+			<?php if($this->item->params->get('itemSocialButton') && !is_null($this->item->params->get('socialButtonCode', NULL))): ?>
+				<?php echo $this->item->params->get('socialButtonCode'); ?>
+			<?php endif; ?>
+
+			<?php if($this->item->params->get('itemVideoAnchor') && !empty($this->item->video)): ?>
+				<a class="itemVideoLink k2Anchor" href="<?php echo $this->item->link; ?>#itemVideoAnchor"><?php echo JText::_('K2_MEDIA'); ?></a>
+
+			<?php endif; ?>
+
+			<?php if($this->item->params->get('itemImageGalleryAnchor') && !empty($this->item->gallery)): ?>
+				<a class="itemImageGalleryLink k2Anchor" href="<?php echo $this->item->link; ?>#itemImageGalleryAnchor"><?php echo JText::_('K2_IMAGE_GALLERY'); ?></a>
+
+			<?php endif; ?>
+
+
+		</div>
+  </div>
+	<?php endif; ?>
+
+
+
+  <div class="itemBody">
+
 	<!-- K2 Plugins: K2BeforeDisplay -->
 	<?php echo $this->item->event->K2BeforeDisplay; ?>
 	  <?php if($this->item->params->get('itemTitle')): ?>
@@ -172,7 +158,26 @@ defined('_JEXEC') or die;
 
 	  </h1>
 	  <?php endif; ?>
-
+	<div class="itemMeta">
+		<?php if($this->item->params->get('itemDateCreated')): ?>
+			<!-- Date created -->
+			<span class="created">
+			<i class="fa fa-calendar-o" aria-hidden="true"></i> <?php echo JHTML::_('date', $this->item->created, JText::_('DATE_FORMAT_LC3')) ?>
+			</span>
+		<?php endif; ?>
+		<?php if($this->item->params->get('catItemHits')): ?>
+			<span class="ItemHits">
+	      <em class="fa fa-eye" aria-hidden="true"></em>
+	      <?php if($this->item->hits > 0): ?>
+	        <?php echo $this->item->hits. ' ' . JText::_( 'COM_CONTENT_VIEWS' ); ?>
+	      <?php else: ?>
+	        <?php echo $this->item->hits. ' ' . JText::_( 'COM_CONTENT_VIEW' ); ?>
+	      <?php endif; ?>
+	    </span>
+    <?php endif; ?>
+    <!-- Plugins: AfterDisplayContent jvlike -->
+	  <?php echo $this->item->event->AfterDisplayContent; ?>
+	</div>
   <!-- Plugins: AfterDisplayTitle -->
   <?php echo $this->item->event->AfterDisplayTitle; ?>
 
@@ -198,18 +203,9 @@ defined('_JEXEC') or die;
 	  </div>
 	  <?php endif; ?>
 
-
-
-
-
-
     <?php if(
-  $this->item->params->get('catItemHits') ||
   $this->item->params->get('catItemCategory') ||
-  $this->item->params->get('catItemTags') ||
-  $this->item->params->get('catItemDateCreated') ||
   $this->item->params->get('catItemAuthor') ||
-  $this->item->params->get('itemCommentsAnchor') ||
   $this->item->params->get('catItemAttachments')
   ): ?>
   <div class="ItemLinks">
@@ -223,15 +219,6 @@ defined('_JEXEC') or die;
 			<?php echo $this->item->author->name; ?>
 			<?php endif; ?>
 		</span>
-		<?php endif; ?>
-
-		<?php if($this->item->params->get('catItemHits')): ?>
-		<!-- Item Hits -->
-
-			<span class="ItemHits">
-				<span class="icon-eye4"></span> <b><?php echo $this->item->hits; ?></b> <?php echo JText::_('K2_TIMES'); ?>
-			</span>
-
 		<?php endif; ?>
 
 		<?php if($this->item->params->get('catItemCategory')): ?>
@@ -256,18 +243,6 @@ defined('_JEXEC') or die;
 			    <?php endif; ?>
 
 		    <?php endforeach; ?>
-
-	  </span>
-	  <?php endif; ?>
-
-	  <?php if($this->item->params->get('catItemTags') && count($this->item->tags)): ?>
-	  <!-- Item tags -->
-	  <span class="ItemTags">
-		  <span class="icon-tag"></span>
-		    <?php foreach ($this->item->tags as $tag): ?>
-		    <a href="<?php echo $tag->link; ?>"><?php echo $tag->name; ?></a>
-		    <?php endforeach; ?>
-
 
 	  </span>
 	  <?php endif; ?>
@@ -341,15 +316,23 @@ defined('_JEXEC') or die;
 		</div>
 		<?php endif; ?>
 
-	  <!-- Plugins: AfterDisplayContent -->
-	  <?php echo $this->item->event->AfterDisplayContent; ?>
-
 	  <!-- K2 Plugins: K2AfterDisplayContent -->
 	  <?php echo $this->item->event->K2AfterDisplayContent; ?>
 
 
   </div>
+  <div class="itemMetaFooter">
+	 <?php if($this->item->params->get('catItemTags') && count($this->item->tags)): ?>
+	  <!-- Item tags -->
+	  <span class="ItemTags">
+		  <span class="fa fa-tag"></span>
+		  <?php echo JText::_('Tags'); ?>:
+		    <?php foreach ($this->item->tags as $tag): ?>
+	    <a href="<?php echo $tag->link; ?>"><?php echo $tag->name; ?></a>
+	    <?php endforeach; ?>
 
+	  </span>
+	  <?php endif; ?>
 	<?php if($this->item->params->get('itemTwitterButton',1) || $this->item->params->get('itemFacebookButton',1) || $this->item->params->get('itemGooglePlusOneButton',1)): ?>
 	<!-- Social sharing -->
 	<div class="itemSocialSharing">
@@ -399,7 +382,7 @@ defined('_JEXEC') or die;
 
 	</div>
 	<?php endif; ?>
-
+	</div>
 
 
   <?php if($this->item->params->get('itemAuthorBlock') && empty($this->item->created_by_alias)): ?>
@@ -412,7 +395,7 @@ defined('_JEXEC') or die;
 
     <div class="itemAuthorDetails">
       <h3 class="itemAuthorName">
-      	<a rel="author" href="<?php echo $this->item->author->link; ?>"><?php echo $this->item->author->name; ?></a>
+      	<?php echo JText::_('K2_ABOUT_ADMIN'); ?>: <a rel="author" href="<?php echo $this->item->author->link; ?>"><?php echo $this->item->author->name; ?></a>
       </h3>
 
       <?php if($this->item->params->get('itemAuthorDescription') && !empty($this->item->author->profile->description)): ?>
@@ -599,7 +582,7 @@ defined('_JEXEC') or die;
 	  <?php if($this->item->numOfComments>0 && $this->item->params->get('itemComments') && ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2'))): ?>
 	  <!-- Item user comments -->
 	  <h3 class="itemCommentsCounter">
-	  	<span><?php echo $this->item->numOfComments; ?></span> <?php echo ($this->item->numOfComments>1) ? JText::_('K2_COMMENTS') : JText::_('K2_COMMENT'); ?>
+	  	<?php echo ($this->item->numOfComments>1) ? JText::_('K2_COMMENTS') : JText::_('K2_COMMENT'); ?> <span>(<?php echo $this->item->numOfComments; ?>)</span>
 	  </h3>
 
 	  <ul class="itemCommentsList">

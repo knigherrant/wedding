@@ -4424,6 +4424,12 @@ textarea:focus {
 #block-breadcrumb .wd_breadcrumb li span {
   color: #f07677;
 }
+#block-main {
+  margin: 100px 0;
+}
+.home #block-main {
+  margin: 0;
+}
 /*-- About Wrapper css Start --*/
 .wd_about_wrapper {
   background-image: url(../images/content/about_bg.jpg);
@@ -5393,6 +5399,10 @@ textarea:focus {
 .jvlatestnews-container.default li .intro-detail span {
   display: inline-block;
   vertical-align: top;
+  padding-right: 10px;
+}
+.jvlatestnews-container.default li .intro-detail span .fa {
+  color: #f07677;
 }
 .jvlatestnews-container.default li .readmore {
   margin-top: 20px;
@@ -5606,8 +5616,164 @@ textarea:focus {
   vertical-align: top;
   line-height: 22px;
 }
+.itemViewdetail h1 {
+  font-size: 30px;
+}
+.itemViewdetail .itemImage {
+  margin-bottom: 35px;
+}
 .itemViewdetail .itemImage img {
   border-radius: 30px;
+}
+.itemViewdetail .itemMeta {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.itemViewdetail .itemMeta > span {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+}
+.itemViewdetail .itemMeta > span .fa {
+  color: #f07677;
+}
+.itemViewdetail .itemMeta .jvlikeBtn {
+  border: 0;
+  padding: 0;
+}
+.itemViewdetail .itemSocialSharing > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.itemViewdetail blockquote {
+  border: 0;
+  padding: 70px 125px;
+  background: url('../images/content/qoute-icon.png') center no-repeat #f07677;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+  font-style: italic;
+}
+.itemViewdetail blockquote:after,
+.itemViewdetail blockquote:before {
+  display: none;
+}
+.itemViewdetail blockquote .by {
+  font-size: 16px;
+}
+.itemViewdetail .itemFullText .image-left {
+  margin-right: 30px;
+}
+.itemViewdetail .itemFullText .image-right {
+  margin-left: 30px;
+}
+.itemViewdetail .itemFullText ul {
+  list-style: none;
+  overflow: hidden;
+}
+.itemViewdetail .itemFullText ul li {
+  margin-bottom: 18px;
+  padding-left: 30px;
+  position: relative;
+}
+.itemViewdetail .itemFullText ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 18px;
+  background: url('../images/content/like-icon.png') left center no-repeat;
+}
+.itemViewdetail .itemAuthorLatest h3 {
+  font-size: 32px;
+}
+.itemViewdetail .itemAuthorLatest ul {
+  list-style-position: inside;
+}
+.itemViewdetail .itemMetaFooter:before,
+.itemViewdetail .itemMetaFooter:after {
+  display: table;
+  content: "";
+}
+.itemViewdetail .itemMetaFooter:after {
+  clear: both;
+}
+.itemViewdetail .itemMetaFooter .ItemTags {
+  float: left;
+}
+.itemViewdetail .itemMetaFooter .ItemTags .fa {
+  color: #f07677;
+}
+.itemViewdetail .itemMetaFooter .ItemTags a {
+  margin-left: 10px;
+  padding: 2px 15px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+.itemViewdetail .itemMetaFooter .itemSocialSharing {
+  float: right;
+}
+.boxDescription {
+  border: 0;
+  padding: 35px 50px;
+  background-color: #fafafa;
+}
+.boxDescription img.left {
+  margin-right: 20px;
+}
+.boxDescription .itemAuthorDetails .itemAuthorName {
+  margin-bottom: 20px !important;
+  line-height: normal;
+  color: #000;
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.boxDescription .itemAuthorDetails .itemAuthorName a {
+  color: #f07677;
+}
+.itemComments h3 {
+  position: relative;
+  margin-bottom: 38px;
+  padding-bottom: 20px;
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.itemComments h3:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 68px;
+  height: 1px;
+  background-color: #f07677;
+}
+.itemComments .itemCommentsForm {
+  padding-top: 60px;
+  border-top: 1px solid #e4e4e4;
+}
+.itemComments .form-group label {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-style: italic;
+  color: #000;
+  text-transform: capitalize;
+}
+.itemComments .form-group .inputbox {
+  height: 50px;
+  margin-bottom: 0;
+  padding: 5px 15px;
+  border: 1px solid #e4e4e4;
+}
+.itemComments .form-group textarea {
+  padding: 5px 15px;
+  height: 98px;
+  border: 1px solid #e4e4e4;
 }
 /*-- Footer css Start --*/
 .wd_footer_wrapper {
