@@ -118,7 +118,7 @@
 									if(gFont._gfontInit) return;
 									if(!gFont._gfontData){
 										gFont._gfontInit = true;
-										$.get('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCWonrDW2amTWX30frvUf2Aq6Vl9w-E49I&amp;callback=?').done(function( data ) {
+										$.get('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBHsOjENweNX3lmja6BfZ76fe5uE41sOQE&amp;callback=?').done(function( data ) {
 												gFont._gfontData = data;
 												delete gFont._gfontInit;
 												self.call(This,ops);
