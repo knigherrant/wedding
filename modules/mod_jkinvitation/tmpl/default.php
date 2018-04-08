@@ -57,7 +57,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 			<div class="wd_about_infobox_date">
 				<?php if($params->get('desc')){ ?><p><?php echo $params->get('desc'); ?></p><?php } ?>
 				<?php if($params->get('day')){ ?><h3><?php echo $params->get('day'); ?></h3><?php } ?>
-				<?php if($params->get('date')){ ?><h2><?php echo JHTML::_('date',$params->get('date'), JText::_('DATE_FORMAT_LC3')); ?></h2><?php } ?>
+				<?php if($params->get('date')){ ?><p class="date"><?php echo JHTML::_('date',$params->get('date'), JText::_('DATE_FORMAT_LC3')); ?></p><?php } ?>
 				<?php if($params->get('location')){ ?><p><?php echo $params->get('location'); ?></p><?php } ?>
 			</div>
 			<div class="wd_btn wd_single_index_menu_rsvp">

@@ -38,8 +38,8 @@
 			}
 		});
 		// scroll to id
-		var nav = $('.wd_single_index_menu'),
-				navLi = $('.wd_single_index_menu li'),
+		var nav = $('#home_menu'),
+				navLi = $('#home_menu li'),
 				navLiA = nav.find('li a'),
 				headerHeight = 82;
 

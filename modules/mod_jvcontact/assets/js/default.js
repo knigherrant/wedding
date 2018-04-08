@@ -33,7 +33,7 @@ function formsubmit(formid){
 
 		if(el.value==''){
 			flag = false;
-			msg = 'Please input valid data in red fields!';
+			msg = 'You missed out some fields.';
 			el.addClass('invalid');
 		}else{
 			el.removeClass('invalid');

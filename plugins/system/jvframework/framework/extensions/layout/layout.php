@@ -51,7 +51,7 @@ class JVFrameworkExtensionLayout extends JVFrameworkExtension{
             $layout = $params->get('global.type', 'sb-c-sb');
             setcookie("jvlayout[{$name}][type]", $layout);
         }
-        
+
         switch ($layout){
 
             case 'sb-c-sb' :
@@ -123,7 +123,7 @@ class JVFrameworkExtensionLayout extends JVFrameworkExtension{
 		$themePath = JPATH_THEMES.'/'.JFactory::getApplication()->getTemplate();
 
                 // Mobile path
-                $this['path']->addPath($basePath.'/layouts/mobiles', 'theme');			
+                $this['path']->addPath($basePath.'/layouts/mobiles', 'theme');
                 $this['path']->addPath($themePath.'/layouts/mobiles', 'theme');
                 $this['path']->addPath($basePath.'/layouts/mobiles', 'layouts');
                 $this['path']->addPath($themePath.'/layouts/mobiles', 'layouts');
@@ -136,7 +136,7 @@ class JVFrameworkExtensionLayout extends JVFrameworkExtension{
                         $this['path']->addPath($themePath.'/layouts/mobiles/iphone', 'layouts');
                         $this['path']->addPath($themePath.'/layouts/mobiles/iphone/html', 'override');
                 }
-                
+
 
 
                 if($this['browser']->isAndroidOS()){
@@ -145,11 +145,11 @@ class JVFrameworkExtensionLayout extends JVFrameworkExtension{
                         $this['path']->addPath($themePath.'/layouts/mobiles/android', 'layouts');
                         $this['path']->addPath($themePath.'/layouts/mobiles/android/html', 'override');
                 }
-                
-	
-		
+
+
+
 		// Position Alias
-		$positions = $this['option']->get('global.allmobile.positions');		
+		$positions = $this['option']->get('global.allmobile.positions');
 		if(is_object($positions)){
 			foreach ($positions as $position => $option) {
 				if($option->alias){
@@ -157,9 +157,9 @@ class JVFrameworkExtensionLayout extends JVFrameworkExtension{
 					$this['option']->set('position.'.$option->alias, $option);
 				}else{
 					$this['option']->set('position.'.$position, $option);
-				}				
-			}			
-		}	
+				}
+			}
+		}
                break;
         }
 

@@ -153,22 +153,31 @@ Copyright:
 
 var JVTop = new Class({
     Implements: [Options],
-	options:{
-		fxDuration: 350,
-		fxTransition: Fx.Transitions.linear,
-		wait: false
-	},
+		options:{
+			fxDuration: 350,
+			fxTransition: Fx.Transitions.linear,
+			wait: false
+		},
 
     initialize: function(options){
-        this.setOptions(options);
-        var topElement = new Element('div', {
+      this.setOptions(options);
+      var topElement = new Element('div', {
 			'id': 'toTop',
-            'html': '<i class="fa fa-long-arrow-up" aria-hidden="true"></i>'
+      'html': '<i class="fa fa-long-arrow-up" aria-hidden="true"></i>'
 		}).inject(document.body);
+
     topElement.addEvent('click', function(){
         new Fx.Scroll(window).toTop();
     });
-		var topFx = new Fx.Morph(topElement, this.options).set({'opacity': 0});
+
+		var footer = document.getElementById('block-footer'),
+				h = 100;
+		if(footer.clientHeight > 0) {
+			h = footer.clientHeight;
+		}
+
+		var topFx = new Fx.Morph(topElement, this.options).set({'opacity': 0, 'bottom': h + 'px'});
+
 		window.addEvent('scroll', function(){
 			if(window.getScrollTop() != 0){
 				topFx.cancel().start({'opacity': 1});
