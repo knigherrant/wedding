@@ -589,9 +589,6 @@ defined('_JEXEC') or die;
 	    <?php foreach ($this->item->comments as $key=>$comment): ?>
 	    <li class="<?php echo ($key%2) ? "odd" : "even"; echo (!$this->item->created_by_alias && $comment->userID==$this->item->created_by) ? " authorResponse" : ""; echo($comment->published) ? '':' unpublishedComment'; ?>">
 
-
-
-
 				<?php if($comment->userImage): ?>
 				<img class="avatar" src="<?php echo $comment->userImage; ?>" alt="<?php echo JFilterOutput::cleanText($comment->userName); ?>" width="<?php echo $this->item->params->get('commenterImgWidth'); ?>" />
 				<?php endif; ?>
@@ -599,26 +596,27 @@ defined('_JEXEC') or die;
                 <div class="text">
                 	    	<span class="commentLink">
 		    	<a href="<?php echo $this->item->link; ?>#comment<?php echo $comment->id; ?>" name="comment<?php echo $comment->id; ?>" id="comment<?php echo $comment->id; ?>">
-		    		<?php echo JText::_('K2_COMMENT_LINK'); ?>
+		    		<em class="fa fa-link"></em>
 		    	</a>
 		    </span>
 
-				<span class="commentDate">
-		    	<?php echo JHTML::_('date', $comment->commentDate, JText::_('K2_DATE_FORMAT_LC2')); ?>
-		    </span>
 
-		    <span class="commentAuthorName">
-			    <?php echo JText::_('K2_POSTED_BY'); ?>
-			    <?php if(!empty($comment->userLink)): ?>
-			    <a href="<?php echo JFilterOutput::cleanText($comment->userLink); ?>" title="<?php echo JFilterOutput::cleanText($comment->userName); ?>" target="_blank" rel="nofollow">
-			    	<?php echo $comment->userName; ?>
-			    </a>
-			    <?php else: ?>
-			    <?php echo $comment->userName; ?>
-			    <?php endif; ?>
-		    </span>
-
-		    <p><?php echo $comment->commentText; ?></p>
+		    <div class="commentMeta">
+			    <span class="commentAuthorName">
+				    <?php if(!empty($comment->userLink)): ?>
+				    <a href="<?php echo JFilterOutput::cleanText($comment->userLink); ?>" title="<?php echo JFilterOutput::cleanText($comment->userName); ?>" target="_blank" rel="nofollow">
+				    	<?php echo $comment->userName; ?>
+				    </a>
+				    <?php else: ?>
+				    <?php echo $comment->userName; ?>
+				    <?php endif; ?>
+			    </span>
+			    <span class="status"><em class="fa fa-circle"></em></span>
+			    <span class="commentDate">
+			    	<?php echo JHTML::_('date', $comment->commentDate, JText::_('K2_DATE_FORMAT_LC2')); ?>
+			    </span>
+		    </div>
+		    <div class="commentText"><?php echo $comment->commentText; ?></div>
 
 				<?php if($this->inlineCommentsModeration || ($comment->published && ($this->params->get('commentsReporting')=='1' || ($this->params->get('commentsReporting')=='2' && !$this->user->guest)))): ?>
 				<span class="commentToolbar">

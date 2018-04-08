@@ -5537,6 +5537,61 @@ textarea:focus {
 .item-page .item-image.pull-none {
   text-align: center;
 }
+/*-- Form login css Start --*/
+.componentheading {
+  font-size: 30px;
+}
+.login .form-horizontal .control-label {
+  padding-top: 0;
+  font-weight: normal;
+}
+.login .form-horizontal .controls input[type="text"],
+.login .form-horizontal .controls input[type="password"] {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.alert-heading {
+  font-size: 30px;
+}
+.alert.alert-message {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.k2AccountPage fieldset {
+  margin-top: 30px;
+}
+.k2AccountPage .form-group-rq {
+  position: relative;
+}
+.k2AccountPage .form-group-rq .form-control {
+  width: 98%;
+}
+.k2AccountPage .form-group-rq .form-control.invalid {
+  border-color: #c00;
+}
+.k2AccountPage .form-group-rq .red {
+  color: #c00;
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
 /*-- Contact css Start --*/
 .wd_contact_wrapper {
   background-image: url(../images/content/contact_bg.jpg);
@@ -5736,6 +5791,12 @@ textarea:focus {
 .boxDescription .itemAuthorDetails .itemAuthorName a {
   color: #f07677;
 }
+.itemRelated h3 {
+  font-size: 30px;
+}
+.itemRelated ul {
+  list-style-position: inside;
+}
 .itemComments h3 {
   position: relative;
   margin-bottom: 38px;
@@ -5774,6 +5835,57 @@ textarea:focus {
   padding: 5px 15px;
   height: 98px;
   border: 1px solid #e4e4e4;
+}
+.itemCommentsList li {
+  margin-top: 44px;
+  padding-top: 44px;
+  border-top: 1px solid #e4e4e4;
+}
+.itemCommentsList li:before,
+.itemCommentsList li:after {
+  display: table;
+  content: "";
+}
+.itemCommentsList li:after {
+  clear: both;
+}
+.itemCommentsList li .avatar {
+  border: 0;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.itemCommentsList li .commentMeta {
+  margin: 5px 0 20px;
+}
+.itemCommentsList li .commentMeta .commentAuthorName,
+.itemCommentsList li .commentMeta .commentDate,
+.itemCommentsList li .commentMeta .status {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+.itemCommentsList li .commentMeta .commentAuthorName {
+  color: #000;
+  font-size: 22px;
+  font-weight: normal;
+}
+.itemCommentsList li .commentMeta .commentAuthorName a {
+  color: #000;
+}
+.itemCommentsList li .commentMeta .status {
+  margin-right: 10px;
+  color: #e8e8e8;
+  font-size: 14px;
+}
+.itemCommentsList li .commentMeta .commentDate {
+  margin-bottom: 0;
+  color: #f07677;
+  font-style: italic;
+  font-size: 16px;
+}
+.itemCommentsList li .text {
+  border: 0;
+  padding: 0;
 }
 /*-- Footer css Start --*/
 .wd_footer_wrapper {

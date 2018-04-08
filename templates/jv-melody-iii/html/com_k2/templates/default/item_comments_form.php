@@ -21,7 +21,6 @@ defined('_JEXEC') or die;
 	 <?php endif; ?>
  </p>
 <?php endif; ?>
-
 <form action="<?php echo JURI::root(true); ?>/index.php" method="post" id="comment-form" class="form-validate">
 
 

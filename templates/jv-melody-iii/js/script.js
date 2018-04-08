@@ -55,12 +55,14 @@
 		}
 		//Single page scroll js
 		navLiA.on('click' , function(e){
-			if(/^#/.test(target) === true) {
+			var id = $(this).attr('href');
+			href = id.replace('/', '');
+			if($(href).length) {
         e.preventDefault();
       }
 			navLi.removeClass('active');
 			$(this).parent().addClass('active');
-			var target = (jsHome($(this)))? $('#site-header') : $($(this).attr('href'));
+			var target = (jsHome($(this)))? $('#site-header') : $(href);
 			scrollToAnchor(target);
 		});
 
@@ -78,6 +80,7 @@
 				var currLink = $(this).children('a'),
 						href = (jsHome(currLink))? '#site-header' : currLink.attr('href')
 				;
+				href = href.replace('/', '');
 				if((/^#/.test(href) === true || jsHome(currLink)) && $(href).length) {
 					if(scrollPos > 0){
 							var refElement = $(href),
