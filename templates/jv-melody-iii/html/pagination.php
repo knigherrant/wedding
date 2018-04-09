@@ -148,27 +148,32 @@ function pagination_list_render($list)
 function pagination_item_active(&$item)
 {
 	// Check for "Start" item
+	$class = 'pagenav';
 	if ($item->text == JText::_('JLIB_HTML_START'))
 	{
-		$display = '<i class="icon-first"></i>';
+		$display = 'First';
+		$class = 'button';
 	}
 
 	// Check for "Prev" item
 	if ($item->text == JText::_('JPREV'))
 	{
-		$display = '<i class="icon-previous"></i>';
+		$display = 'Prev.';
+		$class = 'button';
 	}
 
 	// Check for "Next" item
 	if ($item->text == JText::_('JNEXT'))
 	{
-		$display = '<i class="icon-next"></i>';
+		$display = 'Next';
+		$class = 'button';
 	}
 
 	// Check for "End" item
 	if ($item->text == JText::_('JLIB_HTML_END'))
 	{
-		$display = '<i class="icon-last"></i>';
+		$display = 'Last';
+		$class = 'button';
 	}
 
 	// If the display object isn't set already, just render the item with its text
@@ -177,7 +182,7 @@ function pagination_item_active(&$item)
 		$display = $item->text;
 	}
 
-	return "<li><a title=\"" . $item->text . "\" href=\"" . $item->link . "\" class=\"pagenav\">" . $display . "</a></li>";
+	return "<li><a title=\"" . $item->text . "\" href=\"" . $item->link . "\" class='".$class."'>" . $display . "</a></li>";
 }
 
 /**
@@ -194,33 +199,33 @@ function pagination_item_inactive(&$item)
 	// Check for "Start" item
 	if ($item->text == JText::_('JLIB_HTML_START'))
 	{
-		return '<li class="disabled"><a><i class="icon-first"></i></a></li>';
+		return '<li class="disabled"><span class="button">'. JText::_('FIRST').'</span></li>';
 	}
 
 	// Check for "Prev" item
 	if ($item->text == JText::_('JPREV'))
 	{
-		return '<li class="disabled"><a><i class="icon-previous"></i></a></li>';
+		return '<li class="disabled"><span class="button">'.JText::_('JPREV').'</span></li>';
 	}
 
 	// Check for "Next" item
 	if ($item->text == JText::_('JNEXT'))
 	{
-		return '<li class="disabled"><a><i class="icon-next"></i></a></li>';
+		return '<li class="disabled"><span class="button">'. JText::_('JNEXT').'</span></li>';
 	}
 
 	// Check for "End" item
 	if ($item->text == JText::_('JLIB_HTML_END'))
 	{
-		return '<li class="disabled"><a><i class="icon-last"></i></a></li>';
+		return '<li class="disabled"><span class="button">'. JText::_('LAST').'</span></li>';
 	}
 
 	// Check if the item is the active page
 	if (isset($item->active) && ($item->active))
 	{
-		return '<li class="active"><a>' . $item->text . '</a></li>';
+		return '<li class="active"><span>' . $item->text . '</span></li>';
 	}
 
 	// Doesn't match any other condition, render a normal item
-	return '<li class="disabled"><a>' . $item->text . '</a></li>';
+	return '<li class="disabled"><span>' . $item->text . '</span></li>';
 }
