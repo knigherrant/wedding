@@ -1988,6 +1988,30 @@ textarea:focus {
     > div {
       display: inline-block;
       vertical-align: top;
+      margin-left: 10px;
+
+      &.itemSocialLabel {
+        padding: 5px 0;
+        font-size: 16px;
+      }
+
+      .button-social {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        border: 1px solid @border-color;
+        border-radius: 50%;
+        line-height: 36px;
+        text-align: center;
+        color: #c0c0c0;
+        .transition(all .3s);
+
+        &:hover {
+          color: @white;
+          border-color: @color1;
+          background-color: @color1;
+        }
+      }
     }
   }
 
@@ -2063,7 +2087,7 @@ textarea:focus {
 
     .ItemTags {
       float: left;
-      padding-bottom: 10px;
+      padding: 7px 0;
 
       .fa {
         margin-right: 5px;
@@ -2082,7 +2106,6 @@ textarea:focus {
 
     .itemSocialSharing {
       float: right;
-      padding-bottom: 10px;
     }
   }
 
@@ -2110,8 +2133,20 @@ textarea:focus {
       font-size: 24px;
       text-transform: capitalize;
 
-      a {
+      .name {
         color: @color1;
+      }
+
+      .more {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+        padding: 3px 8px 2px;
+        border-radius: 3px;
+        font-size: 10px;
+        background-color: @color1;
+        color: @white;
+        text-transform: uppercase;
       }
     }
   }
@@ -2606,6 +2641,11 @@ textarea:focus {
     blockquote {
       margin-bottom: 20px;
       padding: 30px 20px;
+      font-size: 18px;
+
+      .by {
+        font-size: 14px;
+      }
     }
 
     .itemFullText {

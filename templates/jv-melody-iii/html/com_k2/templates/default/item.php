@@ -324,63 +324,46 @@ defined('_JEXEC') or die;
   <div class="itemMetaFooter">
 	 <?php if($this->item->params->get('catItemTags') && count($this->item->tags)): ?>
 	  <!-- Item tags -->
-	  <span class="ItemTags">
+	  <div class="ItemTags">
 		  <span class="fa fa-tag"></span>
 		  <?php echo JText::_('Tags'); ?>:
 		    <?php foreach ($this->item->tags as $tag): ?>
 	    <a href="<?php echo $tag->link; ?>"><?php echo $tag->name; ?></a>
 	    <?php endforeach; ?>
 
-	  </span>
+	  </div>
 	  <?php endif; ?>
 	<?php if($this->item->params->get('itemTwitterButton',1) || $this->item->params->get('itemFacebookButton',1) || $this->item->params->get('itemGooglePlusOneButton',1)): ?>
+		<?php
+			$itemUrl = JUri::base().''. $this->item->link;
+		?>
 	<!-- Social sharing -->
 	<div class="itemSocialSharing">
-
+		<div class="itemSocialLabel">Share :</div>
 		<?php if($this->item->params->get('itemTwitterButton',1)): ?>
 		<!-- Twitter Button -->
 		<div class="itemTwitterButton">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"<?php if($this->item->params->get('twitterUsername')): ?> data-via="<?php echo $this->item->params->get('twitterUsername'); ?>"<?php endif; ?>>
-				<?php echo JText::_('K2_TWEET'); ?>
-			</a>
-			<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+			<a href="https://twitter.com/share?url=<?php echo $itemUrl; ?>&amp;text=<?php echo $this->item->title; ?>" target="_blank" class="button-social" title="Twitter"><em class="fa fa-twitter"></em></a>
 		</div>
 		<?php endif; ?>
 
 		<?php if($this->item->params->get('itemFacebookButton',1)): ?>
 		<!-- Facebook Button -->
 		<div class="itemFacebookButton">
-			<div id="fb-root"></div>
-			<script type="text/javascript">
-				(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-			</script>
-			<div class="fb-like" data-send="false" data-width="200" data-show-faces="true"></div>
+			 <a href="http://www.facebook.com/sharer.php?u=<?php echo $itemUrl; ?>" target="_blank" class="button-social" title="Facebook"><em class="fa fa-facebook"></em></a>
 		</div>
 		<?php endif; ?>
 
 		<?php if($this->item->params->get('itemGooglePlusOneButton',1)): ?>
 		<!-- Google +1 Button -->
 		<div class="itemGooglePlusOneButton">
-			<g:plusone annotation="inline" width="120"></g:plusone>
-			<script type="text/javascript">
-			  (function() {
-			  	window.___gcfg = {lang: 'en'}; // Define button default language here
-			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-			    po.src = 'https://apis.google.com/js/plusone.js';
-			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-			  })();
-			</script>
+			<a href="https://plus.google.com/share?url=<?php echo $itemUrl; ?>" target="_blank" class="button-social" title="Google Plus"><em class="fa fa-google-plus"></em></a>
 		</div>
 		<?php endif; ?>
 
 
 	</div>
+
 	<?php endif; ?>
 	</div>
 
@@ -395,7 +378,7 @@ defined('_JEXEC') or die;
 
     <div class="itemAuthorDetails">
       <h3 class="itemAuthorName">
-      	<?php echo JText::_('K2_ABOUT_ADMIN'); ?>: <a rel="author" href="<?php echo $this->item->author->link; ?>"><?php echo $this->item->author->name; ?></a>
+      	<?php echo JText::_('K2_ABOUT_ADMIN'); ?>: <span class="name"><?php echo $this->item->author->name; ?></span> <a rel="author" href="<?php echo $this->item->author->link; ?>" class="more">More</a>
       </h3>
 
       <?php if($this->item->params->get('itemAuthorDescription') && !empty($this->item->author->profile->description)): ?>
