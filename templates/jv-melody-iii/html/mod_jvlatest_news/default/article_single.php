@@ -61,6 +61,7 @@ if( ($columns > 6) ){
                     <?php echo $item->hits. ' ' . JText::_( 'COM_CONTENT_VIEW' ); ?>
                   <?php endif; ?>
                 </span>
+                <span class="module_show_like"><?php echo jvLike::loadLike($item->id, 'jvLike-k2-'.$item->id , 'k2'); ?></span>
             </div>
         <?php endif; ?>
 
