@@ -89,6 +89,7 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
           <?php echo $this->item->hits. ' ' . JText::_( 'COM_CONTENT_VIEW' ); ?>
         <?php endif; ?>
       </span>
+    <span class="blog_show_like"><?php echo jvLike::loadLike($this->item->id, 'jvLike-k2-'.$this->item->id , 'k2'); ?></span>
     <?php endif; ?>
     </div>
   <?php endif; ?>
