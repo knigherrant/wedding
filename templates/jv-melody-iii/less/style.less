@@ -2304,6 +2304,101 @@ textarea:focus {
     }
   }
 }
+/*K2 tags*/
+.tagView {
+  .componentheading {
+    margin-bottom: 50px;
+    position: relative;
+    padding-right: 60px;
+
+    h2 {
+      font-size: 40px;
+      font-family: @font-family-base
+    }
+
+    .k2FeedIcon {
+      position: absolute;
+      right: 0;
+      top: 4px;
+
+      a {
+        display: block;
+        width: 32px;
+        height: 32px;
+        font-size: 0;
+        background: url('../images/content/rss-icon.png') center no-repeat;
+      }
+    }
+  }
+}
+.tagItemList {
+  .tagItemView {
+    margin-bottom: 40px;
+
+    .tagItemImageBlock {
+      float: left;
+      width: 300px;
+      margin-right: 25px;
+      border-radius: 50px 0 50px 0;
+      overflow: hidden;
+
+      .tagItemImage {
+        display: block;
+      }
+
+      img {
+        display: block;
+        border-radius: 50px 0 50px 0;
+        .transition(all .5s);
+      }
+
+      &:hover {
+        img {
+          .transform(scale(1.1) rotate(2deg));
+        }
+      }
+    }
+
+    .tagItemBody {
+      overflow: hidden;
+    }
+
+    .tagItemTitle {
+      margin-bottom: 15px;
+      padding-top: 10px;
+      font-size: 30px;
+
+      a {
+        color: @heading-color;
+        .transition(all .5s);
+
+        &:hover {
+          color: @color1;
+        }
+      }
+    }
+
+    .itemMeta {
+      margin: 0 -15px 20px;
+
+      > span {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 15px;
+
+        .fa {
+          margin-right: 5px;
+          color: #f07677;
+        }
+      }
+
+      .jvlikeBtn {
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+}
 /*-- Footer css Start --*/
 .wd_footer_wrapper{
   background-image:url(../images/content/footer_bg.jpg);
@@ -2751,6 +2846,20 @@ textarea:focus {
 
     .form-group {
       margin-bottom: 15px;
+    }
+  }
+
+  .tagItemList {
+    .tagItemView {
+      .tagItemImageBlock {
+        float: none;
+        width: auto;
+        margin: 0 0 15px;
+
+        img {
+          width: 100% !important;
+        }
+      }
     }
   }
 

@@ -18,17 +18,16 @@ defined('_JEXEC') or die;
 	<?php if($this->params->get('show_page_title')): ?>
 	<!-- Page title -->
 	<div class="componentheading<?php echo $this->params->get('pageclass_sfx')?>">
-		<?php echo $this->escape($this->params->get('page_title')); ?>
-	</div>
-	<?php endif; ?>
-
-	<?php if($this->params->get('tagFeedIcon',1)): ?>
-	<!-- RSS feed icon -->
-	<div class="k2FeedIcon">
-		<a href="<?php echo $this->feed; ?>" title="<?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?>">
-			<span><?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?></span>
-		</a>
-		<div class="clr"></div>
+		<h2><?php echo $this->escape($this->params->get('page_title')); ?></h2>
+		<?php if($this->params->get('tagFeedIcon',1)): ?>
+		<!-- RSS feed icon -->
+		<div class="k2FeedIcon">
+			<a href="<?php echo $this->feed; ?>" title="<?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?>">
+				<span><?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?></span>
+			</a>
+			<div class="clr"></div>
+		</div>
+		<?php endif; ?>
 	</div>
 	<?php endif; ?>
 
@@ -37,32 +36,8 @@ defined('_JEXEC') or die;
 		<?php foreach($this->items as $item): ?>
 
 		<!-- Start K2 Item Layout -->
-		<div class="tagItemView">
-
-			<div class="tagItemHeader">
-				<?php if($item->params->get('tagItemDateCreated',1)): ?>
-				<!-- Date created -->
-				<span class="tagItemDateCreated">
-					<?php echo JHTML::_('date', $item->created , JText::_('K2_DATE_FORMAT_LC2')); ?>
-				</span>
-				<?php endif; ?>
-
-			  <?php if($item->params->get('tagItemTitle',1)): ?>
-			  <!-- Item title -->
-			  <h2 class="tagItemTitle">
-			  	<?php if ($item->params->get('tagItemTitleLinked',1)): ?>
-					<a href="<?php echo $item->link; ?>">
-			  		<?php echo $item->title; ?>
-			  	</a>
-			  	<?php else: ?>
-			  	<?php echo $item->title; ?>
-			  	<?php endif; ?>
-			  </h2>
-			  <?php endif; ?>
-		  </div>
-
-		  <div class="tagItemBody">
-			  <?php if($item->params->get('tagItemImage',1) && !empty($item->imageGeneric)): ?>
+		<div class="tagItemView clearfix">
+			<?php if($item->params->get('tagItemImage',1) && !empty($item->imageGeneric)): ?>
 			  <!-- Item Image -->
 			  <div class="tagItemImageBlock">
 				  <span class="tagItemImage">
@@ -74,18 +49,44 @@ defined('_JEXEC') or die;
 			  </div>
 			  <?php endif; ?>
 
+		  <div class="tagItemBody">
+		  	<?php if($item->params->get('tagItemTitle',1)): ?>
+			  <!-- Item title -->
+			  <h2 class="tagItemTitle">
+			  	<?php if ($item->params->get('tagItemTitleLinked',1)): ?>
+					<a href="<?php echo $item->link; ?>">
+			  		<?php echo $item->title; ?>
+			  	</a>
+			  	<?php else: ?>
+			  	<?php echo $item->title; ?>
+			  	<?php endif; ?>
+			  </h2>
+				  <?php endif; ?>
+			  <div class="itemMeta">
+	        <?php if($item->params->get('tagItemDateCreated',1)): ?>
+	        <!-- Date created -->
+	           <span class="ItemDateCreated">
+	            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+	            <?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_LC3')) ?>
+	             </span>
+	        <?php endif; ?>
+	        <!-- Item Hits -->
+	          <span class="ItemHits">
+	            <em class="fa fa-eye" aria-hidden="true"></em>
+	            <?php if($item->hits > 0): ?>
+	              <?php echo $item->hits. ' ' . JText::_( 'COM_CONTENT_VIEWS' ); ?>
+	            <?php else: ?>
+	              <?php echo $item->hits. ' ' . JText::_( 'COM_CONTENT_VIEW' ); ?>
+	            <?php endif; ?>
+	          </span>
+	          <span class="blog_show_like"><?php echo jvLike::loadLike($item->id, 'jvLike-k2-'.$item->id , 'k2'); ?></span>
+	      </div>
 			  <?php if($item->params->get('tagItemIntroText',1)): ?>
 			  <!-- Item introtext -->
 			  <div class="tagItemIntroText">
 			  	<?php echo $item->introtext; ?>
 			  </div>
 			  <?php endif; ?>
-
-			  <div class="clr"></div>
-		  </div>
-
-		  <div class="clr"></div>
-
 		  <?php if($item->params->get('tagItemExtraFields',0) && count($item->extra_fields)): ?>
 		  <!-- Item extra fields -->
 		  <div class="tagItemExtraFields">
@@ -104,7 +105,6 @@ defined('_JEXEC') or die;
 				<?php endif; ?>
 				<?php endforeach; ?>
 				</ul>
-		    <div class="clr"></div>
 		  </div>
 		  <?php endif; ?>
 
@@ -124,13 +124,12 @@ defined('_JEXEC') or die;
 				</a>
 			</div>
 			<?php endif; ?>
-
-			<div class="clr"></div>
 		</div>
-		<!-- End K2 Item Layout -->
-
-		<?php endforeach; ?>
 	</div>
+	<!-- End K2 Item Layout -->
+
+	<?php endforeach; ?>
+</div>
 
 	<!-- Pagination -->
 	<?php if($this->pagination->getPagesLinks()): ?>

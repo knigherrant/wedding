@@ -74,7 +74,7 @@ $items_woman = jkCustomfields::getItems($params->get('catid_woman'), $params);
                                                                 <span><img src="<?php echo JURI::root(); ?>modules/mod_jkmember/assets/images/line2.png" alt="Line"></span>
                                                                 <?php if($iwoman->thumb){ ?><img src="<?php echo $iwoman->thumb; ?>" alt="<?php echo $iwoman->title; ?>"><?php } ?>
                                                         </div>
-                                                        <?php if($iwoman->subtitle){ ?><h2><?php echo $iwoman->subtitle; ?></h2><?php } ?>
+                                                        <?php if($iwoman->title){ ?><h2><?php echo $iwoman->title; ?></h2><?php } ?>
                                                         <?php if($iwoman->subtitle){ ?><p><?php echo $iwoman->subtitle; ?></p><?php } ?>
                                                         <ul>
                                                                 <?php if($iwoman->icon_fb){ ?><li><a href="<?php echo $iwoman->icon_fb; ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><?php } ?>

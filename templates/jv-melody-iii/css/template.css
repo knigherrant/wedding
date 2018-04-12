@@ -6088,6 +6088,90 @@ textarea:focus {
   font-style: italic;
   color: #f07677;
 }
+/*K2 tags*/
+.tagView .componentheading {
+  margin-bottom: 50px;
+  position: relative;
+  padding-right: 60px;
+}
+.tagView .componentheading h2 {
+  font-size: 40px;
+  font-family: 'Lora', serif;
+}
+.tagView .componentheading .k2FeedIcon {
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+.tagView .componentheading .k2FeedIcon a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background: url('../images/content/rss-icon.png') center no-repeat;
+}
+.tagItemList .tagItemView {
+  margin-bottom: 40px;
+}
+.tagItemList .tagItemView .tagItemImageBlock {
+  float: left;
+  width: 300px;
+  margin-right: 25px;
+  border-radius: 50px 0 50px 0;
+  overflow: hidden;
+}
+.tagItemList .tagItemView .tagItemImageBlock .tagItemImage {
+  display: block;
+}
+.tagItemList .tagItemView .tagItemImageBlock img {
+  display: block;
+  border-radius: 50px 0 50px 0;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.tagItemList .tagItemView .tagItemImageBlock:hover img {
+  -ms-transform: scale(1.1) rotate(2deg);
+  -moz-transform: scale(1.1) rotate(2deg);
+  -o-transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+  transform: scale(1.1) rotate(2deg);
+}
+.tagItemList .tagItemView .tagItemBody {
+  overflow: hidden;
+}
+.tagItemList .tagItemView .tagItemTitle {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+.tagItemList .tagItemView .tagItemTitle a {
+  color: #222;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.tagItemList .tagItemView .tagItemTitle a:hover {
+  color: #f07677;
+}
+.tagItemList .tagItemView .itemMeta {
+  margin: 0 -15px 20px;
+}
+.tagItemList .tagItemView .itemMeta > span {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+}
+.tagItemList .tagItemView .itemMeta > span .fa {
+  margin-right: 5px;
+  color: #f07677;
+}
+.tagItemList .tagItemView .itemMeta .jvlikeBtn {
+  padding: 0;
+  border: 0;
+}
 /*-- Footer css Start --*/
 .wd_footer_wrapper {
   background-image: url(../images/content/footer_bg.jpg);
@@ -6492,6 +6576,14 @@ textarea:focus {
   }
   .itemComments .form-group {
     margin-bottom: 15px;
+  }
+  .tagItemList .tagItemView .tagItemImageBlock {
+    float: none;
+    width: auto;
+    margin: 0 0 15px;
+  }
+  .tagItemList .tagItemView .tagItemImageBlock img {
+    width: 100% !important;
   }
   .wd_footer_bottom_wrapper .position-footer {
     float: none;
