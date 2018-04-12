@@ -18,6 +18,11 @@
     ?>
 </head>
 <body class="<?php echo $this['option']->get('template.body.class'); ?>">
+    <!-- preloader Start -->
+    <div id="preloader">
+        <div id="status"><img src="<?php echo  JURI::base() . 'templates/' . JFactory::getApplication()->getTemplate(); ?>/images/header/preloader.gif" id="preloader_image" alt="loader">
+        </div>
+    </div>
 	<div id="wrapper">
         <div id="mainsite">
             <span class="flexMenuToggle" ></span>

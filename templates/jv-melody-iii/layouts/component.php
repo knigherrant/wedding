@@ -8,6 +8,7 @@
 	<?php echo $this['template']->render('head');?>
 </head>
 <body class="<?php echo $this['option']->get('template.body.class'); ?>">
+
 	<div class="wrapper">
 		<div id="block-main">
 		    <div class="container">

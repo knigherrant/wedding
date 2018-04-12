@@ -20,6 +20,11 @@
 			 ;
 			 p.prepend(btn) ;
 		});
+		// Preloader
+		jQuery(window).on('load', function() {
+			jQuery("#status").fadeOut();
+			jQuery("#preloader").delay(350).fadeOut("slow");
+		});
 		// Menu mobile
 		var counter = 0,
 				menuWrapper = $('.wd_main_menu_wrapper');

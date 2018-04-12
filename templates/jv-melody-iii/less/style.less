@@ -29,12 +29,14 @@ Purchase:
 */
 
 /*--------- Body Strat -------*/
+@charset "UTF-8";
 body, html{
   font-family: @font-family-base;
   font-size: @font-size;
   line-height: 23px;
   color: @text-color;
   overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
 }
 body {
   position: relative;
@@ -352,13 +354,13 @@ textarea:focus {
       .transition(all .5s);
 
       &:hover {
-        color: @link-color;
+        color: @color1;
       }
     }
 
     &.active {
       a {
-        color: @link-color;
+        color: @color1
       }
     }
   }
