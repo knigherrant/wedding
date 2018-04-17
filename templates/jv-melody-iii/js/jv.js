@@ -164,19 +164,13 @@ var JVTop = new Class({
       var topElement = new Element('div', {
 			'id': 'toTop',
       'html': '<i class="fa fa-long-arrow-up" aria-hidden="true"></i>'
-		}).inject(document.body);
+		}).inject(document.getElementById('block-footer'));
 
     topElement.addEvent('click', function(){
         new Fx.Scroll(window).toTop();
     });
 
-		var footer = document.getElementById('block-footer'),
-				h = 100;
-		if(footer.clientHeight > 0) {
-			h = footer.clientHeight;
-		}
-
-		var topFx = new Fx.Morph(topElement, this.options).set({'opacity': 0, 'bottom': h + 'px'});
+		var topFx = new Fx.Morph(topElement, this.options).set({'opacity': 0});
 
 		window.addEvent('scroll', function(){
 			if(window.getScrollTop() != 0){

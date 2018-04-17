@@ -16,10 +16,10 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="wd_event_infobox">
                 <?php if($params->get('main_title')){ ?><h2><?php echo $params->get('main_title'); ?></h2><?php } ?>
-                <?php if($params->get('main_time')){ ?><h1><?php echo $params->get('main_time'); ?></h1><?php } ?>
+                <?php if($params->get('main_time')){ ?><p class="time"><?php echo $params->get('main_time'); ?></p><?php } ?>
                 <?php if($params->get('main_adress')){ ?><span><?php echo $params->get('main_adress'); ?></span><?php } ?>
                 <?php if($params->get('main_title')){ ?>
-                    <p><?php echo $params->get('main_intro'); ?> 
+                    <p><?php echo $params->get('main_intro'); ?>
                         <?php if($params->get('main_more')){ ?><a href="<?php echo JRoute::_('index.php?Itemid=' . $params->get('main_more')); ?>"><?php echo JText::_('Read More...');?></a><?php } ?>
                     </p>
                 <?php } ?>
@@ -30,10 +30,10 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-0">
         <div class="wd_event_infobox">
                  <?php if($params->get('party_title')){ ?><h2><?php echo $params->get('party_title'); ?></h2><?php } ?>
-                <?php if($params->get('party_time')){ ?><h1><?php echo $params->get('party_time'); ?></h1><?php } ?>
+                <?php if($params->get('party_time')){ ?><p class="time"><?php echo $params->get('party_time'); ?></p><?php } ?>
                 <?php if($params->get('party_adress')){ ?><span><?php echo $params->get('party_adress'); ?></span><?php } ?>
                 <?php if($params->get('party_intro')){ ?>
-                    <p><?php echo $params->get('party_intro'); ?> 
+                    <p><?php echo $params->get('party_intro'); ?>
                         <?php if($params->get('party_more')){ ?><a href="<?php echo JRoute::_('index.php?Itemid=' . $params->get('party_more')); ?>"><?php echo JText::_('Read More...');?></a><?php } ?>
                     </p>
                 <?php } ?>

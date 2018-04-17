@@ -26,24 +26,24 @@
                         <div class="wd_main_menu_wrapper">
                             <div class="wd_main_menu wd_single_index_menu">
                                 <jdoc:include type="position" name="menu" style="raw" />
-                            </jdoc:include>
+                            </div>
                         </div>
                     </div>
                 <?php endif;?>
             </div>
         </div>
-    </div>
 
-    <!--Block Slide-->
-    <?php if( $this['position']->count('slideshow') ):?>
-        <jdoc:include type="position" name="slideshow"  style="raw"  />
-        <div class="wd_single_index_menu_down">
-            <ul>
-                <li><a id="headbottom" href="#down" data-scroll=""><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-    <?php endif;?>
-    <!--/Block Slide-->
+        <!--Block Slide-->
+        <?php if( $this['position']->count('slideshow') ):?>
+            <jdoc:include type="position" name="slideshow"  style="raw"  />
+            <div class="wd_single_index_menu_down">
+                <ul>
+                    <li><a id="headbottom" href="#down" data-scroll=""><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        <?php endif;?>
+        <!--/Block Slide-->
+    </div>
 </header>
 <!--/Block Header-->
 

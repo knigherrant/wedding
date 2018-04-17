@@ -260,7 +260,7 @@ textarea:focus {
       margin: 35px 0 0;
     }
 
-    h1{
+    h4 {
       font-size:40px;
       color: @lighter-black;
       text-transform:uppercase;
@@ -272,6 +272,7 @@ textarea:focus {
 }
 #headbottom {
     position: absolute;
+    z-index: 2;
     right: 0;
     left: 0;
     margin: 0px auto;
@@ -330,9 +331,8 @@ textarea:focus {
 }
 .wd_header_wrapper{
   background-color: rgba(255, 255, 255, 0.30);
-  z-index: 1;
+  z-index: 1000;
   position: relative;
-
   .clearfix();
 }
 .wd_main_menu{
@@ -371,7 +371,6 @@ textarea:focus {
 .menu_fixed{
   position: fixed;
   top: 0;
-  z-index:1000;
   padding: 0;
   width: 100%;
   background-color:rgba(255, 255, 255, 0.9);
@@ -943,7 +942,7 @@ textarea:focus {
   text-align:center;
   margin-bottom:30px;
 
-  h1{
+  .time {
     display: inline-block;
     width: auto;
     margin: 30px 0px;
@@ -952,7 +951,11 @@ textarea:focus {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+     font-size: 30px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #222222;
   }
 
   h2{
@@ -2451,9 +2454,13 @@ textarea:focus {
     font-size: 36px;
   }
 }
+#block-footer {
+  overflow: visible;
+}
 .wd_footer_bottom_wrapper{
   background-color:#0c0c0c;
   position:relative;
+  z-index: 2;
 
   .position-footer {
     float: left;
@@ -2470,6 +2477,7 @@ textarea:focus {
 #toTop {
   position: absolute !important;
   left: 50%;
+  bottom: 100%;
   margin-left: -50px;
   margin-bottom: -50px;
   cursor: pointer;
@@ -2549,14 +2557,16 @@ textarea:focus {
 .wd_main_menu ul {
   width: 100%;
   text-align: center;
-}
-.wd_main_menu ul li {
+
+  li {
     float: none;
     display: inline-block;
-}
-.wd_main_menu ul li a {
-    padding: 20px 10px;
-    font-size: 16px;
+
+    a {
+      padding: 20px 10px;
+      font-size: 16px;
+    }
+  }
 }
 .wd_logo {
     padding-top: 15px;
@@ -2623,6 +2633,9 @@ textarea:focus {
 }
 
 @media (max-width: @screen-xs-max) {
+  #mainsite {
+    .transform(none);
+  }
   .wd_menu_btn{
     display: block;
     float: none;
@@ -2671,17 +2684,13 @@ textarea:focus {
         display: block;
         text-align: left;
         margin: 0;
-        border-radius: 0;
-        border: 0;
         padding:15px;
         color: @white;
+      }
 
-        &:hover,
-        &.active {
-          border: 0;
-          background-color: @white;
-          color: @color1;
-        }
+      &.active a {
+        background-color: @white;
+        color: @color1;
       }
     }
   }
@@ -2948,7 +2957,7 @@ textarea:focus {
     width: 235px;
   }
 }
-.wd_slider_textinfo h1 {
+.wd_slider_textinfo h4 {
     font-size: 24px;
 }
 .ast_glr_overlay {

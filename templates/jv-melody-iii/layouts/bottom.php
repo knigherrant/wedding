@@ -1,7 +1,7 @@
 
 <!--Block bottom-->
 <?php if( $this['block']->count('bottom') ):?>
-	<section section-scroll="2" id="block-bottom">
+	<section id="block-bottom">
     	<div class="container">
          	<jdoc:include type="block" name="bottom"  />
         </div>
@@ -11,7 +11,7 @@
 
 <!--Block bottomb-->
 <?php if( $this['block']->count('bottomb') ):?>
-	<section section-scroll="3" id="block-bottomb" class="wd_scroll_wrap">
+	<section id="block-bottomb" class="wd_scroll_wrap">
         <div class="wd_contact_wrapper wd_toppadder90 wd_bottompadder90">
             <div class="wd_overlay"></div>
         	<div class="container">
@@ -24,7 +24,7 @@
 
 <!--Block footer-top -->
 <?php if( $this['block']->count('footer-top') ):?>
-    <section section-scroll="14" id="block-footer-top" class="wd_footer_wrapper wd_toppadder90 wd_bottompadder100">
+    <section id="block-footer-top" class="wd_footer_wrapper wd_toppadder90 wd_bottompadder100">
         <div class="container">
             <jdoc:include type="position" name="footer-top" />
         </div>

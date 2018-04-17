@@ -21,7 +21,7 @@ if($this['option']->isRTL()){
 
 else
 {
-    JHtmlBootstrap::loadCss(false);
+  JHtmlBootstrap::loadCss(false);
 	$this['asset']->addLess('core-template');
 	$this ['asset']->addLess ( "menu-touch", array('media' => 'screen and (max-width: '.$this['option']->get('menu.responsive').'px)'));
 }
@@ -58,7 +58,7 @@ else
 // Handheld Friendly
 
 if($this['option']->get('global.mobile.allmobile.enable') != 3){
-    $this['template']->document->setMetaData ( 'viewport', 'width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.5, user-scalable='.$this['option']->get('mobile.allmobile.scalable_content', 'no') );
+    $this['template']->document->setMetaData ( 'viewport', 'width=device-width,initial-scale=1,maximum-scale=1,user-scalable='.$this['option']->get('mobile.allmobile.scalable_content', 'yes') );
     $this['template']->document->setMetaData ( 'apple-mobile-web-app-capable', 'yes' );
 }
 

@@ -20,7 +20,7 @@
 <body class="<?php echo $this['option']->get('template.body.class'); ?>">
     <!-- preloader Start -->
     <div id="preloader">
-        <div id="status"><img src="<?php echo  JURI::base() . 'templates/' . JFactory::getApplication()->getTemplate(); ?>/images/header/preloader.gif" id="preloader_image" alt="loader">
+        <div id="status"><img src="<?php echo  JURI::base() . 'templates/' . JFactory::getApplication()->getTemplate(); ?>/images/header/preloader.gif" id="preloader_image" alt="Loader">
         </div>
     </div>
 	<div id="wrapper">
@@ -28,7 +28,7 @@
             <span class="flexMenuToggle" ></span>
             <?php  echo $this['template']->render('top'); ?>
             <?php if( $this['block']->count('full-webding-conent-5') ):?>
-                <div section-scroll="9" id="block-gallery" class="wd_scroll_wrap">
+                <div id="block-gallery" class="wd_scroll_wrap">
                     <div class="wd_gallery_wrapper wd_toppadder90 wd_bottompadder90">
                         <div class="container">
                             <jdoc:include type="position" name="full-webding-conent-5"  style="jvxhtml"  />
@@ -37,7 +37,7 @@
                 </div>
             <?php endif;?>
             <?php if( $this['block']->count('content-top') ):?>
-                <div section-scroll="10" id="block-blog" class="wd_scroll_wrap">
+                <div id="block-blog" class="wd_scroll_wrap">
                     <div class="wd_blog_wrapper wd_toppadder90 wd_bottompadder40">
                         <div class="container">
                             <jdoc:include type="position" name="content-top"  />
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             <?php endif;?>
-             <div section-scroll="11" id="block-main" class="<?php echo $blogClass; ?>">
+             <div id="block-main" class="<?php echo $blogClass; ?>">
                 <div class="container">
                     <div class="row">
                         <?php echo $this['template']->render('content'); ?>
