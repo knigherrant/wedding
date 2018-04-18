@@ -343,7 +343,7 @@ defined('_JEXEC') or die;
 		<?php if($this->item->params->get('itemTwitterButton',1)): ?>
 		<!-- Twitter Button -->
 		<div class="itemTwitterButton">
-			<a href="https://twitter.com/share?url=<?php echo $itemUrl; ?>&amp;text=<?php echo $this->item->title; ?>" target="_blank" class="button-social" title="Twitter"><em class="fa fa-twitter"></em></a>
+			<a href="https://twitter.com/share?url=<?php echo $itemUrl; ?>&amp;text=<?php echo $this->item->alias; ?>" target="_blank" class="button-social" title="Twitter"><em class="fa fa-twitter"></em></a>
 		</div>
 		<?php endif; ?>
 
@@ -382,7 +382,7 @@ defined('_JEXEC') or die;
       </h3>
 
       <?php if($this->item->params->get('itemAuthorDescription') && !empty($this->item->author->profile->description)): ?>
-      <p><?php echo $this->item->author->profile->description; ?></p>
+      <?php echo $this->item->author->profile->description; ?>
       <?php endif; ?>
 
       <?php if($this->item->params->get('itemAuthorURL') && !empty($this->item->author->profile->url)): ?>
@@ -551,7 +551,7 @@ defined('_JEXEC') or die;
 
  <?php if($this->item->params->get('itemComments') && ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2')) && empty($this->item->event->K2CommentsBlock)): ?>
   <!-- Item comments -->
-  <a name="itemCommentsAnchor" id="itemCommentsAnchor"></a>
+  <a id="itemCommentsAnchor"></a>
 
   <div class="itemComments">
 

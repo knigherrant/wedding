@@ -49,7 +49,7 @@ $submitbutton = '<input type="button" class="jvcontactbtnsm button" onclick="for
 $html = JString::str_ireplace('{submitbutton}', $submitbutton, $html);
 
 
-$form = '<form id="jvcontact'. $moduleid .'" action="" method="post">';
+$form = '<form id="jvcontact'. $moduleid .'" method="post">';
 $form .= $html;
 $form .= JHTML::_('form.token');
 $form .= '</form>';

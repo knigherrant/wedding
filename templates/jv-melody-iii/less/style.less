@@ -25,7 +25,9 @@ Purchase:
 14. Blog css Start / .wd_blog_wrapper
 15. Contact css Start / .wd_contact_wrapper
 16. Footer css Start / .wd_footer_wrapper
-17. Responsive css Start / .wd_logo
+17. Blog css Start
+18. Form login css Start
+19. Responsive css Start / .wd_logo
 */
 
 /*--------- Body Strat -------*/
@@ -627,7 +629,7 @@ textarea:focus {
       border-radius:100%;
     }
   }
-  h1{
+  h2{
     display: inline-block;
     vertical-align: top;
     font-size:60px;
@@ -2578,7 +2580,7 @@ textarea:focus {
     padding-left: 0px;
 }
 .menu_fixed .wd_main_menu ul li a {
-    padding: 10px 10px;
+    padding: 10px;
 }
 .wd_slider_textinfo {
     padding: 100px 0px 100px 0px;
@@ -2686,6 +2688,11 @@ textarea:focus {
         margin: 0;
         padding:15px;
         color: @white;
+
+        &:hover {
+          background-color: @white;
+          color: @color1;
+        }
       }
 
       &.active a {
@@ -2718,15 +2725,15 @@ textarea:focus {
       display: none;
   }
   .wd_story_covers_box_left {
-      width: 100%;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      margin: 50px 0 0 0;
+    width: 100%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    margin: 50px 0 0 0;
 
-      &:after {
-        display: none;
-      }
+    &:after {
+      display: none;
+    }
   }
   .wd_story_covers_box_right {
     width: 100%;
@@ -2740,11 +2747,11 @@ textarea:focus {
     }
   }
   .wd_guest_formbox {
-      width: 100%;
+    width: 100%;
 
-      p {
-        padding: 0;
-      }
+    p {
+      padding: 0;
+    }
   }
   .wd_gallery_slide {
       margin-bottom: 16px;

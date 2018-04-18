@@ -53,7 +53,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
    </div>
 	<div class="col-md-4 col-md-pull-4">
 		<div class="wd_about_infobox">
-			<?php if($params->get('name')){ ?><h1><?php echo $params->get('name'); ?></h1><?php } ?>
+			<?php if($params->get('name')){ ?><h2><?php echo $params->get('name'); ?></h2><?php } ?>
 			<div class="wd_about_infobox_date">
 				<?php if($params->get('desc')){ ?><p><?php echo $params->get('desc'); ?></p><?php } ?>
 				<?php if($params->get('day')){ ?><h3><?php echo $params->get('day'); ?></h3><?php } ?>

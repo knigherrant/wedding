@@ -1,4 +1,7 @@
-
+<?php
+    $doc = JFactory::getDocument();
+    $doc->setHtml5(true);
+?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>

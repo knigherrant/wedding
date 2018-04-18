@@ -78,8 +78,8 @@ $this['template']->document->addHeadLink($this['path']->url('theme::touch-icon-i
 ?>
 
 <!--[if lt IE 9]>
-<script src="<?php echo $this['path']->url('theme::js/html5shiv.js') ?>" type="text/javascript"></script>
-<script src="<?php echo $this['path']->url('theme::js/respond.src.js') ?>" type="text/javascript"></script>
+<script src="<?php echo $this['path']->url('theme::js/html5shiv.js') ?>" ></script>
+<script src="<?php echo $this['path']->url('theme::js/respond.src.js') ?>" ></script>
 <![endif]-->
 <?php
 // Reorder Asset - To Support compression

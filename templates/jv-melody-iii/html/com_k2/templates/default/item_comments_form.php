@@ -40,7 +40,7 @@ defined('_JEXEC') or die;
 	</div>
 
 	<div class="form-group">
-		<label for="commentURL"><?php echo JText::_('K2_COMMENTS'); ?>: </label>
+		<label for="commentText"><?php echo JText::_('K2_COMMENTS'); ?>: </label>
 		<textarea rows="20" cols="10" name="commentText" id="commentText"></textarea>
 	</div>
 

@@ -268,8 +268,6 @@
   background: #D6D6D6;
   display: block;
   -webkit-backface-visibility: visible;
-  -webkit-transition: opacity 200ms ease;
-  -o-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
   border-radius: 30px;
 }
@@ -304,7 +302,9 @@ Purchase:
 14. Blog css Start / .wd_blog_wrapper
 15. Contact css Start / .wd_contact_wrapper
 16. Footer css Start / .wd_footer_wrapper
-17. Responsive css Start / .wd_logo
+17. Blog css Start
+18. Form login css Start
+19. Responsive css Start / .wd_logo
 */
 /*--------- Body Strat -------*/
 body,
@@ -368,7 +368,6 @@ input:focus,
 select:focus,
 button:focus {
   outline: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 textarea {
@@ -376,7 +375,6 @@ textarea {
 }
 textarea:focus {
   outline: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .btn {
@@ -541,13 +539,9 @@ textarea:focus {
 }
 .wd_slider_textinfo img {
   display: inline-block;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-name: pulse;
   animation-name: pulse;
 }
 .wd_slider_textinfo h3 {
@@ -924,14 +918,14 @@ textarea:focus {
   -moz-border-radius: 100%;
   border-radius: 100%;
 }
-.wd_about_infobox h1 {
+.wd_about_infobox h2 {
   display: inline-block;
   vertical-align: top;
   font-size: 60px;
   margin: 0;
   position: relative;
 }
-.wd_about_infobox h1:after {
+.wd_about_infobox h2:after {
   content: "";
   position: absolute;
   bottom: 10px;
@@ -1256,13 +1250,9 @@ textarea:focus {
 .wd_event_infobox img {
   display: inline-block;
   margin-bottom: 30px;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-name: pulse;
   animation-name: pulse;
 }
 /*-- Guest css Start --*/
@@ -1375,13 +1365,9 @@ textarea:focus {
   display: inline-block !important;
   width: 63px !important;
   height: 47px;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-name: pulse;
   animation-name: pulse;
 }
 .wd_testimo_box h4 {
@@ -1509,13 +1495,9 @@ textarea:focus {
   -ms-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-name: pulse;
   animation-name: pulse;
 }
 .wd_family_tabbox .tab-content {
@@ -1709,9 +1691,6 @@ textarea:focus {
   right: 0;
   margin: 0px auto;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-  background: -webkit-linear-gradient(bottom, black, transparent 100%);
-  background: -o-linear-gradient(bottom, black, transparent 100%);
   background: linear-gradient(0deg, black, transparent 100%);
   z-index: 0;
   opacity: 0;
@@ -2746,7 +2725,7 @@ textarea:focus {
     padding-left: 0px;
   }
   .menu_fixed .wd_main_menu ul li a {
-    padding: 10px 10px;
+    padding: 10px;
   }
   .wd_slider_textinfo {
     padding: 100px 0px 100px 0px;
@@ -2822,7 +2801,6 @@ textarea:focus {
   .wd_menu_btn:focus {
     outline: none;
     border: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
     text-shadow: none;
   }
@@ -2864,6 +2842,10 @@ textarea:focus {
     margin: 0;
     padding: 15px;
     color: #fff;
+  }
+  .wd_main_menu ul li a:hover {
+    background-color: #fff;
+    color: #f07677;
   }
   .wd_main_menu ul li.active a {
     background-color: #fff;
