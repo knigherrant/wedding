@@ -18927,7 +18927,7 @@ body[demofont-header="f4"] .h6 {
   position: relative;
   cursor: pointer;
   line-height: 85px;
-  color: #fffefe;
+  color: #333;
   padding: 0 24px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -19164,6 +19164,9 @@ span.fx-title {
 .headroom.headroom--not-top.header-content-3 .container .header-banner .position-top-banner > div .contentmod {
   line-height: 60px;
 }
+.headroom.headroom--not-top #block-mainnav .fxmenu li.level1 > .level1 {
+  color: #fff;
+}
 @-webkit-keyframes slideDown {
   0% {
     -webkit-transform: translateY(-100%);
@@ -19234,12 +19237,12 @@ span.fx-title {
     transform: translateY(-100%);
   }
 }
-.headroom.headroom--unpinned {
+/*.headroom.headroom--unpinned {
   -webkit-animation-name: slideUp;
   -moz-animation-name: slideUp;
   -o-animation-name: slideUp;
   animation-name: slideUp;
-}
+}*/
 #mainsite {
   overflow-x: hidden;
 }
@@ -25266,7 +25269,7 @@ img.mfp-img {
   cursor: pointer;
 }
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-  
+
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0;
@@ -28291,7 +28294,7 @@ pre.high {
 .text-weight code {
   font-family: "Open Sans";
 }
-#socialicons-428615 .item-0 a:hover { border-color: #c43b68; color: #c43b68;} #socialicons-428615 .item-1 a:hover { border-color: #0b5fa6; color: #0b5fa6;} #socialicons-428615 .item-2 a:hover { border-color: #e21b1b; color: #e21b1b;} #socialicons-428615 .item-3 a:hover { border-color: #dd4c39; color: #dd4c39;} #socialicons-428615 .item-4 a:hover { border-color: #e21b1b; color: #e21b1b;} 
+#socialicons-428615 .item-0 a:hover { border-color: #c43b68; color: #c43b68;} #socialicons-428615 .item-1 a:hover { border-color: #0b5fa6; color: #0b5fa6;} #socialicons-428615 .item-2 a:hover { border-color: #e21b1b; color: #e21b1b;} #socialicons-428615 .item-3 a:hover { border-color: #dd4c39; color: #dd4c39;} #socialicons-428615 .item-4 a:hover { border-color: #e21b1b; color: #e21b1b;}
 #socialicons-542770 .item-0:hover { background-color: #1b57a1;} #socialicons-542770 .item-1:hover { background-color: #e21b1b;} #socialicons-542770 .item-2:hover { background-color: #1e75ce;} #socialicons-542770 .item-3:hover { background-color: #ea367e;} #socialicons-542770 .item-4:hover { background-color: #0cbce2;} #socialicons-542770 .item-5:hover { background-color: #313131;}
 
 
@@ -28666,7 +28669,7 @@ pre.high {
     filter: alpha(opacity=100)
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  *  v1.3.3
  */
@@ -28704,7 +28707,7 @@ pre.high {
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
-  
+
 .owl-carousel .owl-item{
   float: left;
 }
@@ -28722,7 +28725,7 @@ pre.high {
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(grabbing.png) 8 8, move;
 }
 
