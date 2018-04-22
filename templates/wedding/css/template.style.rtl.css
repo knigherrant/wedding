@@ -1,3 +1,6 @@
+#less-content-separator {
+  content: "separator";
+}
 #logo {
   float: right;
 }
@@ -5,4 +8,3 @@ a.flexMenuToggle {
   float: right;
   margin: 0 0 0 10px;
 }
-/*-----------------------------------------------------------------RESPONSIVE-------------------------------------------------------------------*/

@@ -28209,23 +28209,26 @@ textarea.chzn-container-single .chzn-single {
 }
 
 .img-thumb {
-    display: inline-block;
-    width: 100px;
-    height: 85px;
-    background-size: cover;
-    background-position: top center;
-    border-radius: 5px;
-    border: 2px solid #ddd;
-    margin: 10px 10px 10px 0;
-    position: relative
+  display: inline-block;
+  width: 100px;
+  height: 85px;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  margin: 10px 10px 10px 0;
+  position: relative;
 }
 
 .img-thumb-md {
-    width: 170px;
-    height: 150px;
-    margin: 0
+  width: 170px;
+  height: 150px;
+  margin: 0
 }
-
+.gallery-inner .item {
+  display: inline-block;
+  vertical-align: top;
+}
 .img-thumb:active,.img-thumb:focus {
     outline: none
 }
