@@ -669,10 +669,12 @@ textarea:focus {
     font-size:60px;
     margin: 0;
     position:relative;
+    z-index: 2;
 
     &:after{
       content: "";
       position: absolute;
+      z-index: -1;
       bottom: 10px;
       right: 0px;
       width: 70%;
