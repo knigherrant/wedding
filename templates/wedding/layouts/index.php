@@ -30,15 +30,6 @@
         <div id="mainsite">
             <span class="flexMenuToggle" ></span>
             <?php  echo $this['template']->render('top'); ?>
-            <?php if( $this['block']->count('full-webding-conent-5') ):?>
-                <div id="block-gallery" class="wd_scroll_wrap">
-                    <div class="wd_gallery_wrapper wd_toppadder90 wd_bottompadder90">
-                        <div class="container">
-                            <jdoc:include type="position" name="full-webding-conent-5"  style="jvxhtml"  />
-                        </div>
-                    </div>
-                </div>
-            <?php endif;?>
             <?php if( $this['block']->count('content-top') ):?>
                 <div id="block-blog" class="wd_scroll_wrap">
                     <div class="wd_blog_wrapper wd_toppadder90 wd_bottompadder40">

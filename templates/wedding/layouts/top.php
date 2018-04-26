@@ -118,14 +118,33 @@
     <!--/Block full-webding-conent-4-->
 <?php endif;?>
 
+<?php if( $this['block']->count('full-webding-conent-5') ):?>
+    <div id="block-family" class="wd_scroll_wrap">
+        <div class="wd_family_wrapper wd_toppadder90 wd_bottompadder90">
+            <div class="container">
+                <jdoc:include type="position" name="full-webding-conent-5"  style="jvxhtml"  />
+            </div>
+        </div>
+    </div>
+<?php endif;?>
+
+<?php if( $this['block']->count('full-webding-conent-6') ):?>
+    <div id="block-gallery" class="wd_scroll_wrap">
+        <div class="wd_gallery_wrapper wd_toppadder90 wd_bottompadder90">
+            <div class="container">
+                <jdoc:include type="position" name="full-webding-conent-6"  style="jvxhtml"  />
+            </div>
+        </div>
+    </div>
+<?php endif;?>
+
 <?php if( $this['block']->count('topb') ):?>
     <!--Block topb-->
     <section id="block-topb" class="wd_scroll_wrap">
-        <div class="wd_family_wrapper wd_toppadder90 wd_bottompadder90">
-            <div class="container">
-                <jdoc:include type="block" name="topb" style="jvxhtml" />
-            </div>
-            </div>
+        <div class="container">
+            <jdoc:include type="block" name="topb" style="jvxhtml" />
+        </div>
     </section>
     <!--/Block topb-->
 <?php endif;?>
+

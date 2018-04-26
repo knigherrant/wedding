@@ -75,6 +75,127 @@ body {
       border-radius: 0 0 10px 10px;
     }
   }
+
+  &-bg-1 {
+    #mainsite {
+      background: url('../images/background/body-bg-1.png') center repeat;
+    }
+  }
+  &-bg-2 {
+    #mainsite {
+      background: url('../images/background/body-bg-2.png') center repeat;
+    }
+  }
+  &-bg-3 {
+    #mainsite {
+      background: url('../images/background/body-bg-3.png') center repeat;
+    }
+  }
+  &-bg-4 {
+    #mainsite {
+      background: url('../images/background/body-bg-4.png') center repeat;
+    }
+  }
+  &-bg-5 {
+    #mainsite {
+      background: url('../images/background/body-bg-5.png') center repeat;
+    }
+  }
+  &-bg-6 {
+    #mainsite {
+      background: url('../images/background/body-bg-6.png') center repeat;
+    }
+  }
+  &-bg-1 {
+    #mainsite {
+      background: url('../images/background/body-bg-1.png') center repeat;
+    }
+  }
+  &-bg-7 {
+    #mainsite {
+      background: url('../images/background/body-bg-7.png') center repeat;
+    }
+  }
+  &-bg-8 {
+    #mainsite {
+      background: url('../images/background/body-bg-8.png') center repeat;
+    }
+  }
+  &-bg-9 {
+    #mainsite {
+      background: url('../images/background/body-bg-9.png') center repeat;
+    }
+  }
+  &-bg-10 {
+    #mainsite {
+      background: url('../images/background/body-bg-10.png') center repeat;
+    }
+  }
+  &-bg-11 {
+    #mainsite {
+      background: url('../images/background/body-bg-11.png') center repeat;
+    }
+  }
+  &-bg-12 {
+    #mainsite {
+      background: url('../images/background/body-bg-12.png') center repeat;
+    }
+  }
+  &-bg-13 {
+    #mainsite {
+      background: url('../images/background/body-bg-13.png') center repeat;
+    }
+  }
+  &-bg-14 {
+    #mainsite {
+      background: url('../images/background/body-bg-14.png') center repeat;
+    }
+  }
+  &-bg-15 {
+    #mainsite {
+      background: url('../images/background/body-bg-15.png') center repeat;
+    }
+  }
+  &-bg-16 {
+    #mainsite {
+      background: url('../images/background/body-bg-16.png') center repeat;
+    }
+  }
+  &-bg-17 {
+    #mainsite {
+      background: url('../images/background/body-bg-17.png') center repeat;
+    }
+  }
+  &-bg-18 {
+    #mainsite {
+      background: url('../images/background/body-bg-18.png') center repeat;
+    }
+  }
+  &-bg-19 {
+    #mainsite {
+      background: url('../images/background/body-bg-19.png') center repeat;
+    }
+  }
+  &-bg-20 {
+    #mainsite {
+      background: url('../images/background/body-bg-20.png') center repeat;
+    }
+  }
+  &-bg-21 {
+    #mainsite {
+      background: url('../images/background/body-bg-21.png') center repeat;
+    }
+  }
+  &-bg-22 {
+    #mainsite {
+      background: url('../images/background/body-bg-22.png') center repeat;
+    }
+  }
+  &-bg-23 {
+    #mainsite {
+      background: url('../images/background/body-bg-23.png') center repeat;
+    }
+  }
 }
 
 /*---------- Custom Css Start -------*/
@@ -306,6 +427,11 @@ textarea:focus {
     }
   }
 }
+.wd_single_index_menu_down {
+  ul {
+    margin: 0;
+  }
+}
 #headbottom {
     position: absolute;
     z-index: 2;
@@ -407,6 +533,7 @@ textarea:focus {
 .menu_fixed{
   position: fixed;
   top: 0;
+  left: 0;
   padding: 0;
   width: 100%;
   background-color:rgba(255, 255, 255, 0.9);
@@ -576,10 +703,17 @@ textarea:focus {
   }
 }
 #block-main {
-  margin: 100px 0;
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: @white;
+  }
 
   .home & {
-    margin: 0 !important;
+    .container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }
 /*-- About Wrapper css Start --*/
@@ -2706,7 +2840,7 @@ textarea:focus {
     .transform(translateX(-100%));
     .transition(all .3s);
     background-color:  @color1;
-    width: 300px;
+    width: 250px;
 
     &.wd_main_menu_hide{
       .transform(translateX(0));

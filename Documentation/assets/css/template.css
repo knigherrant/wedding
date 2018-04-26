@@ -19007,10 +19007,6 @@ span.fx-title {
 .fxmenu .levelsub.fa::before.pull-right {
   margin-left: .3em;
 }
-#block-panel {
-  color: #fff;
-  background-color: #c43b68;
-}
 #block-header > .container {
   position: relative;
 }
@@ -19252,6 +19248,31 @@ span.fx-title {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+#main-position {
+  padding: 70px 0;
+}
+#main-position .column {
+  background-color: #f1f1f1;
+}
+#main-position .notuse {
+  background-color: #c1c1c1;
+}
+#main-position .row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#main-position .column {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+#main-position .container-full .column:last-child {
+  border-left: 0;
+  border-right: 0;
+}
+.container-full {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .tmplComponent #block-main {
   padding: 20px 0;
