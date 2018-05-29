@@ -1,6 +1,8 @@
 #less-content-separator {
   content: "separator";
 }
-a {
+a,
+b,
+.wd_main_menu li.active a {
   color: #f07677;
 }

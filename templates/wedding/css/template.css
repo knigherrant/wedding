@@ -1,47 +1,9 @@
-@charset "UTF-8";
-/**
- # JV Framework
- # @version   4.0
- # ------------------------------------------------------------------------
- # author    PHPKungfu Solutions Co
- # copyright Copyright (C) 2011 phpkungfu.club. All Rights Reserved.
- # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL or later.
- # Websites: http://www.phpkungfu.club
- # Technical Support:  http://www.phpkungfu.club/my-tickets.html
- */
-/**
- # JV Framework
- # @version		3.3.x
- # ------------------------------------------------------------------------
- # author    PHPKungfu Solutions Co
- # copyright Copyright (C) 2011 phpkungfu.club. All Rights Reserved.
- # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL or later.
- # Websites: http://www.phpkungfu.club
- # Technical Support:  http://www.phpkungfu.club/my-tickets.html
- */
-/**
- # JV Framework
- # @version   4.0
- # ------------------------------------------------------------------------
- # author    PHPKungfu Solutions Co
- # copyright Copyright (C) 2011 phpkungfu.club. All Rights Reserved.
- # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL or later.
- # Websites: http://www.phpkungfu.club
- # Technical Support:  http://www.phpkungfu.club/my-tickets.html
- */
-/**
- *------------------------------------------------------------------------------
- * @package       T3 Framework for Joomla!
- *------------------------------------------------------------------------------
- * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
- * @license       GNU General Public License version 2 or later; see LICENSE.txt
- * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github
- *                & Google group to become co-author)
- * @Google group: https://groups.google.com/forum/#!forum/t3fw
- * @Link:         http://t3-framework.org
- *------------------------------------------------------------------------------
- */
-/* latin-ext */
+#less-content-separator {
+  content: "separator";
+}
+
+
+
 @font-face {
   font-family: 'Great Vibes';
   font-style: normal;
@@ -49,7 +11,7 @@
   src: local('Great Vibes'), local('GreatVibes-Regular'), url(https://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3SYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: 'Great Vibes';
   font-style: normal;
@@ -57,7 +19,7 @@
   src: local('Great Vibes'), local('GreatVibes-Regular'), url(https://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3Y4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* cyrillic-ext */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -65,7 +27,7 @@
   src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v10/Ukd0sOIY4JZgcODPuj2G3Q.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
-/* cyrillic */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -73,7 +35,7 @@
   src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v10/GsNxiN0oIzsS201cnUag6w.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* vietnamese */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -81,7 +43,7 @@
   src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v10/ie2Ux11tIT0C_JTksRPlKA.woff2) format('woff2');
   unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -89,7 +51,7 @@
   src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v10/I0dEfRgGNE90_hXZq7bjyw.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -97,7 +59,7 @@
   src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v10/4vqKRIwnQQGUQQh-PnvdMA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* cyrillic-ext */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -105,7 +67,7 @@
   src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v10/sNXgpEOJ2Tz7WJSozSN6D_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
-/* cyrillic */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -113,7 +75,7 @@
   src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v10/VZ-5ejr2fpt5l1RKkVxPr_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* vietnamese */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -121,7 +83,7 @@
   src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v10/gBru_9ER68jWAtTarLXr3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
   unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -129,7 +91,7 @@
   src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v10/BYKAuswRIqh69412sen31PY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -137,7 +99,7 @@
   src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v10/P18Nsu9EiYldSvHIj_0e5w.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* cyrillic-ext */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -145,7 +107,7 @@
   src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v10/HeAP0mHtiTx5JKQlc80wp_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
-/* cyrillic */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -153,7 +115,7 @@
   src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v10/OVZcBeQFqX1w7YhsLFAXp_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* vietnamese */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -161,7 +123,7 @@
   src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v10/7zlcDWwHlSl_w5azaU2j3PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
   unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -169,7 +131,7 @@
   src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v10/nRWuMjV9d7Qv7608EovOgfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -177,7 +139,7 @@
   src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v10/_RSiB1sBuflZfa9fxV8cOg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* cyrillic-ext */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -185,7 +147,7 @@
   src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v10/47861CGpECw31aszKPt4uhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
-/* cyrillic */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -193,7 +155,7 @@
   src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v10/66KG1MDzU5Zo36weZ_yx-RJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* vietnamese */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -201,7 +163,7 @@
   src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v10/GjWw5_K_Fhq8yNDkNV_ETRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
   unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -209,7 +171,7 @@
   src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v10/1wR3aOJ69QwyZ9B-WDmIqRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: 'Lora';
   font-style: italic;
@@ -217,14 +179,9 @@
   src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v10/_IxjUs2lbQSu0MyFEAfa7VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/**
- * Owl Carousel v2.2.1
- * Copyright 2013-2017 David Deutsch
- * Licensed under  ()
- */
-/*
- * 	Default theme - Owl Carousel CSS File
- */
+
+
+
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
@@ -275,38 +232,10 @@
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
 }
-/*------------------------------------------------------------------
-[Master Stylesheet]
 
-Project:  Wedding
-Version:  1.0.0
-Author:
-Website:
-Purchase:
--------------------------------------------------------------------
-[Table of contents]
 
-1. Body
-2. Custom css / a
-3. Preloader/ #preloader
-4. Header Css Start / .wd_slider_wrapper
-5. Button Css Start / .wd_btn
-6. Heading Css Start / .wd_heading
-7. About Wrapper css Start / .wd_about_wrapper
-8. Story css Start / .wd_story_wrapper
-9. Event css Start / .wd_event_wrapper
-10. Guest css Start / .wd_guest_wrapper
-11. Testimomnial css Start / .wd_testimonial_wrapper
-12. Family css Start / .wd_family_wrapper
-13. Gallery css Start / .wd_gallery_wrapper
-14. Blog css Start / .wd_blog_wrapper
-15. Contact css Start / .wd_contact_wrapper
-16. Footer css Start / .wd_footer_wrapper
-17. Blog css Start
-18. Form login css Start
-19. Responsive css Start / .wd_logo
-*/
-/*--------- Body Strat -------*/
+
+@charset "UTF-8";
 body,
 html {
   font-family: 'Lora', serif;
@@ -320,7 +249,7 @@ body {
   position: relative;
 }
 .body-boxed {
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #c7c7c7;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
@@ -333,7 +262,7 @@ body {
   transition: all 0.6s;
 }
 .body-framed {
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #c7c7c7;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
@@ -346,7 +275,7 @@ body {
   transition: all 0.6s;
 }
 .body-rounded {
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #c7c7c7;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
@@ -434,7 +363,7 @@ body {
 .body-bg-23 #mainsite {
   background: url('../images/background/body-bg-23.png') center repeat;
 }
-/*---------- Custom Css Start -------*/
+
 section,
 .sidebar .jv-module {
   margin-bottom: 0;
@@ -466,7 +395,7 @@ h6,
   font-family: 'Great Vibes', cursive;
   line-height: 1.1;
   font-weight: 400;
-  color: #222;
+  color: #222222;
 }
 select,
 input,
@@ -508,12 +437,12 @@ textarea:focus {
 }
 .btn-primary {
   background-color: #f07677;
-  color: #fff;
+  color: #ffffff;
 }
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #111;
-  color: #fff;
+  color: #ffffff;
 }
 .btn-sm {
   height: 30px;
@@ -582,9 +511,9 @@ textarea:focus {
 .wd_bottompadder100 {
   padding-bottom: 100px;
 }
-/*-- Preloader css start --*/
+
 #preloader {
-  background-color: #fff;
+  background-color: #ffffff;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -607,7 +536,7 @@ textarea:focus {
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-/*-- Header Css Start --*/
+
 .position-slideshow:before,
 .position-slideshow:after {
   display: table;
@@ -668,7 +597,7 @@ textarea:focus {
 }
 .wd_slider_textinfo h4 {
   font-size: 40px;
-  color: #111;
+  color: #111111;
   text-transform: uppercase;
   font-family: 'Lora', serif;
   margin: 0;
@@ -687,7 +616,7 @@ textarea:focus {
   cursor: pointer;
   width: 100px;
   height: 100px;
-  border: 8px solid #fff;
+  border: 8px solid #ffffff;
   text-align: center;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -700,7 +629,7 @@ textarea:focus {
   right: 0;
   z-index: 10;
   line-height: 80px;
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
 }
 .wow {
@@ -782,7 +711,7 @@ textarea:focus {
 .wd_main_menu li a {
   display: inline-block;
   padding: 70px 16px;
-  color: #111;
+  color: #111111;
   font-size: 18px;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -815,7 +744,7 @@ textarea:focus {
 .menu_fixed .wd_main_menu ul li a {
   padding: 30px 16px;
 }
-/*-- Button Css Start --*/
+
 .wd_btn a {
   display: inline-block;
   width: auto;
@@ -823,7 +752,7 @@ textarea:focus {
   height: 50px;
   line-height: 49px;
   font-size: 18px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: normal;
   background-color: #f07677;
@@ -840,8 +769,8 @@ textarea:focus {
   transition: all 0.5s;
 }
 .wd_btn a:hover {
-  color: #fff;
-  background: #111;
+  color: #ffffff;
+  background: #111111;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -856,7 +785,7 @@ textarea:focus {
   height: 50px;
   line-height: 49px;
   font-size: 18px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: normal;
   background-color: #f07677;
@@ -875,15 +804,15 @@ textarea:focus {
 }
 .wd_btn button:hover,
 .wd_btn .button:hover {
-  color: #fff;
-  background: #111;
+  color: #ffffff;
+  background: #111111;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-/*-- Heading Css Start --*/
+
 .wd_heading {
   margin-bottom: 60px;
   padding-bottom: 20px;
@@ -905,7 +834,7 @@ textarea:focus {
 .wd_heading img {
   display: inline-block;
 }
-/*-- #block-breadcrumb css Start --*/
+
 #block-breadcrumb {
   padding: 80px 0;
 }
@@ -922,7 +851,7 @@ textarea:focus {
   margin: 0;
   padding: 6px 24px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   font-family: 'Lora', serif;
 }
 #block-breadcrumb .wd_breadcrumb li {
@@ -947,7 +876,7 @@ textarea:focus {
   color: #f07677;
 }
 #block-breadcrumb .wd_breadcrumb li a {
-  color: #000;
+  color: #000000;
 }
 #block-breadcrumb .wd_breadcrumb li a:hover {
   text-decoration: underline;
@@ -958,13 +887,13 @@ textarea:focus {
 #block-main .container {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .home #block-main .container {
   padding-top: 0;
   padding-bottom: 0;
 }
-/*-- About Wrapper css Start --*/
+
 .wd_about_wrapper {
   background-image: url(../images/content/about_bg.jpg);
   background-size: cover;
@@ -1083,7 +1012,7 @@ textarea:focus {
   text-align: center;
   color: #000000;
   border: 1px solid #e4e4e4;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -1094,7 +1023,7 @@ textarea:focus {
 }
 .wd_about_infobox ul li a:hover {
   background-color: #f07677;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid #f07677;
 }
 .wd_about_infobox_date {
@@ -1145,7 +1074,7 @@ textarea:focus {
   font-family: 'Lora', serif;
   margin: 0;
   padding: 0px 15px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 #clockdiv {
   color: #f07677;
@@ -1169,7 +1098,7 @@ textarea:focus {
   font-style: italic;
   color: #797979;
 }
-/*-- Story css Start --*/
+
 .wd_story_wrapper {
   background-image: url(../images/content/story_bg.jpg);
   background-size: cover;
@@ -1258,7 +1187,7 @@ textarea:focus {
   -webkit-border-radius: 0 0 50px 50px;
   -moz-border-radius: 0 0 50px 50px;
   border-radius: 0 0 50px 50px;
-  color: #fff;
+  color: #ffffff;
 }
 .wd_story_covers_box_datails span {
   display: block;
@@ -1268,12 +1197,12 @@ textarea:focus {
 }
 .wd_story_covers_box_datails h3 {
   font-size: 30px;
-  color: #fff;
+  color: #ffffff;
   text-transform: capitalize;
   margin: 12px 0px;
 }
 .wd_story_covers_box_datails p {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 0px;
   margin-top: 15px;
 }
@@ -1326,7 +1255,7 @@ textarea:focus {
   -moz-border-radius: 50px;
   border-radius: 50px;
 }
-/*-- Event css Start --*/
+
 .wd_event_wrapper {
   background-image: url(../images/content/event_bg.jpg);
   background-size: cover;
@@ -1361,7 +1290,7 @@ textarea:focus {
 }
 .wd_event_infobox span {
   font-size: 18px;
-  color: #111;
+  color: #111111;
   margin-bottom: 15px;
   padding: 0px 60px;
 }
@@ -1379,7 +1308,7 @@ textarea:focus {
   animation-iteration-count: infinite;
   animation-name: pulse;
 }
-/*-- Guest css Start --*/
+
 .wd_guest_wrapper {
   background-image: url(../images/content/guest_bg.jpg);
   background-size: cover;
@@ -1389,7 +1318,7 @@ textarea:focus {
   z-index: 0;
 }
 .wd_guest_wrapper .wd_heading h2 {
-  color: #fff;
+  color: #ffffff;
 }
 .wd_guest_infobox {
   padding: 60px 0 30px 0;
@@ -1417,7 +1346,7 @@ textarea:focus {
 }
 .wd_guest_formbox h2 {
   margin: 0;
-  color: #111;
+  color: #111111;
   font-size: 30px;
   font-style: italic;
   font-family: 'Lora', serif;
@@ -1430,10 +1359,10 @@ textarea:focus {
   text-transform: capitalize;
 }
 .wd_guest_wrapper .wd_guest_formbox .wd_heading h2 {
-  color: #111;
+  color: #111111;
 }
 .wd_guest_form {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 45px 70px;
   text-align: left;
 }
@@ -1444,7 +1373,7 @@ textarea:focus {
   display: block;
   font-size: 16px;
   font-weight: 400;
-  color: #111;
+  color: #111111;
   font-style: italic;
 }
 .wd_guest_form input,
@@ -1478,7 +1407,7 @@ textarea:focus {
 .wd_guest_slider .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 50px;
 }
-/*-- Testimomnial css Start --*/
+
 .wd_testimonial_wrapper {
   background-color: #f07677;
 }
@@ -1496,13 +1425,13 @@ textarea:focus {
 }
 .wd_testimo_box h4 {
   font-size: 18px;
-  color: #fff;
+  color: #ffffff;
   font-family: 'Lora', serif;
   margin: 0px;
 }
 .wd_testimo_box p {
   font-size: 46px;
-  color: #fff;
+  color: #ffffff;
   font-family: 'Great Vibes', cursive;
   margin: 30px 0px 20px 0px;
   line-height: 46px;
@@ -1510,7 +1439,7 @@ textarea:focus {
 .wd_testimonial_slider .owl-theme .owl-nav.disabled + .owl-dots {
   display: none;
 }
-/*-- Family css Start --*/
+
 .wd_family_wrapper {
   background-image: url(../images/content/family_bg.jpg);
   background-size: cover;
@@ -1540,7 +1469,7 @@ textarea:focus {
   float: none;
   display: inline-block;
   width: 130px;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0px -3px;
 }
 .wd_family_tabbox ul.nav > li > a {
@@ -1642,7 +1571,7 @@ textarea:focus {
   display: none;
 }
 .wd_family_slider .owl-theme .owl-nav [class*='owl-'] {
-  color: #111;
+  color: #111111;
   font-size: 24px;
   margin: 0px;
   padding: 0px;
@@ -1656,7 +1585,7 @@ textarea:focus {
   height: 55px;
   line-height: 45px;
   text-align: center;
-  border: 5px solid #fff;
+  border: 5px solid #ffffff;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -1664,7 +1593,7 @@ textarea:focus {
 }
 .wd_family_slider .owl-theme .owl-nav [class*='owl-']:hover {
   background: #f07677;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 .wd_family_slider .owl-theme .owl-nav .owl-prev:before {
@@ -1696,7 +1625,7 @@ textarea:focus {
 .wd_family_infobox h2 {
   font-size: 30px;
   text-transform: capitalize;
-  color: #111;
+  color: #111111;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -1723,7 +1652,7 @@ textarea:focus {
   text-align: center;
   color: #000000;
   border: 1px solid #e4e4e4;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -1734,7 +1663,7 @@ textarea:focus {
 }
 .wd_family_infobox ul li a:hover {
   background-color: #f07677;
-  color: #fff;
+  color: #ffffff;
   border-color: #f07677;
 }
 .wd_family_infobox:hover h2 {
@@ -1775,14 +1704,14 @@ textarea:focus {
   transition: all 0.5s;
   width: auto !important;
 }
-/*-- Gallery css Start --*/
+
 .wd_gallery_wrapper {
   background-color: #0c0c0c;
   position: relative;
   z-index: 0;
 }
 .wd_gallery_wrapper .wd_heading h2 {
-  color: #fff;
+  color: #ffffff;
 }
 .wd_gallery_slide {
   float: left;
@@ -1816,7 +1745,7 @@ textarea:focus {
   right: 0;
   margin: 0px auto;
   height: 100%;
-  background: linear-gradient(0deg, black, transparent 100%);
+  background: linear-gradient(0deg, #000000, transparent 100%);
   z-index: 0;
   opacity: 0;
   visibility: hidden;
@@ -1846,7 +1775,7 @@ textarea:focus {
   width: auto;
   margin: 0px;
   text-transform: capitalize;
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
   padding-top: 5px;
 }
@@ -1882,7 +1811,7 @@ textarea:focus {
   border: 1px solid #f07677;
   background: #383838;
 }
-/*-- Blog css Start --*/
+
 .wd_blog_wrapper {
   background: url(../images/content/blog_bg.jpg) center no-repeat;
   background-size: cover;
@@ -2095,7 +2024,7 @@ textarea:focus {
 .item-page .item-image.pull-none {
   text-align: center;
 }
-/*-- Form login css Start --*/
+
 .componentheading {
   font-size: 30px;
 }
@@ -2111,7 +2040,7 @@ textarea:focus {
   padding: 6px 12px;
   border: 1px solid #e4e4e4;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .alert {
   padding: 15px;
@@ -2142,15 +2071,15 @@ textarea:focus {
   width: 98%;
 }
 .k2AccountPage .form-group-rq .form-control.invalid {
-  border-color: #c00;
+  border-color: #cc0000;
 }
 .k2AccountPage .form-group-rq .red {
-  color: #c00;
+  color: #cc0000;
   position: absolute;
   right: 0;
   top: 7px;
 }
-/*-- Contact css Start --*/
+
 .wd_contact_wrapper {
   background-image: url(../images/content/contact_bg.jpg);
   background-size: cover;
@@ -2175,7 +2104,7 @@ textarea:focus {
   width: 100%;
   height: 50px;
   padding: 0px 15px;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid transparent;
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.2);
@@ -2202,30 +2131,29 @@ textarea:focus {
 }
 .wd_contact_form input::-webkit-input-placeholder,
 .wd_contact_form textarea::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #fff;
+  
+  color: #ffffff;
   font-style: italic;
 }
 .wd_contact_form input::-moz-placeholder,
 .wd_contact_form textarea::-webkit-input-placeholder {
-  /* Firefox 19+ */
-  color: #fff;
+  
+  color: #ffffff;
   font-style: italic;
 }
 .wd_contact_form input:-ms-input-placeholder,
 .wd_contact_form textarea::-webkit-input-placeholder {
-  /* IE 10+ */
-  color: #fff;
+  
+  color: #ffffff;
   font-style: italic;
 }
 .wd_contact_form input:-moz-placeholder,
 .wd_contact_form textarea::-webkit-input-placeholder {
-  /* Firefox 18- */
-  color: #fff;
+  
+  color: #ffffff;
   font-style: italic;
 }
-/*-- K2 css Start --*/
-/*k2 itemList*/
+
 .itemList .ItemView {
   margin-bottom: 60px;
 }
@@ -2242,7 +2170,7 @@ textarea:focus {
   font-size: 30px;
 }
 .itemList .ItemView .ItemTitle a {
-  color: #000;
+  color: #000000;
 }
 .itemList .ItemView .itemMeta {
   margin: 0 -15px 20px;
@@ -2299,12 +2227,12 @@ textarea:focus {
   line-height: 50px;
   border: 1px solid #e4e4e4;
   border-radius: 50%;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 .pagination .pagination-list li > a:hover {
   background-color: #f07677;
-  color: #fff;
+  color: #ffffff;
   border-color: #f07677;
 }
 .pagination .pagination-list li .button {
@@ -2316,7 +2244,7 @@ textarea:focus {
   background-color: #fafafa;
   cursor: default;
 }
-/*k2 item*/
+
 .ItemLinks > * {
   display: inline-block;
   vertical-align: top;
@@ -2372,7 +2300,7 @@ textarea:focus {
   transition: all 0.3s;
 }
 .itemViewdetail .itemSocialSharing > div .button-social:hover {
-  color: #fff;
+  color: #ffffff;
   border-color: #f07677;
   background-color: #f07677;
 }
@@ -2381,7 +2309,7 @@ textarea:focus {
   margin-bottom: 44px;
   padding: 70px 125px;
   background: url('../images/content/qoute-icon.png') center no-repeat #f07677;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 22px;
   line-height: 1.4;
@@ -2453,7 +2381,7 @@ textarea:focus {
   margin-left: 10px;
   padding: 2px 6px;
   font-size: 14px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #e4e4e4;
   border-radius: 4px;
 }
@@ -2484,7 +2412,7 @@ textarea:focus {
   margin-bottom: 20px !important;
   padding-top: 8px;
   line-height: normal;
-  color: #000;
+  color: #000000;
   font-family: 'Lora', serif;
   font-size: 24px;
   text-transform: capitalize;
@@ -2500,7 +2428,7 @@ textarea:focus {
   border-radius: 3px;
   font-size: 10px;
   background-color: #f07677;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .itemRelated h3 {
@@ -2533,7 +2461,7 @@ textarea:focus {
   margin-bottom: 10px;
   font-weight: normal;
   font-style: italic;
-  color: #000;
+  color: #000000;
   text-transform: capitalize;
 }
 .itemComments .form-group .inputbox {
@@ -2577,12 +2505,12 @@ textarea:focus {
   margin-right: 15px;
 }
 .itemCommentsList li .commentMeta .commentAuthorName {
-  color: #000;
+  color: #000000;
   font-size: 22px;
   font-weight: normal;
 }
 .itemCommentsList li .commentMeta .commentAuthorName a {
-  color: #000;
+  color: #000000;
 }
 .itemCommentsList li .commentMeta .status {
   margin-right: 10px;
@@ -2608,7 +2536,7 @@ textarea:focus {
   font-style: italic;
   color: #f07677;
 }
-/*K2 tags*/
+
 .tagView .componentheading {
   margin-bottom: 50px;
   position: relative;
@@ -2667,7 +2595,7 @@ textarea:focus {
   font-size: 30px;
 }
 .tagItemList .tagItemView .tagItemTitle a {
-  color: #222;
+  color: #222222;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -2692,7 +2620,7 @@ textarea:focus {
   padding: 0;
   border: 0;
 }
-/*-- Footer css Start --*/
+
 .wd_footer_wrapper {
   background-image: url(../images/content/footer_bg.jpg);
   background-size: cover;
@@ -2732,7 +2660,7 @@ textarea:focus {
   height: 120px;
   line-height: 120px;
   background-color: #f07677;
-  color: #fff;
+  color: #ffffff;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -2767,9 +2695,9 @@ textarea:focus {
   width: 100px;
   height: 100px;
   line-height: 80px;
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
-  border: 10px solid #fff;
+  border: 10px solid #ffffff;
   text-align: center;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -2777,7 +2705,7 @@ textarea:focus {
   background: #f07677;
   text-indent: 0;
 }
-/*-- Responsive css Start --*/
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .wd_logo {
     padding-top: 39px;
@@ -2918,7 +2846,7 @@ textarea:focus {
     width: 40px;
     height: 30px;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     border-radius: 3px;
     background-color: #f07677;
   }
@@ -2966,14 +2894,14 @@ textarea:focus {
     text-align: left;
     margin: 0;
     padding: 15px;
-    color: #fff;
+    color: #ffffff;
   }
   .wd_main_menu ul li a:hover {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #f07677;
   }
   .wd_main_menu ul li.active a {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #f07677;
   }
   .menu_fixed .wd_main_menu ul li a {
@@ -3047,7 +2975,7 @@ textarea:focus {
     padding-left: 0;
     margin-left: 0;
   }
-  /*css blog single*/
+  
   #block-main {
     margin: 40px 0;
   }
@@ -3195,4 +3123,3 @@ textarea:focus {
     width: 410px;
   }
 }
-/*-- Responsive css End --*/
