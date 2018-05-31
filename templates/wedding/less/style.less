@@ -389,6 +389,10 @@ textarea:focus {
   background: url('../images/header/bg_page-header.jpg') center no-repeat;
   background-size: cover;
 }
+.position-slideshow {
+  position: relative;
+  z-index: 2;
+}
 .wd_slider {
   &_textinfo{
     float: left;
@@ -1366,34 +1370,11 @@ textarea:focus {
         font-size:24px;
         .transition(all .5s);
       }
-
-      &:hover {
-        background: none;
-
-        img {
-          border-color: @color1;
-        }
-
-        p {
-          color:  @color1;
-        }
-      }
-    }
-
-    &.active > a:hover {
-      background: none;
-
-      img {
-        border-color: @color1;
-      }
-
-      p {
-        color:  @color1;
-      }
     }
   }
 }
-.wd_family_tabbox .nav-tabs > li.active > a, .wd_family_tabbox .nav-tabs > li.active > a:hover, .wd_family_tabbox .nav-tabs > li.active > a:focus{
+.wd_family_tabbox .nav-tabs > li.active > a,
+.wd_family_tabbox .nav-tabs > li > a:hover {
   border:none;
   background:none;
     -webkit-transition: all 0.5s;
@@ -1402,25 +1383,26 @@ textarea:focus {
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.wd_family_tabbox .nav-tabs > li.active > a p, .wd_family_tabbox .nav-tabs > li.active > a:hover p, .wd_family_tabbox .nav-tabs > li.active > a:focus p{
+.wd_family_tabbox .nav-tabs > li.active > a p, .wd_family_tabbox .nav-tabs > li > a:hover p{
   color:  @color1;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
-.wd_family_tabbox .nav-tabs > li.active > a img, .wd_family_tabbox .nav-tabs > li.active > a:hover img, .wd_family_tabbox .nav-tabs > li.active > a:focus img{
+.wd_family_tabbox .nav-tabs > li.active > a img,
+.wd_family_tabbox .nav-tabs > li > a:hover img {
   border: 4px solid  @color1;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    animation-duration: 2s;
-    animation-delay: 300ms;
-    animation-iteration-count: infinite;
-    animation-name: pulse;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  animation-duration: 2s;
+  animation-delay: 300ms;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
 }
 .wd_family_tabbox .tab-content{
   margin-top: 50px;
