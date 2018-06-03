@@ -7,11 +7,8 @@
     </section>
 <?php endif;?>
 <!--/Block top-->
-<div class="site-header-outer">
 <!--Block Header -->
-<header id="site-header" class="wd_scroll_wap">
-    <div class="wd_slider_wrapper ">
-        <div id="snow"></div>
+    <header id="site-header" class="wd_scroll_wap">
         <div class="wd_header_wrapper wd_single_index_menu">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="wd_logo">
@@ -32,20 +29,15 @@
                 <?php endif;?>
             </div>
         </div>
-
-        <!--Block Slide-->
-        <?php if( $this['position']->count('slideshow') ):?>
-            <jdoc:include type="position" name="slideshow"  style="raw"  />
-            <div class="wd_single_index_menu_down">
-                <ul>
-                    <li><a id="headbottom" href="#down" data-scroll=""><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        <?php endif;?>
-        <!--/Block Slide-->
-    </div>
-</header>
+    </header>
 <!--/Block Header-->
+
+<!--Block Slide-->
+<?php if( $this['position']->count('slideshow') ):?>
+    <jdoc:include type="position" name="slideshow"  style="jvxhtml"  />
+<?php endif;?>
+<!--/Block Slide-->
+
 
 <?php if( $this['position']->count('breadcrumb') ):?>
     <!--Block Breadcrumb-->
@@ -56,7 +48,6 @@
 	</section>
     <!--/Block Breadcrumb-->
 <?php endif;?>
-</div>
 <?php if( $this['position']->count('full-webding-conent-1') ):?>
     <!--Block full-webding-conent-1-->
     <section id="down" class="wd_scroll_wrap">

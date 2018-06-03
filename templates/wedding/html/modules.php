@@ -84,7 +84,13 @@ function modChrome_popup($module, &$params, &$attribs){ ?>
 
 function modChrome_jvxhtml($module, &$params, &$attribs){
 	if (!empty ($module->content)) : ?>
-		<div class="jv-module<?php if($params->get('moduleclass_sfx')) echo " module".$params->get('moduleclass_sfx'); ?>">
+        <?php
+            $bg =  '';
+            if($params->get('backgroundimage')) {
+            $bg = 'style="background-image: url('. $params->get('backgroundimage').')"';
+            }
+        ?>
+	<div class="jv-module<?php if($params->get('moduleclass_sfx')) echo " module".$params->get('moduleclass_sfx'); ?>" <?php echo $bg;?> >
 		<?php
 		if ($module->showtitle != 0) :
 			$title = explode('||',$module->title);

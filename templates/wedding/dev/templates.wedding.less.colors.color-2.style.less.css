@@ -1,29 +1,44 @@
 #less-content-separator {
   content: "separator";
 }
-.btn-primary,
-.wd_btn a,
-.wd_btn button,
-.wd_btn .button {
-  background-color: #6b6ee9;
-}
-.wd_main_menu li.active a,
-.wd_main_menu li a:hover,
-.wd_slider_textinfo h3 {
+a:hover {
   color: #6b6ee9;
 }
-.wd_slider_textinfo .inner,
-.wd_heading {
+#snow.btn-primary,
+.wd_btn a,
+.wd_btn button,
+.wd_btn .button,
+.btn-primary {
+  background-color: #6b6ee9;
+}
+.wd_logo .logo-image {
+  background-image: url('../less/colors/color-2/images/logo.png');
+}
+.wd_main_menu ul.menu li.active a,
+.wd_main_menu ul.menu li a:hover {
+  color: #6b6ee9;
+}
+.wd_slider_module .wd_slider_textinfo h3 {
+  color: #6b6ee9;
+}
+.wd_slider_module .wd_slider_textinfo .inner {
   background-image: url('../less/colors/color-2/images/bg_heading.png');
 }
-#headbottom {
+.wd_slider_module #headbottom {
   background-color: #6b6ee9;
+}
+.wd_heading {
+  background-image: url('../less/colors/color-2/images/bg_heading.png');
 }
 .wd_heading h4 {
   color: #6b6ee9;
 }
 .wd_about_infobox h2:after {
   border-bottom-color: #6b6ee9;
+}
+.wd_about_infobox ul li a:hover {
+  border-color: #6b6ee9;
+  background-color: #6b6ee9;
 }
 .wd_about_infobox_img:before,
 .wd_about_infobox_img:after {
@@ -94,6 +109,50 @@
 .wd_footicon i {
   background-color: #6b6ee9;
 }
+.wd_contact_form .wd_btn .button:hover {
+  border-color: #6b6ee9;
+}
 #toTop {
   background-color: #6b6ee9;
+}
+.wd_footer_bottom_wrapper .module-logo-footer .logo-flink {
+  background-image: url('../less/colors/color-2/images/flogo.png');
+}
+
+#block-breadcrumb .wd_breadcrumb li:last-child a {
+  color: #6b6ee9;
+}
+.itemList .ItemView .itemMeta > span .fa {
+  color: #6b6ee9;
+}
+.itemViewdetail .itemMeta > span .fa {
+  color: #6b6ee9;
+}
+.itemViewdetail blockquote {
+  background-color: #6b6ee9;
+}
+.itemViewdetail .itemFullText ul li:before,
+.itemViewdetail .itemMetaFooter .ItemTags .fa,
+.boxDescription .itemAuthorDetails .itemAuthorName .name {
+  color: #6b6ee9;
+}
+.itemViewdetail .itemSocialSharing > div .button-social:hover {
+  background-color: #6b6ee9;
+  border-color: #6b6ee9;
+}
+.boxDescription .itemAuthorDetails .itemAuthorName .more,
+.itemComments h3:after {
+  background-color: #6b6ee9;
+}
+@media (max-width: 767px) {
+  .wd_main_menu_wrapper,
+  .wd_menu_btn {
+    background-color: #6b6ee9;
+  }
+  .wd_main_menu ul.menu > li.active a {
+    color: #6b6ee9;
+  }
+  .wd_main_menu ul.menu > li .divsubmenu li.current a {
+    color: #6b6ee9;
+  }
 }
